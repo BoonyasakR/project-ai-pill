@@ -1,0 +1,5 @@
+anomalib==2.7.0
+fastapi
+httpx
+python-multipart
+uvicorn[standard]

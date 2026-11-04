@@ -1,0 +1,218 @@
+{
+ "size256_coreset0.01": {
+  "config": {
+   "id": "size256_coreset0.01",
+   "size": 256,
+   "coreset": 0.01
+  },
+  "overall": {
+   "image_auroc": 0.9620840152755046,
+   "pixel_auroc": 0.9812083079811417,
+   "au_pro": 0.9422779625370378,
+   "threshold": 38.27748832702637,
+   "precision": 0.9916666666666667,
+   "recall": 0.8439716312056738,
+   "f1": 0.9118773946360154,
+   "true_positive": 119,
+   "false_positive": 1,
+   "false_negative": 22,
+   "true_negative": 25,
+   "latency_ms": 57.503971742858894
+  },
+  "by_defect": {
+   "color": {
+    "images": 25,
+    "image_auroc": 0.9215384615384614,
+    "pixel_auroc": 0.9894956598358502,
+    "au_pro": 0.9802905718159152,
+    "recall": 0.72
+   },
+   "combined": {
+    "images": 17,
+    "image_auroc": 0.9909502262443439,
+    "pixel_auroc": 0.9785402754426812,
+    "au_pro": 0.9646873639388724,
+    "recall": 0.8823529411764706
+   },
+   "contamination": {
+    "images": 21,
+    "image_auroc": 0.9780219780219781,
+    "pixel_auroc": 0.9935031558519218,
+    "au_pro": 0.9766568206003405,
+    "recall": 0.9523809523809523
+   },
+   "crack": {
+    "images": 26,
+    "image_auroc": 0.915680473372781,
+    "pixel_auroc": 0.9654650899381838,
+    "au_pro": 0.839541323142795,
+    "recall": 0.7307692307692307
+   },
+   "faulty_imprint": {
+    "images": 19,
+    "image_auroc": 0.9838056680161943,
+    "pixel_auroc": 0.9936331256065452,
+    "au_pro": 0.9787451825682302,
+    "recall": 0.8421052631578947
+   },
+   "pill_type": {
+    "images": 9,
+    "image_auroc": 1.0,
+    "pixel_auroc": 0.9885708508208659,
+    "au_pro": 0.9684674774868662,
+    "recall": 1.0
+   },
+   "scratch": {
+    "images": 24,
+    "image_auroc": 0.9887820512820513,
+    "pixel_auroc": 0.9778780340710681,
+    "au_pro": 0.9548627686886515,
+    "recall": 0.9166666666666666
+   }
+  }
+ },
+ "size320_coreset0.1": {
+  "config": {
+   "id": "size320_coreset0.1",
+   "size": 320,
+   "coreset": 0.1
+  },
+  "overall": {
+   "image_auroc": 0.9517184942716858,
+   "pixel_auroc": 0.9801327344142803,
+   "au_pro": 0.9517980582123464,
+   "threshold": 38.561347770690915,
+   "precision": 0.9917355371900827,
+   "recall": 0.851063829787234,
+   "f1": 0.916030534351145,
+   "true_positive": 120,
+   "false_positive": 1,
+   "false_negative": 21,
+   "true_negative": 25,
+   "latency_ms": 110.85463537141484
+  },
+  "by_defect": {
+   "color": {
+    "images": 25,
+    "image_auroc": 0.8984615384615385,
+    "pixel_auroc": 0.9920155817330657,
+    "au_pro": 0.984223045783441,
+    "recall": 0.8
+   },
+   "combined": {
+    "images": 17,
+    "image_auroc": 1.0,
+    "pixel_auroc": 0.9806312557343525,
+    "au_pro": 0.9688049107967716,
+    "recall": 1.0
+   },
+   "contamination": {
+    "images": 21,
+    "image_auroc": 0.9835164835164835,
+    "pixel_auroc": 0.9937213884108911,
+    "au_pro": 0.9783113010624325,
+    "recall": 0.9047619047619048
+   },
+   "crack": {
+    "images": 26,
+    "image_auroc": 0.8831360946745562,
+    "pixel_auroc": 0.9766525140532469,
+    "au_pro": 0.8733307184784727,
+    "recall": 0.6923076923076923
+   },
+   "faulty_imprint": {
+    "images": 19,
+    "image_auroc": 0.9898785425101215,
+    "pixel_auroc": 0.9950220544484463,
+    "au_pro": 0.9845313649421543,
+    "recall": 0.9473684210526315
+   },
+   "pill_type": {
+    "images": 9,
+    "image_auroc": 1.0,
+    "pixel_auroc": 0.9881487030482025,
+    "au_pro": 0.9610699639328545,
+    "recall": 1.0
+   },
+   "scratch": {
+    "images": 24,
+    "image_auroc": 0.9711538461538461,
+    "pixel_auroc": 0.9773454299123459,
+    "au_pro": 0.9569766765621409,
+    "recall": 0.7916666666666666
+   }
+  }
+ },
+ "size512_coreset0.01": {
+  "config": {
+   "id": "size512_coreset0.01",
+   "size": 512,
+   "coreset": 0.01
+  },
+  "overall": {
+   "image_auroc": 0.9757228587015822,
+   "pixel_auroc": 0.9738408320225197,
+   "au_pro": 0.964242233240748,
+   "threshold": 42.08144638061523,
+   "precision": 0.9846153846153847,
+   "recall": 0.9078014184397163,
+   "f1": 0.9446494464944649,
+   "true_positive": 128,
+   "false_positive": 2,
+   "false_negative": 13,
+   "true_negative": 24,
+   "latency_ms": 118.72734082857538
+  },
+  "by_defect": {
+   "color": {
+    "images": 25,
+    "image_auroc": 0.956923076923077,
+    "pixel_auroc": 0.9964837701400123,
+    "au_pro": 0.9895254461986647,
+    "recall": 0.84
+   },
+   "combined": {
+    "images": 17,
+    "image_auroc": 1.0,
+    "pixel_auroc": 0.9780307534870324,
+    "au_pro": 0.9750245879407698,
+    "recall": 1.0
+   },
+   "contamination": {
+    "images": 21,
+    "image_auroc": 0.9945054945054945,
+    "pixel_auroc": 0.9962234529071233,
+    "au_pro": 0.9873342963386083,
+    "recall": 0.9523809523809523
+   },
+   "crack": {
+    "images": 26,
+    "image_auroc": 0.9275147928994082,
+    "pixel_auroc": 0.9851987897300962,
+    "au_pro": 0.9109817541641878,
+    "recall": 0.7692307692307693
+   },
+   "faulty_imprint": {
+    "images": 19,
+    "image_auroc": 1.0,
+    "pixel_auroc": 0.996065253934671,
+    "au_pro": 0.9884730777223651,
+    "recall": 1.0
+   },
+   "pill_type": {
+    "images": 9,
+    "image_auroc": 1.0,
+    "pixel_auroc": 0.9775588106165523,
+    "au_pro": 0.9432890504342523,
+    "recall": 1.0
+   },
+   "scratch": {
+    "images": 24,
+    "image_auroc": 0.985576923076923,
+    "pixel_auroc": 0.9750489296132512,
+    "au_pro": 0.96619002867591,
+    "recall": 0.9166666666666666
+   }
+  }
+ }
+}
