@@ -49,3 +49,8 @@ tmp/
 
 # Datasets
 data/
+
+# Model weights
+models/
+*.pt
+*.ckpt
