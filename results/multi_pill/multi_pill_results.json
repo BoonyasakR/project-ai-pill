@@ -1,0 +1,6178 @@
+{
+  "threshold": 35.250545501708984,
+  "validation_pills": 400,
+  "validation_missed_by_segmentation": 0,
+  "validation_score_percentiles": {
+    "0": 27.70275115966797,
+    "50": 32.09007263183594,
+    "95": 34.76886749267578,
+    "99": 35.250545501708984,
+    "100": 40.14094543457031
+  },
+  "segmentation_counts": {
+    "seed1_touchingFalse": {
+      "truth": 167,
+      "found": 167
+    },
+    "seed1_touchingTrue": {
+      "truth": 167,
+      "found": 167
+    },
+    "seed2_touchingFalse": {
+      "truth": 167,
+      "found": 167
+    },
+    "seed2_touchingTrue": {
+      "truth": 167,
+      "found": 167
+    },
+    "seed3_touchingFalse": {
+      "truth": 167,
+      "found": 167
+    },
+    "seed3_touchingTrue": {
+      "truth": 167,
+      "found": 167
+    }
+  },
+  "pill_scores": [
+    {
+      "name": "contamination/012.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.63487243652344
+    },
+    {
+      "name": "contamination/005.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 35.675357818603516
+    },
+    {
+      "name": "color/019.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.850215911865234
+    },
+    {
+      "name": "good/015.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.12107276916504
+    },
+    {
+      "name": "crack/010.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 36.59455108642578
+    },
+    {
+      "name": "faulty_imprint/007.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 42.250160217285156
+    },
+    {
+      "name": "combined/006.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 36.02442932128906
+    },
+    {
+      "name": "scratch/002.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.8050651550293
+    },
+    {
+      "name": "faulty_imprint/014.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 37.133514404296875
+    },
+    {
+      "name": "contamination/002.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 43.2231330871582
+    },
+    {
+      "name": "color/020.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.39938735961914
+    },
+    {
+      "name": "good/003.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.94581985473633
+    },
+    {
+      "name": "contamination/019.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.800472259521484
+    },
+    {
+      "name": "faulty_imprint/018.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 43.46678161621094
+    },
+    {
+      "name": "scratch/001.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.56713104248047
+    },
+    {
+      "name": "pill_type/006.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.25674819946289
+    },
+    {
+      "name": "color/008.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.30294418334961
+    },
+    {
+      "name": "combined/013.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 53.21822738647461
+    },
+    {
+      "name": "scratch/023.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 38.44892501831055
+    },
+    {
+      "name": "color/024.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.774871826171875
+    },
+    {
+      "name": "color/018.png",
+      "defect": "color",
+      "touching": false,
+      "score": 42.469482421875
+    },
+    {
+      "name": "crack/017.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 43.855064392089844
+    },
+    {
+      "name": "scratch/006.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.59751892089844
+    },
+    {
+      "name": "faulty_imprint/017.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 42.99824523925781
+    },
+    {
+      "name": "color/013.png",
+      "defect": "color",
+      "touching": false,
+      "score": 42.01931381225586
+    },
+    {
+      "name": "contamination/017.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 44.87078857421875
+    },
+    {
+      "name": "crack/021.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.96918869018555
+    },
+    {
+      "name": "crack/016.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 37.67544174194336
+    },
+    {
+      "name": "color/022.png",
+      "defect": "color",
+      "touching": false,
+      "score": 50.607582092285156
+    },
+    {
+      "name": "color/021.png",
+      "defect": "color",
+      "touching": false,
+      "score": 50.736961364746094
+    },
+    {
+      "name": "contamination/010.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.92564392089844
+    },
+    {
+      "name": "contamination/001.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.64190673828125
+    },
+    {
+      "name": "faulty_imprint/012.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 34.81980895996094
+    },
+    {
+      "name": "crack/015.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.780460357666016
+    },
+    {
+      "name": "color/005.png",
+      "defect": "color",
+      "touching": false,
+      "score": 34.32460021972656
+    },
+    {
+      "name": "crack/003.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.0859260559082
+    },
+    {
+      "name": "faulty_imprint/005.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.88017272949219
+    },
+    {
+      "name": "good/001.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.18314743041992
+    },
+    {
+      "name": "pill_type/008.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.413551330566406
+    },
+    {
+      "name": "color/004.png",
+      "defect": "color",
+      "touching": false,
+      "score": 42.8038215637207
+    },
+    {
+      "name": "faulty_imprint/000.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 35.041587829589844
+    },
+    {
+      "name": "faulty_imprint/008.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.299949645996094
+    },
+    {
+      "name": "combined/007.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 36.601104736328125
+    },
+    {
+      "name": "combined/004.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 42.655941009521484
+    },
+    {
+      "name": "contamination/015.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 46.72708511352539
+    },
+    {
+      "name": "scratch/012.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.98558044433594
+    },
+    {
+      "name": "crack/002.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.12965393066406
+    },
+    {
+      "name": "color/006.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.120567321777344
+    },
+    {
+      "name": "good/017.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.417844772338867
+    },
+    {
+      "name": "faulty_imprint/001.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.311767578125
+    },
+    {
+      "name": "good/004.png",
+      "defect": "good",
+      "touching": false,
+      "score": 28.253067016601562
+    },
+    {
+      "name": "good/000.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.646318435668945
+    },
+    {
+      "name": "crack/018.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 43.217411041259766
+    },
+    {
+      "name": "crack/007.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.32056427001953
+    },
+    {
+      "name": "scratch/010.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 45.26467514038086
+    },
+    {
+      "name": "combined/009.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 48.20365524291992
+    },
+    {
+      "name": "pill_type/001.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.746009826660156
+    },
+    {
+      "name": "good/016.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.14284324645996
+    },
+    {
+      "name": "combined/001.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 46.06352233886719
+    },
+    {
+      "name": "good/025.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.319637298583984
+    },
+    {
+      "name": "color/007.png",
+      "defect": "color",
+      "touching": false,
+      "score": 33.7193489074707
+    },
+    {
+      "name": "crack/000.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.64023208618164
+    },
+    {
+      "name": "combined/012.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 51.038944244384766
+    },
+    {
+      "name": "contamination/006.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 40.81987380981445
+    },
+    {
+      "name": "color/023.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.035667419433594
+    },
+    {
+      "name": "combined/002.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.66948699951172
+    },
+    {
+      "name": "combined/015.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.025146484375
+    },
+    {
+      "name": "crack/004.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.73593521118164
+    },
+    {
+      "name": "good/012.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.34178924560547
+    },
+    {
+      "name": "color/017.png",
+      "defect": "color",
+      "touching": false,
+      "score": 36.157249450683594
+    },
+    {
+      "name": "pill_type/000.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 48.985286712646484
+    },
+    {
+      "name": "combined/003.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 51.21177291870117
+    },
+    {
+      "name": "good/011.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.6511116027832
+    },
+    {
+      "name": "scratch/004.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.02131271362305
+    },
+    {
+      "name": "good/009.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.21483039855957
+    },
+    {
+      "name": "color/016.png",
+      "defect": "color",
+      "touching": false,
+      "score": 44.47628402709961
+    },
+    {
+      "name": "combined/010.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 42.61619186401367
+    },
+    {
+      "name": "good/020.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.282867431640625
+    },
+    {
+      "name": "good/022.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.652515411376953
+    },
+    {
+      "name": "crack/020.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 35.81662368774414
+    },
+    {
+      "name": "crack/012.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.01971435546875
+    },
+    {
+      "name": "scratch/003.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.81231689453125
+    },
+    {
+      "name": "scratch/013.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.93548583984375
+    },
+    {
+      "name": "color/014.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.30674362182617
+    },
+    {
+      "name": "scratch/014.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.026275634765625
+    },
+    {
+      "name": "contamination/013.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 36.235992431640625
+    },
+    {
+      "name": "good/018.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.519189834594727
+    },
+    {
+      "name": "good/006.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.402667999267578
+    },
+    {
+      "name": "contamination/003.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 59.297306060791016
+    },
+    {
+      "name": "crack/024.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 33.15604782104492
+    },
+    {
+      "name": "combined/005.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.307621002197266
+    },
+    {
+      "name": "pill_type/002.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 47.71895217895508
+    },
+    {
+      "name": "good/005.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.11640739440918
+    },
+    {
+      "name": "good/002.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.740633010864258
+    },
+    {
+      "name": "pill_type/004.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.766422271728516
+    },
+    {
+      "name": "color/001.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.05958938598633
+    },
+    {
+      "name": "contamination/018.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 49.66397476196289
+    },
+    {
+      "name": "faulty_imprint/016.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.97324752807617
+    },
+    {
+      "name": "crack/001.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 31.337459564208984
+    },
+    {
+      "name": "faulty_imprint/003.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 35.96821975708008
+    },
+    {
+      "name": "pill_type/007.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.62727737426758
+    },
+    {
+      "name": "good/013.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.969425201416016
+    },
+    {
+      "name": "color/015.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.96345138549805
+    },
+    {
+      "name": "combined/014.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.43281555175781
+    },
+    {
+      "name": "color/009.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.84379577636719
+    },
+    {
+      "name": "scratch/016.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.49079132080078
+    },
+    {
+      "name": "scratch/022.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.42666244506836
+    },
+    {
+      "name": "contamination/014.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 42.88503646850586
+    },
+    {
+      "name": "good/014.png",
+      "defect": "good",
+      "touching": false,
+      "score": 34.11658477783203
+    },
+    {
+      "name": "faulty_imprint/002.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 34.2807502746582
+    },
+    {
+      "name": "color/003.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.630043029785156
+    },
+    {
+      "name": "crack/019.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.715415954589844
+    },
+    {
+      "name": "faulty_imprint/010.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 44.53117752075195
+    },
+    {
+      "name": "good/023.png",
+      "defect": "good",
+      "touching": false,
+      "score": 38.30799102783203
+    },
+    {
+      "name": "scratch/000.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.683128356933594
+    },
+    {
+      "name": "contamination/020.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 33.54987716674805
+    },
+    {
+      "name": "crack/008.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 33.61922836303711
+    },
+    {
+      "name": "scratch/009.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.31391525268555
+    },
+    {
+      "name": "scratch/018.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 49.172847747802734
+    },
+    {
+      "name": "crack/011.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 51.364715576171875
+    },
+    {
+      "name": "crack/023.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.26403045654297
+    },
+    {
+      "name": "faulty_imprint/006.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 39.67017364501953
+    },
+    {
+      "name": "good/019.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.38117218017578
+    },
+    {
+      "name": "pill_type/003.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.304481506347656
+    },
+    {
+      "name": "crack/005.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 54.47507095336914
+    },
+    {
+      "name": "faulty_imprint/015.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 39.971317291259766
+    },
+    {
+      "name": "crack/025.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 37.1047248840332
+    },
+    {
+      "name": "combined/008.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 48.82780075073242
+    },
+    {
+      "name": "scratch/005.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 34.1861686706543
+    },
+    {
+      "name": "combined/016.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.69439697265625
+    },
+    {
+      "name": "scratch/015.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.80998992919922
+    },
+    {
+      "name": "good/007.png",
+      "defect": "good",
+      "touching": false,
+      "score": 36.93457794189453
+    },
+    {
+      "name": "combined/000.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 40.72187042236328
+    },
+    {
+      "name": "scratch/008.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.17295837402344
+    },
+    {
+      "name": "faulty_imprint/011.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.55202865600586
+    },
+    {
+      "name": "good/008.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.330604553222656
+    },
+    {
+      "name": "color/000.png",
+      "defect": "color",
+      "touching": false,
+      "score": 29.859460830688477
+    },
+    {
+      "name": "pill_type/005.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 47.110504150390625
+    },
+    {
+      "name": "good/010.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.606969833374023
+    },
+    {
+      "name": "crack/014.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.92604446411133
+    },
+    {
+      "name": "scratch/007.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.15449523925781
+    },
+    {
+      "name": "contamination/007.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 46.2285041809082
+    },
+    {
+      "name": "good/024.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.779170989990234
+    },
+    {
+      "name": "crack/022.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.16036605834961
+    },
+    {
+      "name": "faulty_imprint/004.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 36.37028884887695
+    },
+    {
+      "name": "good/021.png",
+      "defect": "good",
+      "touching": false,
+      "score": 34.09283447265625
+    },
+    {
+      "name": "color/011.png",
+      "defect": "color",
+      "touching": false,
+      "score": 38.64643096923828
+    },
+    {
+      "name": "color/012.png",
+      "defect": "color",
+      "touching": false,
+      "score": 46.695404052734375
+    },
+    {
+      "name": "scratch/011.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.80358123779297
+    },
+    {
+      "name": "scratch/019.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.301727294921875
+    },
+    {
+      "name": "scratch/020.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.99101638793945
+    },
+    {
+      "name": "color/010.png",
+      "defect": "color",
+      "touching": false,
+      "score": 33.010765075683594
+    },
+    {
+      "name": "contamination/016.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 47.95646667480469
+    },
+    {
+      "name": "scratch/021.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 50.65528106689453
+    },
+    {
+      "name": "contamination/004.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.076107025146484
+    },
+    {
+      "name": "contamination/011.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 50.74198532104492
+    },
+    {
+      "name": "contamination/008.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.16122817993164
+    },
+    {
+      "name": "faulty_imprint/009.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.41337203979492
+    },
+    {
+      "name": "color/002.png",
+      "defect": "color",
+      "touching": false,
+      "score": 32.80519485473633
+    },
+    {
+      "name": "contamination/000.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 37.15300750732422
+    },
+    {
+      "name": "crack/013.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 31.975481033325195
+    },
+    {
+      "name": "contamination/009.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 36.01066207885742
+    },
+    {
+      "name": "combined/011.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 48.919578552246094
+    },
+    {
+      "name": "crack/006.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 41.145057678222656
+    },
+    {
+      "name": "crack/009.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 38.74030685424805
+    },
+    {
+      "name": "scratch/017.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 38.21021270751953
+    },
+    {
+      "name": "faulty_imprint/013.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 37.28721237182617
+    },
+    {
+      "name": "contamination/012.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.618778228759766
+    },
+    {
+      "name": "contamination/005.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.745662689208984
+    },
+    {
+      "name": "color/019.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.88530731201172
+    },
+    {
+      "name": "good/015.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.119712829589844
+    },
+    {
+      "name": "crack/010.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 36.6481819152832
+    },
+    {
+      "name": "faulty_imprint/007.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 42.24916458129883
+    },
+    {
+      "name": "combined/006.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 36.054141998291016
+    },
+    {
+      "name": "scratch/002.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.81928253173828
+    },
+    {
+      "name": "faulty_imprint/014.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.23719024658203
+    },
+    {
+      "name": "contamination/002.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 43.20267868041992
+    },
+    {
+      "name": "color/020.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.320945739746094
+    },
+    {
+      "name": "good/003.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.712459564208984
+    },
+    {
+      "name": "contamination/019.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 39.06508255004883
+    },
+    {
+      "name": "faulty_imprint/018.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 44.3372688293457
+    },
+    {
+      "name": "scratch/001.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.630130767822266
+    },
+    {
+      "name": "pill_type/006.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.217315673828125
+    },
+    {
+      "name": "color/008.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.10649871826172
+    },
+    {
+      "name": "combined/013.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 53.21754455566406
+    },
+    {
+      "name": "scratch/023.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 38.6964225769043
+    },
+    {
+      "name": "color/024.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.900821685791016
+    },
+    {
+      "name": "color/018.png",
+      "defect": "color",
+      "touching": true,
+      "score": 41.99012756347656
+    },
+    {
+      "name": "crack/017.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 43.79944610595703
+    },
+    {
+      "name": "scratch/006.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.35328674316406
+    },
+    {
+      "name": "faulty_imprint/017.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 43.09458923339844
+    },
+    {
+      "name": "color/013.png",
+      "defect": "color",
+      "touching": true,
+      "score": 41.76462936401367
+    },
+    {
+      "name": "contamination/017.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 45.584938049316406
+    },
+    {
+      "name": "crack/021.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 46.88069534301758
+    },
+    {
+      "name": "crack/016.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 37.466819763183594
+    },
+    {
+      "name": "color/022.png",
+      "defect": "color",
+      "touching": true,
+      "score": 50.77443313598633
+    },
+    {
+      "name": "color/021.png",
+      "defect": "color",
+      "touching": true,
+      "score": 50.46879196166992
+    },
+    {
+      "name": "contamination/010.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 39.027164459228516
+    },
+    {
+      "name": "contamination/001.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.29487991333008
+    },
+    {
+      "name": "faulty_imprint/012.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 35.097206115722656
+    },
+    {
+      "name": "crack/015.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.580223083496094
+    },
+    {
+      "name": "color/005.png",
+      "defect": "color",
+      "touching": true,
+      "score": 34.909271240234375
+    },
+    {
+      "name": "crack/003.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.33893966674805
+    },
+    {
+      "name": "faulty_imprint/005.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.08149719238281
+    },
+    {
+      "name": "good/001.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.872512817382812
+    },
+    {
+      "name": "pill_type/008.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.06157302856445
+    },
+    {
+      "name": "color/004.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.020198822021484
+    },
+    {
+      "name": "faulty_imprint/000.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 35.28765106201172
+    },
+    {
+      "name": "faulty_imprint/008.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.83262252807617
+    },
+    {
+      "name": "combined/007.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 36.3029899597168
+    },
+    {
+      "name": "combined/004.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 42.78506851196289
+    },
+    {
+      "name": "contamination/015.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 46.62657928466797
+    },
+    {
+      "name": "scratch/012.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.76470947265625
+    },
+    {
+      "name": "crack/002.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.679988861083984
+    },
+    {
+      "name": "color/006.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.081092834472656
+    },
+    {
+      "name": "good/017.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.51166343688965
+    },
+    {
+      "name": "faulty_imprint/001.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.349571228027344
+    },
+    {
+      "name": "good/004.png",
+      "defect": "good",
+      "touching": true,
+      "score": 29.42848014831543
+    },
+    {
+      "name": "good/000.png",
+      "defect": "good",
+      "touching": true,
+      "score": 29.9862060546875
+    },
+    {
+      "name": "crack/018.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 43.60470199584961
+    },
+    {
+      "name": "crack/007.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.80088806152344
+    },
+    {
+      "name": "scratch/010.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 45.4176025390625
+    },
+    {
+      "name": "combined/009.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 48.33256912231445
+    },
+    {
+      "name": "pill_type/001.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.74574279785156
+    },
+    {
+      "name": "good/016.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.087066650390625
+    },
+    {
+      "name": "combined/001.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 46.22256088256836
+    },
+    {
+      "name": "good/025.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.180938720703125
+    },
+    {
+      "name": "color/007.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.91873550415039
+    },
+    {
+      "name": "crack/000.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.109519958496094
+    },
+    {
+      "name": "combined/012.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 50.79916763305664
+    },
+    {
+      "name": "contamination/006.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 40.89570999145508
+    },
+    {
+      "name": "color/023.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.13339614868164
+    },
+    {
+      "name": "combined/002.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 48.0095100402832
+    },
+    {
+      "name": "combined/015.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 46.07487869262695
+    },
+    {
+      "name": "crack/004.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.60105895996094
+    },
+    {
+      "name": "good/012.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.2903938293457
+    },
+    {
+      "name": "color/017.png",
+      "defect": "color",
+      "touching": true,
+      "score": 36.369041442871094
+    },
+    {
+      "name": "pill_type/000.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 48.836326599121094
+    },
+    {
+      "name": "combined/003.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 51.27326202392578
+    },
+    {
+      "name": "good/011.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.72743606567383
+    },
+    {
+      "name": "scratch/004.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.19633102416992
+    },
+    {
+      "name": "good/009.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.087242126464844
+    },
+    {
+      "name": "color/016.png",
+      "defect": "color",
+      "touching": true,
+      "score": 44.20375442504883
+    },
+    {
+      "name": "combined/010.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 42.71220016479492
+    },
+    {
+      "name": "good/020.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.30686950683594
+    },
+    {
+      "name": "good/022.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.44573974609375
+    },
+    {
+      "name": "crack/020.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 35.07952880859375
+    },
+    {
+      "name": "crack/012.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 45.807212829589844
+    },
+    {
+      "name": "scratch/003.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.482547760009766
+    },
+    {
+      "name": "scratch/013.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.56410598754883
+    },
+    {
+      "name": "color/014.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.484188079833984
+    },
+    {
+      "name": "scratch/014.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.252464294433594
+    },
+    {
+      "name": "contamination/013.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 36.091835021972656
+    },
+    {
+      "name": "good/018.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.29296112060547
+    },
+    {
+      "name": "good/006.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.389802932739258
+    },
+    {
+      "name": "contamination/003.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 59.51781463623047
+    },
+    {
+      "name": "crack/024.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 32.72760009765625
+    },
+    {
+      "name": "combined/005.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 45.20468521118164
+    },
+    {
+      "name": "pill_type/002.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 47.58598327636719
+    },
+    {
+      "name": "good/005.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.022159576416016
+    },
+    {
+      "name": "good/002.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.753416061401367
+    },
+    {
+      "name": "pill_type/004.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.94561767578125
+    },
+    {
+      "name": "color/001.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.26796340942383
+    },
+    {
+      "name": "contamination/018.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 49.842620849609375
+    },
+    {
+      "name": "faulty_imprint/016.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.965576171875
+    },
+    {
+      "name": "crack/001.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 32.8615837097168
+    },
+    {
+      "name": "faulty_imprint/003.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 35.56284713745117
+    },
+    {
+      "name": "pill_type/007.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.450931549072266
+    },
+    {
+      "name": "good/013.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.30424118041992
+    },
+    {
+      "name": "color/015.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.27399826049805
+    },
+    {
+      "name": "combined/014.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.26283264160156
+    },
+    {
+      "name": "color/009.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.9705924987793
+    },
+    {
+      "name": "scratch/016.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.279380798339844
+    },
+    {
+      "name": "scratch/022.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 35.89540100097656
+    },
+    {
+      "name": "contamination/014.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 42.82068634033203
+    },
+    {
+      "name": "good/014.png",
+      "defect": "good",
+      "touching": true,
+      "score": 36.48727798461914
+    },
+    {
+      "name": "faulty_imprint/002.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 34.78900146484375
+    },
+    {
+      "name": "color/003.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.60526657104492
+    },
+    {
+      "name": "crack/019.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 46.8536491394043
+    },
+    {
+      "name": "faulty_imprint/010.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 44.34340286254883
+    },
+    {
+      "name": "good/023.png",
+      "defect": "good",
+      "touching": true,
+      "score": 38.13448715209961
+    },
+    {
+      "name": "scratch/000.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.373531341552734
+    },
+    {
+      "name": "contamination/020.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 33.320579528808594
+    },
+    {
+      "name": "crack/008.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 34.07187271118164
+    },
+    {
+      "name": "scratch/009.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.10959243774414
+    },
+    {
+      "name": "scratch/018.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 49.41904830932617
+    },
+    {
+      "name": "crack/011.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 50.877132415771484
+    },
+    {
+      "name": "crack/023.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.618247985839844
+    },
+    {
+      "name": "faulty_imprint/006.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 39.939510345458984
+    },
+    {
+      "name": "good/019.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.65290451049805
+    },
+    {
+      "name": "pill_type/003.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 49.60049819946289
+    },
+    {
+      "name": "crack/005.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 54.087764739990234
+    },
+    {
+      "name": "faulty_imprint/015.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.05385208129883
+    },
+    {
+      "name": "crack/025.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 37.9188117980957
+    },
+    {
+      "name": "combined/008.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.04266357421875
+    },
+    {
+      "name": "scratch/005.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 33.79534149169922
+    },
+    {
+      "name": "combined/016.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.61587905883789
+    },
+    {
+      "name": "scratch/015.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.45463562011719
+    },
+    {
+      "name": "good/007.png",
+      "defect": "good",
+      "touching": true,
+      "score": 37.15117645263672
+    },
+    {
+      "name": "combined/000.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 40.54303741455078
+    },
+    {
+      "name": "scratch/008.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.09423065185547
+    },
+    {
+      "name": "faulty_imprint/011.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.76789093017578
+    },
+    {
+      "name": "good/008.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.07197952270508
+    },
+    {
+      "name": "color/000.png",
+      "defect": "color",
+      "touching": true,
+      "score": 29.400745391845703
+    },
+    {
+      "name": "pill_type/005.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 47.18465805053711
+    },
+    {
+      "name": "good/010.png",
+      "defect": "good",
+      "touching": true,
+      "score": 35.598445892333984
+    },
+    {
+      "name": "crack/014.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.86814498901367
+    },
+    {
+      "name": "scratch/007.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.32782745361328
+    },
+    {
+      "name": "contamination/007.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 46.06452178955078
+    },
+    {
+      "name": "good/024.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.17302703857422
+    },
+    {
+      "name": "crack/022.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.920738220214844
+    },
+    {
+      "name": "faulty_imprint/004.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 36.410926818847656
+    },
+    {
+      "name": "good/021.png",
+      "defect": "good",
+      "touching": true,
+      "score": 34.19622039794922
+    },
+    {
+      "name": "color/011.png",
+      "defect": "color",
+      "touching": true,
+      "score": 39.243865966796875
+    },
+    {
+      "name": "color/012.png",
+      "defect": "color",
+      "touching": true,
+      "score": 47.098487854003906
+    },
+    {
+      "name": "scratch/011.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 44.08750534057617
+    },
+    {
+      "name": "scratch/019.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.890987396240234
+    },
+    {
+      "name": "scratch/020.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.13978958129883
+    },
+    {
+      "name": "color/010.png",
+      "defect": "color",
+      "touching": true,
+      "score": 32.424015045166016
+    },
+    {
+      "name": "contamination/016.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 47.743507385253906
+    },
+    {
+      "name": "scratch/021.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 50.25363540649414
+    },
+    {
+      "name": "contamination/004.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 37.95737838745117
+    },
+    {
+      "name": "contamination/011.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 50.62574768066406
+    },
+    {
+      "name": "contamination/008.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.427127838134766
+    },
+    {
+      "name": "faulty_imprint/009.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.40351104736328
+    },
+    {
+      "name": "color/002.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.072669982910156
+    },
+    {
+      "name": "contamination/000.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 37.5001106262207
+    },
+    {
+      "name": "crack/013.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 31.977067947387695
+    },
+    {
+      "name": "contamination/009.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 36.04451370239258
+    },
+    {
+      "name": "combined/011.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.18313980102539
+    },
+    {
+      "name": "crack/006.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.81199645996094
+    },
+    {
+      "name": "crack/009.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.021575927734375
+    },
+    {
+      "name": "scratch/017.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 38.410911560058594
+    },
+    {
+      "name": "faulty_imprint/013.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.5118522644043
+    },
+    {
+      "name": "scratch/008.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.138004302978516
+    },
+    {
+      "name": "pill_type/000.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 48.977725982666016
+    },
+    {
+      "name": "scratch/003.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.970855712890625
+    },
+    {
+      "name": "scratch/016.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.42375946044922
+    },
+    {
+      "name": "crack/018.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 43.12991714477539
+    },
+    {
+      "name": "crack/019.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.95346450805664
+    },
+    {
+      "name": "pill_type/005.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 47.288047790527344
+    },
+    {
+      "name": "crack/017.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 43.82558822631836
+    },
+    {
+      "name": "good/021.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.83891677856445
+    },
+    {
+      "name": "crack/008.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 34.00661087036133
+    },
+    {
+      "name": "scratch/022.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 35.95718002319336
+    },
+    {
+      "name": "color/015.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.81270980834961
+    },
+    {
+      "name": "color/010.png",
+      "defect": "color",
+      "touching": false,
+      "score": 32.8032341003418
+    },
+    {
+      "name": "faulty_imprint/018.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 44.3158073425293
+    },
+    {
+      "name": "scratch/012.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.68407440185547
+    },
+    {
+      "name": "color/004.png",
+      "defect": "color",
+      "touching": false,
+      "score": 42.97072219848633
+    },
+    {
+      "name": "combined/011.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.3076057434082
+    },
+    {
+      "name": "color/002.png",
+      "defect": "color",
+      "touching": false,
+      "score": 33.085350036621094
+    },
+    {
+      "name": "combined/002.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.040748596191406
+    },
+    {
+      "name": "color/023.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.11018371582031
+    },
+    {
+      "name": "contamination/009.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 35.91606903076172
+    },
+    {
+      "name": "good/023.png",
+      "defect": "good",
+      "touching": false,
+      "score": 38.300086975097656
+    },
+    {
+      "name": "color/014.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.53385925292969
+    },
+    {
+      "name": "pill_type/002.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 47.4943733215332
+    },
+    {
+      "name": "scratch/000.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.69370651245117
+    },
+    {
+      "name": "contamination/006.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.436100006103516
+    },
+    {
+      "name": "pill_type/008.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.2741813659668
+    },
+    {
+      "name": "color/013.png",
+      "defect": "color",
+      "touching": false,
+      "score": 41.795169830322266
+    },
+    {
+      "name": "faulty_imprint/008.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.107391357421875
+    },
+    {
+      "name": "combined/001.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 46.19794845581055
+    },
+    {
+      "name": "color/011.png",
+      "defect": "color",
+      "touching": false,
+      "score": 38.510990142822266
+    },
+    {
+      "name": "faulty_imprint/003.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 36.17201614379883
+    },
+    {
+      "name": "scratch/010.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 45.5467414855957
+    },
+    {
+      "name": "contamination/000.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 37.26298522949219
+    },
+    {
+      "name": "crack/004.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.81252670288086
+    },
+    {
+      "name": "good/025.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.45772171020508
+    },
+    {
+      "name": "contamination/003.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 60.031002044677734
+    },
+    {
+      "name": "scratch/017.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 37.80878448486328
+    },
+    {
+      "name": "color/000.png",
+      "defect": "color",
+      "touching": false,
+      "score": 29.450429916381836
+    },
+    {
+      "name": "good/011.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.6716194152832
+    },
+    {
+      "name": "faulty_imprint/000.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 35.10036849975586
+    },
+    {
+      "name": "combined/015.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.73468017578125
+    },
+    {
+      "name": "scratch/019.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.78199005126953
+    },
+    {
+      "name": "scratch/002.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.711483001708984
+    },
+    {
+      "name": "crack/003.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 41.18963623046875
+    },
+    {
+      "name": "crack/011.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 51.18407440185547
+    },
+    {
+      "name": "crack/021.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 47.55522537231445
+    },
+    {
+      "name": "faulty_imprint/009.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.63135528564453
+    },
+    {
+      "name": "good/012.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.22356414794922
+    },
+    {
+      "name": "good/015.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.24673843383789
+    },
+    {
+      "name": "contamination/005.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 35.88906478881836
+    },
+    {
+      "name": "contamination/014.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 43.726192474365234
+    },
+    {
+      "name": "scratch/021.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 50.66611862182617
+    },
+    {
+      "name": "good/010.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.806495666503906
+    },
+    {
+      "name": "contamination/011.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 50.47626495361328
+    },
+    {
+      "name": "crack/006.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 41.11176300048828
+    },
+    {
+      "name": "good/004.png",
+      "defect": "good",
+      "touching": false,
+      "score": 28.592615127563477
+    },
+    {
+      "name": "pill_type/001.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.59714126586914
+    },
+    {
+      "name": "color/007.png",
+      "defect": "color",
+      "touching": false,
+      "score": 33.66120147705078
+    },
+    {
+      "name": "contamination/012.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.77083206176758
+    },
+    {
+      "name": "pill_type/003.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 49.78059768676758
+    },
+    {
+      "name": "good/024.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.91455078125
+    },
+    {
+      "name": "crack/015.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.331546783447266
+    },
+    {
+      "name": "scratch/018.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 49.458404541015625
+    },
+    {
+      "name": "good/019.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.55854034423828
+    },
+    {
+      "name": "combined/000.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 40.527164459228516
+    },
+    {
+      "name": "crack/007.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.576908111572266
+    },
+    {
+      "name": "crack/023.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.126502990722656
+    },
+    {
+      "name": "good/018.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.393421173095703
+    },
+    {
+      "name": "crack/002.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.83650207519531
+    },
+    {
+      "name": "scratch/020.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.05401611328125
+    },
+    {
+      "name": "pill_type/007.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.648677825927734
+    },
+    {
+      "name": "color/005.png",
+      "defect": "color",
+      "touching": false,
+      "score": 34.299800872802734
+    },
+    {
+      "name": "good/007.png",
+      "defect": "good",
+      "touching": false,
+      "score": 37.02415466308594
+    },
+    {
+      "name": "contamination/002.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 43.12637710571289
+    },
+    {
+      "name": "color/019.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.980812072753906
+    },
+    {
+      "name": "scratch/004.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.399131774902344
+    },
+    {
+      "name": "crack/013.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 31.96366310119629
+    },
+    {
+      "name": "contamination/007.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 46.259708404541016
+    },
+    {
+      "name": "color/018.png",
+      "defect": "color",
+      "touching": false,
+      "score": 41.99573516845703
+    },
+    {
+      "name": "good/000.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.791940689086914
+    },
+    {
+      "name": "scratch/001.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 37.3804817199707
+    },
+    {
+      "name": "crack/022.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.53920364379883
+    },
+    {
+      "name": "scratch/009.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.43069839477539
+    },
+    {
+      "name": "faulty_imprint/007.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 42.115543365478516
+    },
+    {
+      "name": "good/002.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.84475326538086
+    },
+    {
+      "name": "combined/003.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 50.841487884521484
+    },
+    {
+      "name": "contamination/010.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.96424102783203
+    },
+    {
+      "name": "faulty_imprint/006.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 39.38644790649414
+    },
+    {
+      "name": "crack/012.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.244422912597656
+    },
+    {
+      "name": "scratch/005.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 34.153770446777344
+    },
+    {
+      "name": "contamination/020.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 33.048851013183594
+    },
+    {
+      "name": "color/008.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.08790588378906
+    },
+    {
+      "name": "scratch/006.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.68953323364258
+    },
+    {
+      "name": "good/006.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.29088020324707
+    },
+    {
+      "name": "crack/000.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.281978607177734
+    },
+    {
+      "name": "color/006.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.449771881103516
+    },
+    {
+      "name": "scratch/011.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 44.473167419433594
+    },
+    {
+      "name": "contamination/008.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.704925537109375
+    },
+    {
+      "name": "combined/009.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 48.11214065551758
+    },
+    {
+      "name": "combined/004.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 42.84675979614258
+    },
+    {
+      "name": "good/008.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.99653434753418
+    },
+    {
+      "name": "faulty_imprint/015.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 39.99217224121094
+    },
+    {
+      "name": "scratch/015.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.917354583740234
+    },
+    {
+      "name": "color/021.png",
+      "defect": "color",
+      "touching": false,
+      "score": 50.625579833984375
+    },
+    {
+      "name": "scratch/013.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.31697082519531
+    },
+    {
+      "name": "color/009.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.55302429199219
+    },
+    {
+      "name": "combined/014.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.91384506225586
+    },
+    {
+      "name": "contamination/019.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.63977813720703
+    },
+    {
+      "name": "faulty_imprint/002.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 34.952903747558594
+    },
+    {
+      "name": "faulty_imprint/013.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 37.06366729736328
+    },
+    {
+      "name": "scratch/023.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 38.456417083740234
+    },
+    {
+      "name": "scratch/007.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.36662292480469
+    },
+    {
+      "name": "color/003.png",
+      "defect": "color",
+      "touching": false,
+      "score": 44.914798736572266
+    },
+    {
+      "name": "pill_type/006.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.25986099243164
+    },
+    {
+      "name": "faulty_imprint/004.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 36.32728576660156
+    },
+    {
+      "name": "crack/016.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 38.0877571105957
+    },
+    {
+      "name": "combined/010.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 42.638153076171875
+    },
+    {
+      "name": "contamination/017.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 44.890472412109375
+    },
+    {
+      "name": "color/012.png",
+      "defect": "color",
+      "touching": false,
+      "score": 46.25830078125
+    },
+    {
+      "name": "combined/007.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 36.22340393066406
+    },
+    {
+      "name": "good/009.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.206533432006836
+    },
+    {
+      "name": "combined/008.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.07808303833008
+    },
+    {
+      "name": "combined/013.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 53.21460723876953
+    },
+    {
+      "name": "crack/024.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 32.95780944824219
+    },
+    {
+      "name": "color/020.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.316749572753906
+    },
+    {
+      "name": "crack/010.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 37.027183532714844
+    },
+    {
+      "name": "good/005.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.634641647338867
+    },
+    {
+      "name": "faulty_imprint/001.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.821327209472656
+    },
+    {
+      "name": "crack/005.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 54.03024673461914
+    },
+    {
+      "name": "good/016.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.719341278076172
+    },
+    {
+      "name": "faulty_imprint/012.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 34.80727005004883
+    },
+    {
+      "name": "pill_type/004.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.81356430053711
+    },
+    {
+      "name": "combined/016.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.97798156738281
+    },
+    {
+      "name": "contamination/013.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 35.81205749511719
+    },
+    {
+      "name": "faulty_imprint/014.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 36.90013885498047
+    },
+    {
+      "name": "contamination/001.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.65910339355469
+    },
+    {
+      "name": "good/020.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.447757720947266
+    },
+    {
+      "name": "contamination/018.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 49.72456741333008
+    },
+    {
+      "name": "contamination/016.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 48.04733657836914
+    },
+    {
+      "name": "crack/001.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 31.54718017578125
+    },
+    {
+      "name": "faulty_imprint/017.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 42.51358413696289
+    },
+    {
+      "name": "contamination/004.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.11412048339844
+    },
+    {
+      "name": "color/016.png",
+      "defect": "color",
+      "touching": false,
+      "score": 44.02146530151367
+    },
+    {
+      "name": "faulty_imprint/005.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.612796783447266
+    },
+    {
+      "name": "color/024.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.32786178588867
+    },
+    {
+      "name": "good/003.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.08699417114258
+    },
+    {
+      "name": "good/017.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.442480087280273
+    },
+    {
+      "name": "crack/014.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 41.19444274902344
+    },
+    {
+      "name": "crack/025.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 37.264652252197266
+    },
+    {
+      "name": "contamination/015.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 46.5865592956543
+    },
+    {
+      "name": "color/022.png",
+      "defect": "color",
+      "touching": false,
+      "score": 50.963592529296875
+    },
+    {
+      "name": "color/001.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.15760040283203
+    },
+    {
+      "name": "good/022.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.574935913085938
+    },
+    {
+      "name": "good/013.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.7387809753418
+    },
+    {
+      "name": "good/014.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.9015007019043
+    },
+    {
+      "name": "good/001.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.2520866394043
+    },
+    {
+      "name": "color/017.png",
+      "defect": "color",
+      "touching": false,
+      "score": 36.396766662597656
+    },
+    {
+      "name": "crack/020.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 35.214969635009766
+    },
+    {
+      "name": "faulty_imprint/016.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.801021575927734
+    },
+    {
+      "name": "combined/012.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 50.61783981323242
+    },
+    {
+      "name": "scratch/014.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.34881591796875
+    },
+    {
+      "name": "combined/006.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 35.9427490234375
+    },
+    {
+      "name": "combined/005.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.59918975830078
+    },
+    {
+      "name": "faulty_imprint/010.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 44.73813247680664
+    },
+    {
+      "name": "faulty_imprint/011.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.7386474609375
+    },
+    {
+      "name": "crack/009.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 38.58115768432617
+    },
+    {
+      "name": "scratch/008.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.138004302978516
+    },
+    {
+      "name": "pill_type/000.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 49.06360626220703
+    },
+    {
+      "name": "scratch/003.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.97658920288086
+    },
+    {
+      "name": "scratch/016.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.380821228027344
+    },
+    {
+      "name": "crack/018.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 43.3140869140625
+    },
+    {
+      "name": "crack/019.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 46.883270263671875
+    },
+    {
+      "name": "pill_type/005.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 47.32826614379883
+    },
+    {
+      "name": "crack/017.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 43.684173583984375
+    },
+    {
+      "name": "good/021.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.83614730834961
+    },
+    {
+      "name": "crack/008.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 33.60196304321289
+    },
+    {
+      "name": "scratch/022.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.17702102661133
+    },
+    {
+      "name": "color/015.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.786556243896484
+    },
+    {
+      "name": "color/010.png",
+      "defect": "color",
+      "touching": true,
+      "score": 32.80434036254883
+    },
+    {
+      "name": "faulty_imprint/018.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 43.5767822265625
+    },
+    {
+      "name": "scratch/012.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.86763000488281
+    },
+    {
+      "name": "color/004.png",
+      "defect": "color",
+      "touching": true,
+      "score": 42.77235794067383
+    },
+    {
+      "name": "combined/011.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 50.428688049316406
+    },
+    {
+      "name": "color/002.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.243080139160156
+    },
+    {
+      "name": "combined/002.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.40220642089844
+    },
+    {
+      "name": "color/023.png",
+      "defect": "color",
+      "touching": true,
+      "score": 44.988929748535156
+    },
+    {
+      "name": "contamination/009.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.539085388183594
+    },
+    {
+      "name": "good/023.png",
+      "defect": "good",
+      "touching": true,
+      "score": 38.123748779296875
+    },
+    {
+      "name": "color/014.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.902069091796875
+    },
+    {
+      "name": "pill_type/002.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 47.01094436645508
+    },
+    {
+      "name": "scratch/000.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.15168380737305
+    },
+    {
+      "name": "contamination/006.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 40.86777114868164
+    },
+    {
+      "name": "pill_type/008.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.353599548339844
+    },
+    {
+      "name": "color/013.png",
+      "defect": "color",
+      "touching": true,
+      "score": 41.589942932128906
+    },
+    {
+      "name": "faulty_imprint/008.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.458316802978516
+    },
+    {
+      "name": "combined/001.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 46.19709014892578
+    },
+    {
+      "name": "color/011.png",
+      "defect": "color",
+      "touching": true,
+      "score": 38.79013442993164
+    },
+    {
+      "name": "faulty_imprint/003.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 35.967098236083984
+    },
+    {
+      "name": "scratch/010.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 45.66533279418945
+    },
+    {
+      "name": "contamination/000.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 36.820621490478516
+    },
+    {
+      "name": "crack/004.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.392608642578125
+    },
+    {
+      "name": "good/025.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.33500671386719
+    },
+    {
+      "name": "contamination/003.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 59.39375686645508
+    },
+    {
+      "name": "scratch/017.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 37.75623321533203
+    },
+    {
+      "name": "color/000.png",
+      "defect": "color",
+      "touching": true,
+      "score": 29.618131637573242
+    },
+    {
+      "name": "good/011.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.068843841552734
+    },
+    {
+      "name": "faulty_imprint/000.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 35.02031707763672
+    },
+    {
+      "name": "combined/015.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 45.447509765625
+    },
+    {
+      "name": "scratch/019.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.816349029541016
+    },
+    {
+      "name": "scratch/002.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 42.217132568359375
+    },
+    {
+      "name": "crack/003.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.407806396484375
+    },
+    {
+      "name": "crack/011.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 50.7592887878418
+    },
+    {
+      "name": "crack/021.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 47.021881103515625
+    },
+    {
+      "name": "faulty_imprint/009.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.207576751708984
+    },
+    {
+      "name": "good/012.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.990550994873047
+    },
+    {
+      "name": "good/015.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.30465316772461
+    },
+    {
+      "name": "contamination/005.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.6529655456543
+    },
+    {
+      "name": "contamination/014.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 43.493751525878906
+    },
+    {
+      "name": "scratch/021.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 50.53173828125
+    },
+    {
+      "name": "good/010.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.497007369995117
+    },
+    {
+      "name": "contamination/011.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 50.69118881225586
+    },
+    {
+      "name": "crack/006.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.78646469116211
+    },
+    {
+      "name": "good/004.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.18494987487793
+    },
+    {
+      "name": "pill_type/001.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.84758758544922
+    },
+    {
+      "name": "color/007.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.89990997314453
+    },
+    {
+      "name": "contamination/012.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.79377365112305
+    },
+    {
+      "name": "pill_type/003.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.36271286010742
+    },
+    {
+      "name": "good/024.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.859039306640625
+    },
+    {
+      "name": "crack/015.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.50344467163086
+    },
+    {
+      "name": "scratch/018.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 49.11867904663086
+    },
+    {
+      "name": "good/019.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.55854034423828
+    },
+    {
+      "name": "combined/000.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 40.559783935546875
+    },
+    {
+      "name": "crack/007.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.63014221191406
+    },
+    {
+      "name": "crack/023.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 38.82225036621094
+    },
+    {
+      "name": "good/018.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.556148529052734
+    },
+    {
+      "name": "crack/002.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.80542755126953
+    },
+    {
+      "name": "scratch/020.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.8346061706543
+    },
+    {
+      "name": "pill_type/007.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.691131591796875
+    },
+    {
+      "name": "color/005.png",
+      "defect": "color",
+      "touching": true,
+      "score": 34.36830520629883
+    },
+    {
+      "name": "good/007.png",
+      "defect": "good",
+      "touching": true,
+      "score": 37.205406188964844
+    },
+    {
+      "name": "contamination/002.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 42.85424041748047
+    },
+    {
+      "name": "color/019.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.74128723144531
+    },
+    {
+      "name": "scratch/004.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.35561752319336
+    },
+    {
+      "name": "crack/013.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 31.90618133544922
+    },
+    {
+      "name": "contamination/007.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 46.37148666381836
+    },
+    {
+      "name": "color/018.png",
+      "defect": "color",
+      "touching": true,
+      "score": 42.25397872924805
+    },
+    {
+      "name": "good/000.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.06793785095215
+    },
+    {
+      "name": "scratch/001.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.82977294921875
+    },
+    {
+      "name": "crack/022.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.37318420410156
+    },
+    {
+      "name": "scratch/009.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.20032501220703
+    },
+    {
+      "name": "faulty_imprint/007.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 42.27830505371094
+    },
+    {
+      "name": "good/002.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.493391036987305
+    },
+    {
+      "name": "combined/003.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 51.04294204711914
+    },
+    {
+      "name": "contamination/010.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 39.230003356933594
+    },
+    {
+      "name": "faulty_imprint/006.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 39.70537185668945
+    },
+    {
+      "name": "crack/012.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 46.93600082397461
+    },
+    {
+      "name": "scratch/005.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 33.927650451660156
+    },
+    {
+      "name": "contamination/020.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 32.907161712646484
+    },
+    {
+      "name": "color/008.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.34090042114258
+    },
+    {
+      "name": "scratch/006.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.53457260131836
+    },
+    {
+      "name": "good/006.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.230443954467773
+    },
+    {
+      "name": "crack/000.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.8745231628418
+    },
+    {
+      "name": "color/006.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.497886657714844
+    },
+    {
+      "name": "scratch/011.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.87706756591797
+    },
+    {
+      "name": "contamination/008.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.4989013671875
+    },
+    {
+      "name": "combined/009.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 47.95925521850586
+    },
+    {
+      "name": "combined/004.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 42.7614631652832
+    },
+    {
+      "name": "good/008.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.370826721191406
+    },
+    {
+      "name": "faulty_imprint/015.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 39.87773513793945
+    },
+    {
+      "name": "scratch/015.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.913780212402344
+    },
+    {
+      "name": "color/021.png",
+      "defect": "color",
+      "touching": true,
+      "score": 50.83258819580078
+    },
+    {
+      "name": "scratch/013.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.832481384277344
+    },
+    {
+      "name": "color/009.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.44485092163086
+    },
+    {
+      "name": "combined/014.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.61543273925781
+    },
+    {
+      "name": "contamination/019.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 38.69338607788086
+    },
+    {
+      "name": "faulty_imprint/002.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 34.36368942260742
+    },
+    {
+      "name": "faulty_imprint/013.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.2988166809082
+    },
+    {
+      "name": "scratch/023.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 38.55995178222656
+    },
+    {
+      "name": "scratch/007.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.397987365722656
+    },
+    {
+      "name": "color/003.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.1571044921875
+    },
+    {
+      "name": "pill_type/006.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.249595642089844
+    },
+    {
+      "name": "faulty_imprint/004.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 36.37781524658203
+    },
+    {
+      "name": "crack/016.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 38.4361572265625
+    },
+    {
+      "name": "combined/010.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 43.17908477783203
+    },
+    {
+      "name": "contamination/017.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 44.60633850097656
+    },
+    {
+      "name": "color/012.png",
+      "defect": "color",
+      "touching": true,
+      "score": 46.74034118652344
+    },
+    {
+      "name": "combined/007.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 37.05937957763672
+    },
+    {
+      "name": "good/009.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.634220123291016
+    },
+    {
+      "name": "combined/008.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 48.83247756958008
+    },
+    {
+      "name": "combined/013.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 53.05207824707031
+    },
+    {
+      "name": "crack/024.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 32.50196075439453
+    },
+    {
+      "name": "color/020.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.735260009765625
+    },
+    {
+      "name": "crack/010.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 36.465553283691406
+    },
+    {
+      "name": "good/005.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.4509391784668
+    },
+    {
+      "name": "faulty_imprint/001.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.608455657958984
+    },
+    {
+      "name": "crack/005.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 54.700687408447266
+    },
+    {
+      "name": "good/016.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.756750106811523
+    },
+    {
+      "name": "faulty_imprint/012.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 34.743282318115234
+    },
+    {
+      "name": "pill_type/004.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.45280075073242
+    },
+    {
+      "name": "combined/016.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.86415481567383
+    },
+    {
+      "name": "contamination/013.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.43899917602539
+    },
+    {
+      "name": "faulty_imprint/014.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.47865676879883
+    },
+    {
+      "name": "contamination/001.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.87458038330078
+    },
+    {
+      "name": "good/020.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.278472900390625
+    },
+    {
+      "name": "contamination/018.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 49.88230895996094
+    },
+    {
+      "name": "contamination/016.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 48.07292938232422
+    },
+    {
+      "name": "crack/001.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 30.851320266723633
+    },
+    {
+      "name": "faulty_imprint/017.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 42.78460693359375
+    },
+    {
+      "name": "contamination/004.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 38.598304748535156
+    },
+    {
+      "name": "color/016.png",
+      "defect": "color",
+      "touching": true,
+      "score": 44.32505798339844
+    },
+    {
+      "name": "faulty_imprint/005.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.7298469543457
+    },
+    {
+      "name": "color/024.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.10700607299805
+    },
+    {
+      "name": "good/003.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.809486389160156
+    },
+    {
+      "name": "good/017.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.5396785736084
+    },
+    {
+      "name": "crack/014.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.963436126708984
+    },
+    {
+      "name": "crack/025.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 37.34584426879883
+    },
+    {
+      "name": "contamination/015.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 46.76395034790039
+    },
+    {
+      "name": "color/022.png",
+      "defect": "color",
+      "touching": true,
+      "score": 49.81441116333008
+    },
+    {
+      "name": "color/001.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.430152893066406
+    },
+    {
+      "name": "good/022.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.06344223022461
+    },
+    {
+      "name": "good/013.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.969852447509766
+    },
+    {
+      "name": "good/014.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.86673355102539
+    },
+    {
+      "name": "good/001.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.852888107299805
+    },
+    {
+      "name": "color/017.png",
+      "defect": "color",
+      "touching": true,
+      "score": 36.320133209228516
+    },
+    {
+      "name": "crack/020.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 35.698143005371094
+    },
+    {
+      "name": "faulty_imprint/016.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.66982650756836
+    },
+    {
+      "name": "combined/012.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 50.77223205566406
+    },
+    {
+      "name": "scratch/014.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.680458068847656
+    },
+    {
+      "name": "combined/006.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 35.72370910644531
+    },
+    {
+      "name": "combined/005.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 45.49644088745117
+    },
+    {
+      "name": "faulty_imprint/010.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 44.358131408691406
+    },
+    {
+      "name": "faulty_imprint/011.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.60390853881836
+    },
+    {
+      "name": "crack/009.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 38.974151611328125
+    },
+    {
+      "name": "scratch/007.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.23683547973633
+    },
+    {
+      "name": "contamination/016.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 48.296566009521484
+    },
+    {
+      "name": "good/020.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.489688873291016
+    },
+    {
+      "name": "good/017.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.10687255859375
+    },
+    {
+      "name": "combined/007.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 36.26286315917969
+    },
+    {
+      "name": "scratch/020.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.0260124206543
+    },
+    {
+      "name": "contamination/006.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.6204719543457
+    },
+    {
+      "name": "faulty_imprint/002.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 34.27887725830078
+    },
+    {
+      "name": "crack/002.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.354942321777344
+    },
+    {
+      "name": "color/023.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.142452239990234
+    },
+    {
+      "name": "pill_type/000.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 48.89712905883789
+    },
+    {
+      "name": "combined/002.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.500728607177734
+    },
+    {
+      "name": "contamination/001.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.505699157714844
+    },
+    {
+      "name": "crack/021.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.812339782714844
+    },
+    {
+      "name": "color/024.png",
+      "defect": "color",
+      "touching": false,
+      "score": 36.015140533447266
+    },
+    {
+      "name": "scratch/010.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 45.18966293334961
+    },
+    {
+      "name": "color/018.png",
+      "defect": "color",
+      "touching": false,
+      "score": 42.31721115112305
+    },
+    {
+      "name": "crack/001.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 31.098108291625977
+    },
+    {
+      "name": "crack/014.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 41.26750564575195
+    },
+    {
+      "name": "combined/009.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 48.20240020751953
+    },
+    {
+      "name": "contamination/009.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 36.1085319519043
+    },
+    {
+      "name": "faulty_imprint/004.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 36.15233612060547
+    },
+    {
+      "name": "good/003.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.67528533935547
+    },
+    {
+      "name": "crack/020.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 35.63997268676758
+    },
+    {
+      "name": "faulty_imprint/012.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 34.798152923583984
+    },
+    {
+      "name": "good/016.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.754253387451172
+    },
+    {
+      "name": "contamination/000.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 36.944705963134766
+    },
+    {
+      "name": "combined/003.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 51.23930740356445
+    },
+    {
+      "name": "color/011.png",
+      "defect": "color",
+      "touching": false,
+      "score": 38.44258117675781
+    },
+    {
+      "name": "faulty_imprint/009.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.406490325927734
+    },
+    {
+      "name": "scratch/008.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.060115814208984
+    },
+    {
+      "name": "scratch/021.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 50.6766242980957
+    },
+    {
+      "name": "scratch/009.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.84465789794922
+    },
+    {
+      "name": "color/020.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.45793151855469
+    },
+    {
+      "name": "scratch/012.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.18134307861328
+    },
+    {
+      "name": "faulty_imprint/011.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.73954391479492
+    },
+    {
+      "name": "good/008.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.642330169677734
+    },
+    {
+      "name": "good/011.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.93516540527344
+    },
+    {
+      "name": "good/014.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.72483825683594
+    },
+    {
+      "name": "combined/010.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 42.63591003417969
+    },
+    {
+      "name": "good/004.png",
+      "defect": "good",
+      "touching": false,
+      "score": 28.179080963134766
+    },
+    {
+      "name": "faulty_imprint/003.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 36.21828079223633
+    },
+    {
+      "name": "scratch/022.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.051979064941406
+    },
+    {
+      "name": "contamination/018.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 49.94920349121094
+    },
+    {
+      "name": "pill_type/007.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.06714630126953
+    },
+    {
+      "name": "contamination/011.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 50.50971984863281
+    },
+    {
+      "name": "crack/023.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.23929214477539
+    },
+    {
+      "name": "contamination/020.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 33.36471176147461
+    },
+    {
+      "name": "good/022.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.445093154907227
+    },
+    {
+      "name": "color/001.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.357688903808594
+    },
+    {
+      "name": "combined/016.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.35887908935547
+    },
+    {
+      "name": "scratch/023.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 38.49470520019531
+    },
+    {
+      "name": "crack/009.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 38.88024139404297
+    },
+    {
+      "name": "good/024.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.91568374633789
+    },
+    {
+      "name": "color/017.png",
+      "defect": "color",
+      "touching": false,
+      "score": 36.45252990722656
+    },
+    {
+      "name": "crack/024.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 32.11371994018555
+    },
+    {
+      "name": "scratch/019.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.4988899230957
+    },
+    {
+      "name": "crack/008.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 33.297237396240234
+    },
+    {
+      "name": "good/005.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.223527908325195
+    },
+    {
+      "name": "pill_type/008.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.2940788269043
+    },
+    {
+      "name": "contamination/003.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 59.33203125
+    },
+    {
+      "name": "combined/005.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.9334602355957
+    },
+    {
+      "name": "good/013.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.74654006958008
+    },
+    {
+      "name": "color/022.png",
+      "defect": "color",
+      "touching": false,
+      "score": 50.508174896240234
+    },
+    {
+      "name": "faulty_imprint/000.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 35.21812057495117
+    },
+    {
+      "name": "color/002.png",
+      "defect": "color",
+      "touching": false,
+      "score": 32.89906692504883
+    },
+    {
+      "name": "faulty_imprint/007.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 42.1744384765625
+    },
+    {
+      "name": "color/015.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.70259094238281
+    },
+    {
+      "name": "color/012.png",
+      "defect": "color",
+      "touching": false,
+      "score": 46.184749603271484
+    },
+    {
+      "name": "combined/006.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 36.38673782348633
+    },
+    {
+      "name": "crack/019.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.566619873046875
+    },
+    {
+      "name": "good/012.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.17024612426758
+    },
+    {
+      "name": "pill_type/002.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 47.486724853515625
+    },
+    {
+      "name": "faulty_imprint/015.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.11035919189453
+    },
+    {
+      "name": "crack/005.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 54.1926383972168
+    },
+    {
+      "name": "combined/012.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 51.02294158935547
+    },
+    {
+      "name": "crack/006.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.88705062866211
+    },
+    {
+      "name": "crack/018.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.71561813354492
+    },
+    {
+      "name": "color/021.png",
+      "defect": "color",
+      "touching": false,
+      "score": 50.4365234375
+    },
+    {
+      "name": "color/003.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.05928421020508
+    },
+    {
+      "name": "crack/003.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.26655960083008
+    },
+    {
+      "name": "good/015.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.144886016845703
+    },
+    {
+      "name": "crack/000.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 40.309722900390625
+    },
+    {
+      "name": "good/010.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.061885833740234
+    },
+    {
+      "name": "color/000.png",
+      "defect": "color",
+      "touching": false,
+      "score": 29.486852645874023
+    },
+    {
+      "name": "scratch/016.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.44035339355469
+    },
+    {
+      "name": "faulty_imprint/017.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 42.50048828125
+    },
+    {
+      "name": "contamination/004.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.4616813659668
+    },
+    {
+      "name": "good/023.png",
+      "defect": "good",
+      "touching": false,
+      "score": 38.281463623046875
+    },
+    {
+      "name": "crack/015.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.349510192871094
+    },
+    {
+      "name": "pill_type/001.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.79036331176758
+    },
+    {
+      "name": "good/009.png",
+      "defect": "good",
+      "touching": false,
+      "score": 31.265836715698242
+    },
+    {
+      "name": "good/019.png",
+      "defect": "good",
+      "touching": false,
+      "score": 33.615501403808594
+    },
+    {
+      "name": "faulty_imprint/013.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 37.284793853759766
+    },
+    {
+      "name": "faulty_imprint/010.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 44.53543472290039
+    },
+    {
+      "name": "crack/012.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 46.06266784667969
+    },
+    {
+      "name": "good/002.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.778087615966797
+    },
+    {
+      "name": "contamination/002.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 43.211788177490234
+    },
+    {
+      "name": "scratch/014.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.16980743408203
+    },
+    {
+      "name": "scratch/017.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 38.36729049682617
+    },
+    {
+      "name": "faulty_imprint/016.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.675315856933594
+    },
+    {
+      "name": "color/004.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.03904342651367
+    },
+    {
+      "name": "scratch/006.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.56440353393555
+    },
+    {
+      "name": "good/006.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.226253509521484
+    },
+    {
+      "name": "crack/004.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 39.931026458740234
+    },
+    {
+      "name": "contamination/007.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 47.5203971862793
+    },
+    {
+      "name": "pill_type/006.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 50.667198181152344
+    },
+    {
+      "name": "scratch/000.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.71662139892578
+    },
+    {
+      "name": "good/000.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.016559600830078
+    },
+    {
+      "name": "good/021.png",
+      "defect": "good",
+      "touching": false,
+      "score": 34.3303108215332
+    },
+    {
+      "name": "faulty_imprint/001.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 40.29280471801758
+    },
+    {
+      "name": "faulty_imprint/006.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 39.6063232421875
+    },
+    {
+      "name": "color/010.png",
+      "defect": "color",
+      "touching": false,
+      "score": 32.191246032714844
+    },
+    {
+      "name": "color/019.png",
+      "defect": "color",
+      "touching": false,
+      "score": 45.99153518676758
+    },
+    {
+      "name": "good/018.png",
+      "defect": "good",
+      "touching": false,
+      "score": 30.903379440307617
+    },
+    {
+      "name": "scratch/005.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 34.19487762451172
+    },
+    {
+      "name": "crack/022.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 42.05531692504883
+    },
+    {
+      "name": "combined/013.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 53.29902267456055
+    },
+    {
+      "name": "scratch/002.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.462379455566406
+    },
+    {
+      "name": "contamination/014.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 44.025447845458984
+    },
+    {
+      "name": "pill_type/004.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 46.55144119262695
+    },
+    {
+      "name": "contamination/013.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 36.051021575927734
+    },
+    {
+      "name": "combined/000.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 40.710304260253906
+    },
+    {
+      "name": "faulty_imprint/005.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.416812896728516
+    },
+    {
+      "name": "scratch/013.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 43.851688385009766
+    },
+    {
+      "name": "combined/014.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.674739837646484
+    },
+    {
+      "name": "good/025.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.31775665283203
+    },
+    {
+      "name": "color/006.png",
+      "defect": "color",
+      "touching": false,
+      "score": 43.52643585205078
+    },
+    {
+      "name": "contamination/010.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.7801399230957
+    },
+    {
+      "name": "faulty_imprint/018.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 43.67469787597656
+    },
+    {
+      "name": "pill_type/005.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 47.00910568237305
+    },
+    {
+      "name": "scratch/003.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 40.826751708984375
+    },
+    {
+      "name": "color/009.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.24104309082031
+    },
+    {
+      "name": "combined/004.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 42.316158294677734
+    },
+    {
+      "name": "contamination/019.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 38.32621383666992
+    },
+    {
+      "name": "faulty_imprint/014.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 37.52974319458008
+    },
+    {
+      "name": "scratch/011.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 44.27848434448242
+    },
+    {
+      "name": "good/001.png",
+      "defect": "good",
+      "touching": false,
+      "score": 32.13168716430664
+    },
+    {
+      "name": "crack/013.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 32.243141174316406
+    },
+    {
+      "name": "good/007.png",
+      "defect": "good",
+      "touching": false,
+      "score": 36.990482330322266
+    },
+    {
+      "name": "scratch/015.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 41.913639068603516
+    },
+    {
+      "name": "color/013.png",
+      "defect": "color",
+      "touching": false,
+      "score": 41.74654769897461
+    },
+    {
+      "name": "combined/015.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.00601577758789
+    },
+    {
+      "name": "crack/025.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 37.319087982177734
+    },
+    {
+      "name": "crack/016.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 37.258949279785156
+    },
+    {
+      "name": "crack/010.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 36.73329544067383
+    },
+    {
+      "name": "scratch/018.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 49.49046325683594
+    },
+    {
+      "name": "crack/011.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 50.758872985839844
+    },
+    {
+      "name": "faulty_imprint/008.png",
+      "defect": "faulty_imprint",
+      "touching": false,
+      "score": 38.20468521118164
+    },
+    {
+      "name": "contamination/005.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 35.82209396362305
+    },
+    {
+      "name": "crack/017.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 43.82188415527344
+    },
+    {
+      "name": "color/016.png",
+      "defect": "color",
+      "touching": false,
+      "score": 44.023136138916016
+    },
+    {
+      "name": "color/008.png",
+      "defect": "color",
+      "touching": false,
+      "score": 35.49034881591797
+    },
+    {
+      "name": "pill_type/003.png",
+      "defect": "pill_type",
+      "touching": false,
+      "score": 49.8773307800293
+    },
+    {
+      "name": "contamination/008.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.821048736572266
+    },
+    {
+      "name": "crack/007.png",
+      "defect": "crack",
+      "touching": false,
+      "score": 41.29225540161133
+    },
+    {
+      "name": "combined/008.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 48.99632263183594
+    },
+    {
+      "name": "combined/001.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 45.882049560546875
+    },
+    {
+      "name": "contamination/017.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 44.774723052978516
+    },
+    {
+      "name": "color/007.png",
+      "defect": "color",
+      "touching": false,
+      "score": 33.87696075439453
+    },
+    {
+      "name": "scratch/001.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 36.28763961791992
+    },
+    {
+      "name": "color/014.png",
+      "defect": "color",
+      "touching": false,
+      "score": 40.62997055053711
+    },
+    {
+      "name": "contamination/015.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 46.591339111328125
+    },
+    {
+      "name": "combined/011.png",
+      "defect": "combined",
+      "touching": false,
+      "score": 49.18348693847656
+    },
+    {
+      "name": "contamination/012.png",
+      "defect": "contamination",
+      "touching": false,
+      "score": 41.796878814697266
+    },
+    {
+      "name": "color/005.png",
+      "defect": "color",
+      "touching": false,
+      "score": 34.466217041015625
+    },
+    {
+      "name": "scratch/004.png",
+      "defect": "scratch",
+      "touching": false,
+      "score": 39.78752899169922
+    },
+    {
+      "name": "scratch/007.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 35.70878982543945
+    },
+    {
+      "name": "contamination/016.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 48.01755142211914
+    },
+    {
+      "name": "good/020.png",
+      "defect": "good",
+      "touching": true,
+      "score": 35.137786865234375
+    },
+    {
+      "name": "good/017.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.083520889282227
+    },
+    {
+      "name": "combined/007.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 36.26321792602539
+    },
+    {
+      "name": "scratch/020.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.05207443237305
+    },
+    {
+      "name": "contamination/006.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.478431701660156
+    },
+    {
+      "name": "faulty_imprint/002.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 34.27042770385742
+    },
+    {
+      "name": "crack/002.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.34668731689453
+    },
+    {
+      "name": "color/023.png",
+      "defect": "color",
+      "touching": true,
+      "score": 44.546531677246094
+    },
+    {
+      "name": "pill_type/000.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 49.045562744140625
+    },
+    {
+      "name": "combined/002.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 48.776939392089844
+    },
+    {
+      "name": "contamination/001.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.87015151977539
+    },
+    {
+      "name": "crack/021.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 47.19863510131836
+    },
+    {
+      "name": "color/024.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.64117431640625
+    },
+    {
+      "name": "scratch/010.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 45.39431381225586
+    },
+    {
+      "name": "color/018.png",
+      "defect": "color",
+      "touching": true,
+      "score": 41.967350006103516
+    },
+    {
+      "name": "crack/001.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 31.202627182006836
+    },
+    {
+      "name": "crack/014.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 41.247676849365234
+    },
+    {
+      "name": "combined/009.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 48.279998779296875
+    },
+    {
+      "name": "contamination/009.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.79872512817383
+    },
+    {
+      "name": "faulty_imprint/004.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 36.46453094482422
+    },
+    {
+      "name": "good/003.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.87784957885742
+    },
+    {
+      "name": "crack/020.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 35.22813034057617
+    },
+    {
+      "name": "faulty_imprint/012.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 34.93378448486328
+    },
+    {
+      "name": "good/016.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.032249450683594
+    },
+    {
+      "name": "contamination/000.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 36.85291290283203
+    },
+    {
+      "name": "combined/003.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 51.797550201416016
+    },
+    {
+      "name": "color/011.png",
+      "defect": "color",
+      "touching": true,
+      "score": 38.513511657714844
+    },
+    {
+      "name": "faulty_imprint/009.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.181339263916016
+    },
+    {
+      "name": "scratch/008.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.25301742553711
+    },
+    {
+      "name": "scratch/021.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 50.72705841064453
+    },
+    {
+      "name": "scratch/009.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.21231460571289
+    },
+    {
+      "name": "color/020.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.47016143798828
+    },
+    {
+      "name": "scratch/012.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.39167022705078
+    },
+    {
+      "name": "faulty_imprint/011.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.45624923706055
+    },
+    {
+      "name": "good/008.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.531532287597656
+    },
+    {
+      "name": "good/011.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.29967498779297
+    },
+    {
+      "name": "good/014.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.875247955322266
+    },
+    {
+      "name": "combined/010.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 42.50985336303711
+    },
+    {
+      "name": "good/004.png",
+      "defect": "good",
+      "touching": true,
+      "score": 27.924089431762695
+    },
+    {
+      "name": "faulty_imprint/003.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 35.74365234375
+    },
+    {
+      "name": "scratch/022.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 35.515377044677734
+    },
+    {
+      "name": "contamination/018.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 49.76871871948242
+    },
+    {
+      "name": "pill_type/007.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.549476623535156
+    },
+    {
+      "name": "contamination/011.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 50.20877456665039
+    },
+    {
+      "name": "crack/023.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.12651443481445
+    },
+    {
+      "name": "contamination/020.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 32.95596694946289
+    },
+    {
+      "name": "good/022.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.692108154296875
+    },
+    {
+      "name": "color/001.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.09162902832031
+    },
+    {
+      "name": "combined/016.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.84111022949219
+    },
+    {
+      "name": "scratch/023.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 38.58070373535156
+    },
+    {
+      "name": "crack/009.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.261985778808594
+    },
+    {
+      "name": "good/024.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.76076126098633
+    },
+    {
+      "name": "color/017.png",
+      "defect": "color",
+      "touching": true,
+      "score": 36.760616302490234
+    },
+    {
+      "name": "crack/024.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 32.39734649658203
+    },
+    {
+      "name": "scratch/019.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.39262008666992
+    },
+    {
+      "name": "crack/008.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 33.69699478149414
+    },
+    {
+      "name": "good/005.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.311809539794922
+    },
+    {
+      "name": "pill_type/008.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.28681182861328
+    },
+    {
+      "name": "contamination/003.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 59.57872009277344
+    },
+    {
+      "name": "combined/005.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 45.4888916015625
+    },
+    {
+      "name": "good/013.png",
+      "defect": "good",
+      "touching": true,
+      "score": 34.074520111083984
+    },
+    {
+      "name": "color/022.png",
+      "defect": "color",
+      "touching": true,
+      "score": 50.62149429321289
+    },
+    {
+      "name": "faulty_imprint/000.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 34.988433837890625
+    },
+    {
+      "name": "color/002.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.2762565612793
+    },
+    {
+      "name": "faulty_imprint/007.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 41.95347595214844
+    },
+    {
+      "name": "color/015.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.89132308959961
+    },
+    {
+      "name": "color/012.png",
+      "defect": "color",
+      "touching": true,
+      "score": 46.44572448730469
+    },
+    {
+      "name": "combined/006.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 35.85132598876953
+    },
+    {
+      "name": "crack/019.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 46.891422271728516
+    },
+    {
+      "name": "good/012.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.29471969604492
+    },
+    {
+      "name": "pill_type/002.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 47.46057891845703
+    },
+    {
+      "name": "faulty_imprint/015.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.11144256591797
+    },
+    {
+      "name": "crack/005.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 54.444461822509766
+    },
+    {
+      "name": "combined/012.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 50.14958190917969
+    },
+    {
+      "name": "crack/006.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.51075744628906
+    },
+    {
+      "name": "crack/018.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 43.36420440673828
+    },
+    {
+      "name": "color/021.png",
+      "defect": "color",
+      "touching": true,
+      "score": 50.55374526977539
+    },
+    {
+      "name": "color/003.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.0731086730957
+    },
+    {
+      "name": "crack/003.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 41.61333465576172
+    },
+    {
+      "name": "good/015.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.2231388092041
+    },
+    {
+      "name": "crack/000.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 40.467098236083984
+    },
+    {
+      "name": "good/010.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.5777530670166
+    },
+    {
+      "name": "color/000.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.88187789916992
+    },
+    {
+      "name": "scratch/016.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.702213287353516
+    },
+    {
+      "name": "faulty_imprint/017.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 42.93107604980469
+    },
+    {
+      "name": "contamination/004.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 38.4461784362793
+    },
+    {
+      "name": "good/023.png",
+      "defect": "good",
+      "touching": true,
+      "score": 38.324092864990234
+    },
+    {
+      "name": "crack/015.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 42.97732925415039
+    },
+    {
+      "name": "pill_type/001.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.89373016357422
+    },
+    {
+      "name": "good/009.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.33251953125
+    },
+    {
+      "name": "good/019.png",
+      "defect": "good",
+      "touching": true,
+      "score": 33.96195602416992
+    },
+    {
+      "name": "faulty_imprint/013.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.29267120361328
+    },
+    {
+      "name": "faulty_imprint/010.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 44.502567291259766
+    },
+    {
+      "name": "crack/012.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 45.85163116455078
+    },
+    {
+      "name": "good/002.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.831918716430664
+    },
+    {
+      "name": "contamination/002.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 43.03396987915039
+    },
+    {
+      "name": "scratch/014.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.21286392211914
+    },
+    {
+      "name": "scratch/017.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 37.958091735839844
+    },
+    {
+      "name": "faulty_imprint/016.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.7698860168457
+    },
+    {
+      "name": "color/004.png",
+      "defect": "color",
+      "touching": true,
+      "score": 42.539974212646484
+    },
+    {
+      "name": "scratch/006.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.413536071777344
+    },
+    {
+      "name": "good/006.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.546125411987305
+    },
+    {
+      "name": "crack/004.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.26091003417969
+    },
+    {
+      "name": "contamination/007.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 48.23431396484375
+    },
+    {
+      "name": "pill_type/006.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.18973922729492
+    },
+    {
+      "name": "scratch/000.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.652706146240234
+    },
+    {
+      "name": "good/000.png",
+      "defect": "good",
+      "touching": true,
+      "score": 30.244665145874023
+    },
+    {
+      "name": "good/021.png",
+      "defect": "good",
+      "touching": true,
+      "score": 34.020225524902344
+    },
+    {
+      "name": "faulty_imprint/001.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.050174713134766
+    },
+    {
+      "name": "faulty_imprint/006.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 40.056060791015625
+    },
+    {
+      "name": "color/010.png",
+      "defect": "color",
+      "touching": true,
+      "score": 31.994518280029297
+    },
+    {
+      "name": "color/019.png",
+      "defect": "color",
+      "touching": true,
+      "score": 45.713279724121094
+    },
+    {
+      "name": "good/018.png",
+      "defect": "good",
+      "touching": true,
+      "score": 31.42334747314453
+    },
+    {
+      "name": "scratch/005.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 34.42119598388672
+    },
+    {
+      "name": "crack/022.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 41.94862365722656
+    },
+    {
+      "name": "combined/013.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 53.520263671875
+    },
+    {
+      "name": "scratch/002.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 42.298866271972656
+    },
+    {
+      "name": "contamination/014.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 43.78770065307617
+    },
+    {
+      "name": "pill_type/004.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 46.78630065917969
+    },
+    {
+      "name": "contamination/013.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.733089447021484
+    },
+    {
+      "name": "combined/000.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 40.69808578491211
+    },
+    {
+      "name": "faulty_imprint/005.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.84931945800781
+    },
+    {
+      "name": "scratch/013.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 43.73337936401367
+    },
+    {
+      "name": "combined/014.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.547462463378906
+    },
+    {
+      "name": "good/025.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.42973709106445
+    },
+    {
+      "name": "color/006.png",
+      "defect": "color",
+      "touching": true,
+      "score": 43.60148620605469
+    },
+    {
+      "name": "contamination/010.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 39.24314498901367
+    },
+    {
+      "name": "faulty_imprint/018.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 43.81889343261719
+    },
+    {
+      "name": "pill_type/005.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 47.271156311035156
+    },
+    {
+      "name": "scratch/003.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 40.75751495361328
+    },
+    {
+      "name": "color/009.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.45443344116211
+    },
+    {
+      "name": "combined/004.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 42.40141677856445
+    },
+    {
+      "name": "contamination/019.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 38.619869232177734
+    },
+    {
+      "name": "faulty_imprint/014.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 37.31331253051758
+    },
+    {
+      "name": "scratch/011.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 44.48333740234375
+    },
+    {
+      "name": "good/001.png",
+      "defect": "good",
+      "touching": true,
+      "score": 32.059898376464844
+    },
+    {
+      "name": "crack/013.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 31.791297912597656
+    },
+    {
+      "name": "good/007.png",
+      "defect": "good",
+      "touching": true,
+      "score": 37.437225341796875
+    },
+    {
+      "name": "scratch/015.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 41.83777618408203
+    },
+    {
+      "name": "color/013.png",
+      "defect": "color",
+      "touching": true,
+      "score": 41.61027145385742
+    },
+    {
+      "name": "combined/015.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 45.559940338134766
+    },
+    {
+      "name": "crack/025.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 36.999755859375
+    },
+    {
+      "name": "crack/016.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 37.946189880371094
+    },
+    {
+      "name": "crack/010.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 35.82006072998047
+    },
+    {
+      "name": "scratch/018.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 48.674072265625
+    },
+    {
+      "name": "crack/011.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 50.926876068115234
+    },
+    {
+      "name": "faulty_imprint/008.png",
+      "defect": "faulty_imprint",
+      "touching": true,
+      "score": 38.24028396606445
+    },
+    {
+      "name": "contamination/005.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 35.71379852294922
+    },
+    {
+      "name": "crack/017.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 43.6695442199707
+    },
+    {
+      "name": "color/016.png",
+      "defect": "color",
+      "touching": true,
+      "score": 44.43136215209961
+    },
+    {
+      "name": "color/008.png",
+      "defect": "color",
+      "touching": true,
+      "score": 35.35037612915039
+    },
+    {
+      "name": "pill_type/003.png",
+      "defect": "pill_type",
+      "touching": true,
+      "score": 50.08402633666992
+    },
+    {
+      "name": "contamination/008.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.643489837646484
+    },
+    {
+      "name": "crack/007.png",
+      "defect": "crack",
+      "touching": true,
+      "score": 39.28504180908203
+    },
+    {
+      "name": "combined/008.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 49.024993896484375
+    },
+    {
+      "name": "combined/001.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 46.09051513671875
+    },
+    {
+      "name": "contamination/017.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 44.474796295166016
+    },
+    {
+      "name": "color/007.png",
+      "defect": "color",
+      "touching": true,
+      "score": 33.90774154663086
+    },
+    {
+      "name": "scratch/001.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 36.16674041748047
+    },
+    {
+      "name": "color/014.png",
+      "defect": "color",
+      "touching": true,
+      "score": 40.804412841796875
+    },
+    {
+      "name": "contamination/015.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 46.86503982543945
+    },
+    {
+      "name": "combined/011.png",
+      "defect": "combined",
+      "touching": true,
+      "score": 48.615623474121094
+    },
+    {
+      "name": "contamination/012.png",
+      "defect": "contamination",
+      "touching": true,
+      "score": 41.6617431640625
+    },
+    {
+      "name": "color/005.png",
+      "defect": "color",
+      "touching": true,
+      "score": 34.60152053833008
+    },
+    {
+      "name": "scratch/004.png",
+      "defect": "scratch",
+      "touching": true,
+      "score": 39.76022720336914
+    }
+  ],
+  "overall": {
+    "pills": 1002,
+    "missed_by_segmentation": 0,
+    "true_positive": 757,
+    "false_positive": 14,
+    "false_negative": 89,
+    "true_negative": 142,
+    "precision": 0.9818417639429312,
+    "recall": 0.8947990543735225,
+    "f1": 0.9363017934446505,
+    "auroc": 0.9591289325331879
+  },
+  "spaced": {
+    "pills": 501,
+    "missed_by_segmentation": 0,
+    "true_positive": 379,
+    "false_positive": 6,
+    "false_negative": 44,
+    "true_negative": 72,
+    "precision": 0.9844155844155844,
+    "recall": 0.8959810874704491,
+    "f1": 0.938118811881188,
+    "auroc": 0.9609625992604716
+  },
+  "touching": {
+    "pills": 501,
+    "missed_by_segmentation": 0,
+    "true_positive": 378,
+    "false_positive": 8,
+    "false_negative": 45,
+    "true_negative": 70,
+    "precision": 0.9792746113989638,
+    "recall": 0.8936170212765957,
+    "f1": 0.934487021013597,
+    "auroc": 0.9573861914287446
+  },
+  "by_defect": {
+    "color": {
+      "pills": 150,
+      "missed_by_segmentation": 0,
+      "true_positive": 117,
+      "false_positive": 0,
+      "false_negative": 33,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.78,
+      "f1": 0.8764044943820225
+    },
+    "combined": {
+      "pills": 102,
+      "missed_by_segmentation": 0,
+      "true_positive": 102,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "contamination": {
+      "pills": 126,
+      "missed_by_segmentation": 0,
+      "true_positive": 120,
+      "false_positive": 0,
+      "false_negative": 6,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.9523809523809523,
+      "f1": 0.975609756097561
+    },
+    "crack": {
+      "pills": 156,
+      "missed_by_segmentation": 0,
+      "true_positive": 129,
+      "false_positive": 0,
+      "false_negative": 27,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.8269230769230769,
+      "f1": 0.9052631578947368
+    },
+    "faulty_imprint": {
+      "pills": 114,
+      "missed_by_segmentation": 0,
+      "true_positive": 97,
+      "false_positive": 0,
+      "false_negative": 17,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.8508771929824561,
+      "f1": 0.919431279620853
+    },
+    "good": {
+      "pills": 156,
+      "missed_by_segmentation": 0,
+      "true_positive": 0,
+      "false_positive": 14,
+      "false_negative": 0,
+      "true_negative": 142,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "pill_type": {
+      "pills": 54,
+      "missed_by_segmentation": 0,
+      "true_positive": 54,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "scratch": {
+      "pills": 144,
+      "missed_by_segmentation": 0,
+      "true_positive": 138,
+      "false_positive": 0,
+      "false_negative": 6,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.9583333333333334,
+      "f1": 0.9787234042553191
+    }
+  }
+}

@@ -1,5 +1,7 @@
 anomalib==2.7.0
 fastapi
 httpx
+opencv-python-headless
 python-multipart
+scikit-image
 uvicorn[standard]

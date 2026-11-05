@@ -16,11 +16,17 @@ const METRICS = [
   ["f1", "F1"],
 ];
 
+const INSPECTION_MODELS = [
+  ["mvtec", "MVTec Pill (โมเดลหลัก)"],
+  ["photo", "ภาพถ่ายยา FF (ทดลอง เทรนจากภาพเดียว)"],
+];
+
 const MODEL_NAMES = { patchcore: "PatchCore", padim: "PaDiM" };
 const fixed = (value, digits = 3) => (typeof value === "number" ? value.toFixed(digits) : "-");
 
 function UploadPage({ onResult }) {
   const [file, setFile] = useState(null);
+  const [model, setModel] = useState("mvtec");
   const [preview, setPreview] = useState(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -38,7 +44,7 @@ function UploadPage({ onResult }) {
     try {
       const body = new FormData();
       body.append("file", file);
-      const response = await fetch("/api/inspect", { method: "POST", body });
+      const response = await fetch(`/api/inspect?model=${model}`, { method: "POST", body });
       const data = await response.json();
       if (!response.ok) throw new Error(data.detail || "ตรวจภาพไม่สำเร็จ");
       onResult({ ...data, fileName: file.name });
@@ -52,12 +58,25 @@ function UploadPage({ onResult }) {
   return (
     <section className="panel narrow">
       <h2>อัปโหลดภาพยาเม็ด</h2>
-      <p className="muted">ใช้ภาพยาหนึ่งเม็ดต่อภาพ โมเดลนี้เรียนรู้จากยาเม็ดชนิดเดียวใน MVTec AD Pill</p>
+      <p className="muted">
+        ใช้ภาพยาหนึ่งเม็ดหรือหลายเม็ดที่วางไม่ทับกันบนพื้นสีเข้ม โมเดลนี้เรียนรู้จากยาเม็ดชนิดเดียวใน MVTec AD Pill
+      </p>
+      <label className="field">
+        โมเดล
+        <select value={model} onChange={(event) => setModel(event.target.value)}>
+          {INSPECTION_MODELS.map(([id, label]) => <option key={id} value={id}>{label}</option>)}
+        </select>
+      </label>
+      {model === "photo" && (
+        <p className="notice">
+          โมเดลนี้เทรนจากยา 35 เม็ดในภาพเดียว ถ้าตรวจภาพเดิมซ้ำ ผลจะดูดีเกินจริง และภาพที่ถ่ายต่างออกไปอาจแจ้งผิด
+        </p>
+      )}
       <label className="drop">
-        {preview ? <img src={preview} alt="ภาพที่เลือก" /> : <span>เลือกไฟล์ภาพ PNG หรือ JPG</span>}
+        {preview ? <img src={preview} alt="ภาพที่เลือก" /> : <span>เลือกไฟล์ภาพ PNG, JPG หรือ WebP</span>}
         <input
           type="file"
-          accept="image/png,image/jpeg"
+          accept="image/png,image/jpeg,image/webp"
           onChange={(event) => setFile(event.target.files[0] || null)}
         />
       </label>
@@ -65,6 +84,42 @@ function UploadPage({ onResult }) {
       <button disabled={!file || busy} onClick={inspect}>
         {busy ? "กำลังตรวจ..." : "ตรวจภาพ"}
       </button>
+    </section>
+  );
+}
+
+function SceneResult({ result }) {
+  const bad = result.pills.filter((pill) => pill.is_anomalous).length;
+  return (
+    <section className="panel">
+      <div className="verdict-row">
+        <div>
+          <p className="muted">{result.fileName}</p>
+          <h2 className={bad ? "bad" : "good"}>{bad ? `ผิดปกติ ${bad} เม็ด` : "ปกติทุกเม็ด"}</h2>
+        </div>
+        <dl className="stats">
+          <div><dt>พบยา</dt><dd>{result.pills.length} เม็ด</dd></div>
+          <div><dt>Threshold</dt><dd>{fixed(result.threshold, 2)}</dd></div>
+          <div><dt>เวลา</dt><dd>{fixed(result.latency_ms / 1000, 1)} วินาที</dd></div>
+        </dl>
+      </div>
+      <figure className="scene">
+        <img src={result.image} alt="ภาพที่ตรวจ พร้อมหมายเลขและกรอบของยาแต่ละเม็ด" />
+        <figcaption>กรอบเขียวคือปกติ กรอบแดงคือผิดปกติ</figcaption>
+      </figure>
+      <div className="pills">
+        {result.pills.map((pill) => (
+          <figure key={pill.number}>
+            <img src={pill.heatmap} alt={`Heatmap ยาเม็ดที่ ${pill.number}`} />
+            <figcaption>
+              เม็ดที่ {pill.number}:{" "}
+              <span className={pill.is_anomalous ? "bad" : "good"}>{pill.is_anomalous ? "ผิดปกติ" : "ปกติ"}</span>
+              {" "}({fixed(pill.score, 2)})
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+      <p className="muted">ผลนี้มาจากงานต้นแบบ ไม่ใช่การรับรองคุณภาพยาจริง</p>
     </section>
   );
 }
@@ -78,6 +133,7 @@ function ResultPage({ result, goToUpload }) {
       </section>
     );
   }
+  if (result.pills) return <SceneResult result={result} />;
   const abnormal = result.is_anomalous;
   return (
     <section className="panel">
