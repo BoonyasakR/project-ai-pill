@@ -13,9 +13,6 @@ from segmentation import align_pill, find_pills
 
 
 class FakeInspector:
-    def __init__(self, model: service.ModelName = "mvtec"):
-        self.model = model
-
     def inspect(self, image):
         return {"score": 1.0, "threshold": 2.0, "is_anomalous": False, "size": list(image.size)}
 
@@ -50,11 +47,6 @@ class ApiTest(unittest.TestCase):
     def test_rejects_large_file(self):
         response = self.upload(b"0" * (service.MAX_UPLOAD_BYTES + 1))
         self.assertEqual(response.status_code, 413)
-
-    def test_accepts_known_model_and_rejects_unknown(self):
-        files = {"file": ("pill.png", png_bytes(), "image/png")}
-        self.assertEqual(self.client.post("/api/inspect?model=photo", files=files).status_code, 200)
-        self.assertEqual(self.client.post("/api/inspect?model=nope", files=files).status_code, 422)
 
     def test_results_keep_only_public_fields(self):
         result = self.client.get("/api/results").json()

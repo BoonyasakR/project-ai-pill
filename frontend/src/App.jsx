@@ -16,17 +16,11 @@ const METRICS = [
   ["f1", "F1"],
 ];
 
-const INSPECTION_MODELS = [
-  ["mvtec", "MVTec Pill (โมเดลหลัก)"],
-  ["photo", "ภาพถ่ายยา FF (ทดลอง เทรนจากภาพเดียว)"],
-];
-
 const MODEL_NAMES = { patchcore: "PatchCore", padim: "PaDiM" };
 const fixed = (value, digits = 3) => (typeof value === "number" ? value.toFixed(digits) : "-");
 
 function UploadPage({ onResult }) {
   const [file, setFile] = useState(null);
-  const [model, setModel] = useState("mvtec");
   const [preview, setPreview] = useState(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -44,7 +38,7 @@ function UploadPage({ onResult }) {
     try {
       const body = new FormData();
       body.append("file", file);
-      const response = await fetch(`/api/inspect?model=${model}`, { method: "POST", body });
+      const response = await fetch("/api/inspect", { method: "POST", body });
       const data = await response.json();
       if (!response.ok) throw new Error(data.detail || "ตรวจภาพไม่สำเร็จ");
       onResult({ ...data, fileName: file.name });
@@ -61,17 +55,6 @@ function UploadPage({ onResult }) {
       <p className="muted">
         ใช้ภาพยาหนึ่งเม็ดหรือหลายเม็ดที่วางไม่ทับกันบนพื้นสีเข้ม โมเดลนี้เรียนรู้จากยาเม็ดชนิดเดียวใน MVTec AD Pill
       </p>
-      <label className="field">
-        โมเดล
-        <select value={model} onChange={(event) => setModel(event.target.value)}>
-          {INSPECTION_MODELS.map(([id, label]) => <option key={id} value={id}>{label}</option>)}
-        </select>
-      </label>
-      {model === "photo" && (
-        <p className="notice">
-          โมเดลนี้เทรนจากยา 35 เม็ดในภาพเดียว ถ้าตรวจภาพเดิมซ้ำ ผลจะดูดีเกินจริง และภาพที่ถ่ายต่างออกไปอาจแจ้งผิด
-        </p>
-      )}
       <label className="drop">
         {preview ? <img src={preview} alt="ภาพที่เลือก" /> : <span>เลือกไฟล์ภาพ PNG, JPG หรือ WebP</span>}
         <input

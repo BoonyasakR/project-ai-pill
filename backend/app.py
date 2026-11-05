@@ -4,31 +4,25 @@ import json
 import os
 from functools import lru_cache
 from pathlib import Path
-from typing import Literal
 
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from PIL import Image, UnidentifiedImageError
 
 ROOT = Path(__file__).resolve().parents[1]
-ModelName = Literal["mvtec", "photo"]
-MODEL_PATHS = {
-    "mvtec": Path(os.environ.get("MODEL_PATH", ROOT / "models" / "patchcore_pill_256.pt")),
-    "photo": ROOT / "models" / "patchcore_photo.pt",
-}
+MODEL_PATH = Path(os.environ.get("MODEL_PATH", ROOT / "models" / "patchcore_pill_256.pt"))
 SCENE_RESULTS = ROOT / "results" / "multi_pill" / "multi_pill_results.json"
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024
 
 app = FastAPI(title="Pill Anomaly Inspection")
 
 
-@lru_cache(maxsize=len(MODEL_PATHS))
-def get_inspector(model: ModelName = "mvtec"):
+@lru_cache(maxsize=1)
+def get_inspector():
     from inference import Inspector
 
-    path = MODEL_PATHS[model]
-    if not path.exists():
-        raise HTTPException(503, f"Model file not found: {path.name}")
-    return Inspector(path, SCENE_RESULTS if SCENE_RESULTS.exists() else None)
+    if not MODEL_PATH.exists():
+        raise HTTPException(503, f"Model file not found: {MODEL_PATH.name}")
+    return Inspector(MODEL_PATH, SCENE_RESULTS if SCENE_RESULTS.exists() else None)
 
 
 def summarize(path):
@@ -43,7 +37,7 @@ def summarize(path):
 
 @app.get("/api/health")
 def health():
-    return {"status": "ok", "model_available": MODEL_PATHS["mvtec"].exists()}
+    return {"status": "ok", "model_available": MODEL_PATH.exists()}
 
 
 @app.get("/api/results")

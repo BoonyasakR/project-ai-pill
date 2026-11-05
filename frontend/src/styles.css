@@ -71,18 +71,6 @@ button.tab.active { color: var(--accent); background: #e2f0f0; font-weight: 700;
 .bad { color: var(--bad); }
 .notice { padding: 10px 12px; background: #fff6df; border-radius: 6px; }
 
-.field { display: grid; gap: 6px; margin-bottom: 16px; font-weight: 600; }
-.field select {
-  min-height: 42px;
-  padding: 8px 10px;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  font: inherit;
-  font-weight: 400;
-  color: var(--ink);
-  background: var(--surface);
-}
-
 .drop {
   display: grid;
   place-items: center;

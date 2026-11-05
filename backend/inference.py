@@ -48,10 +48,8 @@ def to_data_url(image):
 class Inspector:
     def __init__(self, model_path, scene_results=None):
         scene_data = json.loads(Path(scene_results).read_text()) if scene_results else {}
+        self.scene_threshold = scene_data.get("threshold")
         checkpoint = torch.load(Path(model_path), map_location="cpu", weights_only=True)
-        # A model trained on aligned pills must always see aligned pills, even one alone.
-        self.aligned_only = "scene_threshold" in checkpoint
-        self.scene_threshold = checkpoint.get("scene_threshold", scene_data.get("threshold"))
         self.threshold = float(checkpoint["threshold"])
         self.image_size = int(checkpoint["image_size"])
         state = checkpoint["state_dict"]
@@ -127,7 +125,7 @@ class Inspector:
         image = image.convert("RGB")
         array = np.asarray(image)
         masks = find_pills(array)
-        if self.scene_threshold is not None and len(masks) > (0 if self.aligned_only else 1):
+        if len(masks) > 1 and self.scene_threshold is not None:
             return self.inspect_scene(array, masks)
         tensor = to_dtype(pil_to_tensor(image), torch.float32, scale=True)
 

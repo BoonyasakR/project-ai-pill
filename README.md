@@ -42,18 +42,6 @@ backend/.venv/bin/python src/evaluate_multi_pill.py calibrate
 backend/.venv/bin/python src/evaluate_multi_pill.py test
 ```
 
-## Experimental photo model
-
-The web app can also use a second model, built from the 35 pills in one image with the same frozen
-backbone. It assumes all 35 pills are normal. Each pill was scored by a bank that had not seen it:
-2 of 35 were flagged, and 101 of 105 faint painted defects were caught. There are no real defect
-labels, so this does not measure accuracy on real defects. Inspecting the training image again gives
-results that look better than they are.
-
-```bash
-backend/.venv/bin/python src/train_from_photo.py IMAGE --bank-share 0.5 --output results/photo_model/bank50 --save models/patchcore_photo.pt
-```
-
 ## Project layout
 
 - `notebooks/`: Colab notebooks for EDA, training, evaluation, and experiments
