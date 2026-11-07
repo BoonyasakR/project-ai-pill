@@ -71,6 +71,10 @@ function UploadPage({ onResult }) {
   );
 }
 
+function Warnings({ warnings }) {
+  return warnings?.map((text) => <p className="notice" role="status" key={text}>{text}</p>);
+}
+
 function SceneResult({ result }) {
   const bad = result.pills.filter((pill) => pill.is_anomalous).length;
   return (
@@ -86,6 +90,7 @@ function SceneResult({ result }) {
           <div><dt>เวลา</dt><dd>{fixed(result.latency_ms / 1000, 1)} วินาที</dd></div>
         </dl>
       </div>
+      <Warnings warnings={result.warnings} />
       <figure className="scene">
         <img src={result.image} alt="ภาพที่ตรวจ พร้อมหมายเลขและกรอบของยาแต่ละเม็ด" />
         <figcaption>กรอบเขียวคือปกติ กรอบแดงคือผิดปกติ</figcaption>
@@ -131,6 +136,7 @@ function ResultPage({ result, goToUpload }) {
           <div><dt>เวลา</dt><dd>{fixed(result.latency_ms, 0)} ms</dd></div>
         </dl>
       </div>
+      <Warnings warnings={result.warnings} />
       <div className="images">
         <figure><img src={result.image} alt="ภาพต้นฉบับ" /><figcaption>ภาพที่ตรวจ</figcaption></figure>
         <figure><img src={result.heatmap} alt="Heatmap จุดผิดปกติ" /><figcaption>Heatmap สีแดงคือบริเวณที่ต่างจากยาปกติมาก</figcaption></figure>

@@ -14,7 +14,7 @@ from PIL import Image
 from torchvision.transforms.v2 import Compose, Normalize, Resize
 from torchvision.transforms.v2.functional import pil_to_tensor, to_dtype
 
-from segmentation import align_pill, find_pills
+from segmentation import MIN_RELIABLE_LENGTH, MIN_WARNED_AREA, align_pill, find_blobs, in_training_pose, keep_pills, pill_pose
 
 PILL_EDGE_PIXELS = 5  # Ignore this rim of the pill, where the background bleeds in.
 MARK_GOOD = (40, 200, 110)
@@ -120,12 +120,28 @@ class Inspector:
             "pills": pills,
         }
 
-    @torch.inference_mode()
     def inspect(self, image):
         image = image.convert("RGB")
         array = np.asarray(image)
-        masks = find_pills(array)
-        if len(masks) > 1 and self.scene_threshold is not None:
+        blobs = find_blobs(array)
+        masks = keep_pills(blobs)
+        result = self.judge(image, array, masks)
+        result["warnings"] = []
+        ignored = sum(blob.sum() >= MIN_WARNED_AREA * blobs[0].sum() for blob in blobs[len(masks):])
+        if ignored:
+            result["warnings"].append(f"มีวัตถุขนาดเล็ก {ignored} ชิ้นที่ไม่ถูกตรวจ เพราะเล็กกว่าเม็ดใหญ่สุดมาก")
+        if "pills" in result:
+            small = sum(pill_pose(mask)[2] < MIN_RELIABLE_LENGTH for mask in masks)
+            if small:
+                result["warnings"].append(
+                    f"ยา {small} เม็ดสั้นกว่า {MIN_RELIABLE_LENGTH} พิกเซล ผลอาจแจ้งผิดปกติเกินจริง ควรถ่ายให้ใกล้ขึ้น"
+                )
+        return result
+
+    @torch.inference_mode()
+    def judge(self, image, array, masks):
+        can_align = self.scene_threshold is not None
+        if can_align and (len(masks) > 1 or (masks and not in_training_pose(masks[0]))):
             return self.inspect_scene(array, masks)
         tensor = to_dtype(pil_to_tensor(image), torch.float32, scale=True)
 
@@ -134,6 +150,12 @@ class Inspector:
         latency_ms = (time.perf_counter() - start) * 1000
 
         score = float(output.pred_score.flatten()[0])
+        if can_align and masks and score > self.threshold:
+            # The pose check cannot see an upside-down pill. A normal one passes once turned;
+            # a real defect stays above the threshold, so its score is kept.
+            turned = self.model(self.transform(tensor.flip(1, 2)).unsqueeze(0))
+            if float(turned.pred_score.flatten()[0]) <= self.threshold:
+                return self.inspect_scene(array, masks)
         anomaly_map = output.anomaly_map.squeeze().numpy()
         resized = image.resize((self.image_size, self.image_size))
         return {

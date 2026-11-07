@@ -21,7 +21,13 @@ See `docs/` for the report and slides.
 The web app also accepts several non-overlapping pills on a dark background. It separates the
 pills, aligns each one like the training images, and runs the same PatchCore model on each. No model
 was retrained. Scoring uses the pill area only, with its own threshold (35.25) set from validation
-pills.
+pills. A single pill that is turned, upside down, resized, or off centre takes the same route. A
+single pill posed like the training images keeps the whole-image score and the main threshold.
+
+The result warns about two cases. An object between 1% and 20% of the largest pill's area is not inspected.
+A pill shorter than 180 pixels may be flagged wrongly: on 40 normal validation pills, 17 were
+flagged at 120 pixels, 5 at 150, and 1 at 180. These pills also set the threshold, so this shows the
+trend only.
 
 MVTec has no multi-pill images, so these results come from simulated scenes: each test pill was
 pasted at a random rotation and size, 8 pills per scene, over 3 seeds. Each pill therefore counts

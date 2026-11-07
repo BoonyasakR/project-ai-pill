@@ -1,15 +1,17 @@
 import io
 import json
 import unittest
+from types import SimpleNamespace
 
 import cv2
 import numpy as np
+import torch
 from fastapi.testclient import TestClient
 from PIL import Image
 
 import app as service
-from inference import overlay_heatmap
-from segmentation import align_pill, find_pills
+from inference import Inspector, overlay_heatmap
+from segmentation import align_pill, find_pills, in_training_pose
 
 
 class FakeInspector:
@@ -95,6 +97,85 @@ class SegmentationTest(unittest.TestCase):
         self.assertAlmostEqual(np.ptp(xs), 693, delta=8)
         self.assertLess(np.ptp(ys), np.ptp(xs))
         self.assertAlmostEqual(xs.mean(), 400, delta=3)
+
+    def test_training_pose_allows_small_changes_only(self):
+        def mask(centre=(400, 400), axes=(346, 238), angle=0, size=800):
+            scene = np.zeros((size, size, 3), np.uint8)
+            ellipse(scene, centre, axes, angle)
+            return find_pills(scene)[0]
+
+        self.assertTrue(in_training_pose(mask()))
+        self.assertTrue(in_training_pose(mask(angle=181)))
+        self.assertTrue(in_training_pose(mask(centre=(200, 200), axes=(173, 119), size=400)))
+        self.assertFalse(in_training_pose(mask(angle=30)))
+        self.assertFalse(in_training_pose(mask(angle=90)))
+        self.assertFalse(in_training_pose(mask(axes=(242, 167))))
+        self.assertFalse(in_training_pose(mask(centre=(420, 400))))
+
+
+class RoutingTest(unittest.TestCase):
+    """A single pill must not be judged by a whole-image model it is not posed for."""
+
+    def inspect(self, scene, scores, scene_threshold=10.0):
+        queue = iter(scores)
+
+        def model(batch):
+            return SimpleNamespace(pred_score=torch.tensor([next(queue)]), anomaly_map=torch.zeros(1, 1, 8, 8))
+
+        inspector = Inspector.__new__(Inspector)
+        inspector.model, inspector.transform = model, lambda tensor: tensor
+        inspector.image_size, inspector.threshold, inspector.scene_threshold = 8, 10.0, scene_threshold
+        inspector.inspect_scene = lambda image, masks: {"route": "aligned", "pills": [{} for _ in masks]}
+        return inspector.inspect(Image.fromarray(scene))
+
+    def scene(self, angle=0):
+        scene = np.zeros((800, 800, 3), np.uint8)
+        ellipse(scene, (400, 400), (346, 238), angle)
+        return scene
+
+    def test_turned_pill_is_aligned(self):
+        result = self.inspect(self.scene(45), [])
+        self.assertEqual((result["route"], result["pills"]), ("aligned", [{}]))
+
+    def test_posed_normal_pill_keeps_one_model_run(self):
+        result = self.inspect(self.scene(), [5.0])
+        self.assertEqual(result["score"], 5.0)
+        self.assertFalse(result["is_anomalous"])
+
+    def test_posed_defect_keeps_whole_image_score(self):
+        result = self.inspect(self.scene(), [20.0, 15.0])  # Lower once turned, but still abnormal.
+        self.assertEqual(result["score"], 20.0)
+        self.assertTrue(result["is_anomalous"])
+
+    def test_upside_down_pill_is_aligned(self):
+        self.assertEqual(self.inspect(self.scene(), [20.0, 5.0])["route"], "aligned")
+
+    def test_without_scene_threshold_uses_whole_image(self):
+        result = self.inspect(self.scene(45), [20.0], scene_threshold=None)
+        self.assertEqual(result["score"], 20.0)
+
+    def test_ignored_object_warns_on_both_routes(self):
+        scene = self.scene()
+        scene[:120, :120] = 0
+        ellipse(scene, (60, 60), (50, 35))  # Far below the size of a pill.
+        result = self.inspect(scene, [5.0])
+        self.assertEqual(result["score"], 5.0)
+        self.assertEqual(len(result["warnings"]), 1)
+        self.assertIn("ไม่ถูกตรวจ", result["warnings"][0])
+
+    def test_small_pill_warns_after_alignment(self):
+        scene = np.zeros((800, 800, 3), np.uint8)
+        ellipse(scene, (400, 400), (60, 40))
+        self.assertIn("สั้นกว่า", self.inspect(scene, [])["warnings"][0])
+
+    def test_speck_gives_no_warning(self):
+        scene = self.scene()
+        ellipse(scene, (60, 60), (8, 8))
+        self.assertEqual(self.inspect(scene, [5.0])["warnings"], [])
+
+    def test_clean_images_have_no_warnings(self):
+        self.assertEqual(self.inspect(self.scene(), [5.0])["warnings"], [])
+        self.assertEqual(self.inspect(self.scene(45), [])["warnings"], [])
 
 
 if __name__ == "__main__":

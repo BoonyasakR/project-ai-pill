@@ -8,12 +8,29 @@ from skimage.segmentation import watershed
 CANVAS = 800  # Training images are 800 x 800.
 PILL_LENGTH = 693  # Median long-axis length of a training pill, in pixels.
 BACKGROUND_BGR = (26, 15, 15)  # Median training background.
-MIN_RELATIVE_AREA = 0.2  # Smaller blobs are specks, not pills.
+MIN_RELATIVE_AREA = 0.2  # Smaller blobs are not inspected as pills.
+MIN_WARNED_AREA = 0.01  # Blobs below this share of the largest are specks. No warning needed.
+MIN_RELIABLE_LENGTH = 180  # Pixels. Shorter normal pills raise false alarms once enlarged.
 MASK_MARGIN = 0.02  # Keep this share of the pill length around the mask.
+# Widest pose that still counts as a training image. Every MVTec pill fits:
+# at most 1.3 degrees of tilt, 1.9% size change, and 6 pixels off centre.
+MAX_TILT = 2  # Degrees.
+MAX_SIZE_CHANGE = 0.025
+MAX_SHIFT = 10  # Pixels on the training canvas.
 
 
 def find_pills(image):
-    """Return one boolean mask per pill in an RGB array, largest first.
+    """Return one boolean mask per pill in an RGB array, largest first."""
+    return keep_pills(find_blobs(image))
+
+
+def keep_pills(blobs):
+    """Drop blobs far smaller than the largest one. `blobs` must be largest first."""
+    return [blob for blob in blobs if blob.sum() >= MIN_RELATIVE_AREA * blobs[0].sum()]
+
+
+def find_blobs(image):
+    """Return one boolean mask per separate bright object, largest first.
 
     ponytail: Otsu needs bright pills on a dark background. Use a trained
     instance segmenter if pills ever overlap or sit on a light surface.
@@ -38,8 +55,10 @@ def find_pills(image):
     labels = watershed(-smooth, markers, mask=foreground)
 
     masks = [labels == index for index in range(1, labels.max() + 1)]
-    masks = sorted(masks, key=np.sum, reverse=True)
-    return [mask for mask in masks if mask.sum() >= MIN_RELATIVE_AREA * masks[0].sum()]
+    # Objects too thin to give a peak get no watershed marker, so add them back.
+    unmarked, count = ndimage.label(foreground & (labels == 0))
+    masks += [unmarked == index for index in range(1, count + 1)]
+    return sorted(masks, key=np.sum, reverse=True)
 
 
 def pill_pose(mask):
@@ -51,6 +70,21 @@ def pill_pose(mask):
     axis = vectors[:, 1]
     length = np.ptp((points - centre) @ axis)
     return centre, float(np.degrees(np.arctan2(axis[1], axis[0]))), float(length)
+
+
+def in_training_pose(mask):
+    """Return whether a one-pill image already sits like a training image.
+
+    The long axis has no direction, so an upside-down pill also passes.
+    """
+    height, width = mask.shape
+    if height != width:
+        return False
+    centre, angle, length = pill_pose(mask)
+    scale = CANVAS / width
+    tilt = abs((angle + 90) % 180 - 90)
+    shift = np.hypot(*(centre * scale - CANVAS / 2))
+    return tilt <= MAX_TILT and abs(length * scale / PILL_LENGTH - 1) <= MAX_SIZE_CHANGE and shift <= MAX_SHIFT
 
 
 def align_pill(image, mask, others=None, flip=False):
