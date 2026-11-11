@@ -1,0 +1,8391 @@
+{
+  "threshold": 67.64113883972168,
+  "validation_pills": 540,
+  "validation_missed_by_segmentation": 0,
+  "validation_score_percentiles": {
+    "0": 42.394622802734375,
+    "50": 47.73055458068848,
+    "95": 59.18631572723386,
+    "99": 67.64113883972168,
+    "100": 69.84783172607422
+  },
+  "segmentation_counts": {
+    "seed1_touchingFalse": {
+      "truth": 230,
+      "found": 230
+    },
+    "seed1_touchingTrue": {
+      "truth": 230,
+      "found": 230
+    },
+    "seed2_touchingFalse": {
+      "truth": 230,
+      "found": 230
+    },
+    "seed2_touchingTrue": {
+      "truth": 230,
+      "found": 230
+    },
+    "seed3_touchingFalse": {
+      "truth": 230,
+      "found": 230
+    },
+    "seed3_touchingTrue": {
+      "truth": 230,
+      "found": 230
+    }
+  },
+  "pill_scores": [
+    {
+      "name": "dirt/dirt0044.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.93310546875
+    },
+    {
+      "name": "dirt/dirt0035.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.214725494384766
+    },
+    {
+      "name": "normal/normal0033.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.780635833740234
+    },
+    {
+      "name": "dirt/dirt0060.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.081966400146484
+    },
+    {
+      "name": "normal/normal0041.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.305442810058594
+    },
+    {
+      "name": "dirt/dirt0061.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.07025146484375
+    },
+    {
+      "name": "normal/normal0027.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.57441711425781
+    },
+    {
+      "name": "chip/chip0039.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.496368408203125
+    },
+    {
+      "name": "dirt/dirt0036.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.45646286010742
+    },
+    {
+      "name": "chip/chip0004.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.03433227539062
+    },
+    {
+      "name": "normal/normal0021.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.331180572509766
+    },
+    {
+      "name": "dirt/dirt0049.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 65.7886734008789
+    },
+    {
+      "name": "chip/chip0030.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.898292541503906
+    },
+    {
+      "name": "dirt/dirt0092.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.23713684082031
+    },
+    {
+      "name": "dirt/dirt0012.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.14000701904297
+    },
+    {
+      "name": "normal/normal0034.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.465087890625
+    },
+    {
+      "name": "dirt/dirt0091.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.97050857543945
+    },
+    {
+      "name": "dirt/dirt0015.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.397308349609375
+    },
+    {
+      "name": "dirt/dirt0053.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.32856369018555
+    },
+    {
+      "name": "normal/normal0076.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.9296760559082
+    },
+    {
+      "name": "dirt/dirt0016.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.23222351074219
+    },
+    {
+      "name": "dirt/dirt0071.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.1029167175293
+    },
+    {
+      "name": "chip/chip0031.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.50858688354492
+    },
+    {
+      "name": "dirt/dirt0079.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.69371032714844
+    },
+    {
+      "name": "dirt/dirt0066.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.92638397216797
+    },
+    {
+      "name": "normal/normal0025.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.068973541259766
+    },
+    {
+      "name": "chip/chip0032.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.353515625
+    },
+    {
+      "name": "normal/normal0090.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 60.65501022338867
+    },
+    {
+      "name": "dirt/dirt0075.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.96174621582031
+    },
+    {
+      "name": "normal/normal0028.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 43.724021911621094
+    },
+    {
+      "name": "chip/chip0015.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.00846862792969
+    },
+    {
+      "name": "normal/normal0071.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.346954345703125
+    },
+    {
+      "name": "normal/normal0039.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.96297836303711
+    },
+    {
+      "name": "dirt/dirt0028.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.48079299926758
+    },
+    {
+      "name": "normal/normal0078.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.915489196777344
+    },
+    {
+      "name": "dirt/dirt0112.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.8151741027832
+    },
+    {
+      "name": "chip/chip0033.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.05379104614258
+    },
+    {
+      "name": "dirt/dirt0106.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.59136199951172
+    },
+    {
+      "name": "dirt/dirt0059.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.175315856933594
+    },
+    {
+      "name": "chip/chip0022.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.75980758666992
+    },
+    {
+      "name": "normal/normal0040.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.47771453857422
+    },
+    {
+      "name": "dirt/dirt0110.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.49300003051758
+    },
+    {
+      "name": "dirt/dirt0109.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.6039924621582
+    },
+    {
+      "name": "dirt/dirt0121.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.07453155517578
+    },
+    {
+      "name": "dirt/dirt0117.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.46929168701172
+    },
+    {
+      "name": "dirt/dirt0132.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.11526107788086
+    },
+    {
+      "name": "chip/chip0011.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 53.71128845214844
+    },
+    {
+      "name": "dirt/dirt0089.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.92184829711914
+    },
+    {
+      "name": "dirt/dirt0017.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.81097412109375
+    },
+    {
+      "name": "dirt/dirt0022.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.56785583496094
+    },
+    {
+      "name": "dirt/dirt0086.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.57534408569336
+    },
+    {
+      "name": "dirt/dirt0128.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.91567611694336
+    },
+    {
+      "name": "dirt/dirt0118.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.17592239379883
+    },
+    {
+      "name": "chip/chip0036.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.59603118896484
+    },
+    {
+      "name": "dirt/dirt0034.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.392581939697266
+    },
+    {
+      "name": "dirt/dirt0094.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.033103942871094
+    },
+    {
+      "name": "dirt/dirt0058.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.640018463134766
+    },
+    {
+      "name": "normal/normal0094.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 62.48849868774414
+    },
+    {
+      "name": "dirt/dirt0014.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.791690826416016
+    },
+    {
+      "name": "normal/normal0029.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.382686614990234
+    },
+    {
+      "name": "normal/normal0069.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.5641975402832
+    },
+    {
+      "name": "chip/chip0038.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 55.77396774291992
+    },
+    {
+      "name": "chip/chip0019.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.29834747314453
+    },
+    {
+      "name": "dirt/dirt0051.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.0474967956543
+    },
+    {
+      "name": "normal/normal0074.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.455867767333984
+    },
+    {
+      "name": "dirt/dirt0045.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 60.129676818847656
+    },
+    {
+      "name": "chip/chip0040.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.24505615234375
+    },
+    {
+      "name": "normal/normal0087.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.5685920715332
+    },
+    {
+      "name": "dirt/dirt0040.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.39728546142578
+    },
+    {
+      "name": "dirt/dirt0068.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.062705993652344
+    },
+    {
+      "name": "dirt/dirt0135.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.76844787597656
+    },
+    {
+      "name": "normal/normal0091.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 53.1092529296875
+    },
+    {
+      "name": "normal/normal0024.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.90869140625
+    },
+    {
+      "name": "chip/chip0013.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.10966491699219
+    },
+    {
+      "name": "dirt/dirt0097.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.452972412109375
+    },
+    {
+      "name": "chip/chip0035.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.88583374023438
+    },
+    {
+      "name": "dirt/dirt0057.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.33208465576172
+    },
+    {
+      "name": "normal/normal0038.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.88001251220703
+    },
+    {
+      "name": "dirt/dirt0033.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.80463409423828
+    },
+    {
+      "name": "dirt/dirt0084.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.18938446044922
+    },
+    {
+      "name": "normal/normal0036.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.10090255737305
+    },
+    {
+      "name": "dirt/dirt0026.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.494140625
+    },
+    {
+      "name": "dirt/dirt0020.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.899906158447266
+    },
+    {
+      "name": "normal/normal0073.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.395057678222656
+    },
+    {
+      "name": "dirt/dirt0054.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.766109466552734
+    },
+    {
+      "name": "dirt/dirt0030.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.41259765625
+    },
+    {
+      "name": "chip/chip0006.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.0341567993164
+    },
+    {
+      "name": "chip/chip0017.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.32715606689453
+    },
+    {
+      "name": "chip/chip0009.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.10807037353516
+    },
+    {
+      "name": "chip/chip0018.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 68.32256317138672
+    },
+    {
+      "name": "dirt/dirt0101.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.21681594848633
+    },
+    {
+      "name": "normal/normal0085.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.26310729980469
+    },
+    {
+      "name": "dirt/dirt0008.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.47407913208008
+    },
+    {
+      "name": "dirt/dirt0076.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.307010650634766
+    },
+    {
+      "name": "dirt/dirt0062.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.45243453979492
+    },
+    {
+      "name": "dirt/dirt0134.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.08222579956055
+    },
+    {
+      "name": "dirt/dirt0050.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.24617004394531
+    },
+    {
+      "name": "dirt/dirt0052.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.62860870361328
+    },
+    {
+      "name": "dirt/dirt0085.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.82327651977539
+    },
+    {
+      "name": "normal/normal0081.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.60845184326172
+    },
+    {
+      "name": "normal/normal0079.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 55.63058090209961
+    },
+    {
+      "name": "dirt/dirt0064.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.47282791137695
+    },
+    {
+      "name": "dirt/dirt0005.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.27072525024414
+    },
+    {
+      "name": "dirt/dirt0103.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.46105194091797
+    },
+    {
+      "name": "dirt/dirt0032.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.947872161865234
+    },
+    {
+      "name": "dirt/dirt0019.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.77143859863281
+    },
+    {
+      "name": "normal/normal0077.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.161964416503906
+    },
+    {
+      "name": "dirt/dirt0136.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.667850494384766
+    },
+    {
+      "name": "normal/normal0026.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.94572067260742
+    },
+    {
+      "name": "chip/chip0025.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 51.896690368652344
+    },
+    {
+      "name": "dirt/dirt0003.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.49064254760742
+    },
+    {
+      "name": "normal/normal0084.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 54.96299362182617
+    },
+    {
+      "name": "dirt/dirt0006.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.67024612426758
+    },
+    {
+      "name": "dirt/dirt0047.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.67256546020508
+    },
+    {
+      "name": "dirt/dirt0039.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 66.44589233398438
+    },
+    {
+      "name": "dirt/dirt0029.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 60.764976501464844
+    },
+    {
+      "name": "dirt/dirt0056.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 61.354270935058594
+    },
+    {
+      "name": "dirt/dirt0043.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.06272506713867
+    },
+    {
+      "name": "dirt/dirt0018.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.74314880371094
+    },
+    {
+      "name": "dirt/dirt0104.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.9705924987793
+    },
+    {
+      "name": "chip/chip0042.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.481380462646484
+    },
+    {
+      "name": "chip/chip0026.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.10801315307617
+    },
+    {
+      "name": "chip/chip0023.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.23857498168945
+    },
+    {
+      "name": "normal/normal0095.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 55.416568756103516
+    },
+    {
+      "name": "dirt/dirt0010.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.1629753112793
+    },
+    {
+      "name": "dirt/dirt0021.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 64.3145751953125
+    },
+    {
+      "name": "normal/normal0070.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.71268081665039
+    },
+    {
+      "name": "dirt/dirt0105.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.81053161621094
+    },
+    {
+      "name": "dirt/dirt0123.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.76044845581055
+    },
+    {
+      "name": "normal/normal0037.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.87692642211914
+    },
+    {
+      "name": "dirt/dirt0102.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.624900817871094
+    },
+    {
+      "name": "normal/normal0075.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.38560104370117
+    },
+    {
+      "name": "dirt/dirt0042.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.93851089477539
+    },
+    {
+      "name": "dirt/dirt0116.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.33580780029297
+    },
+    {
+      "name": "dirt/dirt0067.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.78373718261719
+    },
+    {
+      "name": "normal/normal0082.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.79924392700195
+    },
+    {
+      "name": "dirt/dirt0088.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.35470962524414
+    },
+    {
+      "name": "dirt/dirt0090.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.909210205078125
+    },
+    {
+      "name": "chip/chip0027.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.961456298828125
+    },
+    {
+      "name": "dirt/dirt0048.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 62.78997802734375
+    },
+    {
+      "name": "dirt/dirt0122.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.17962646484375
+    },
+    {
+      "name": "dirt/dirt0065.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.081642150878906
+    },
+    {
+      "name": "chip/chip0007.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.69490432739258
+    },
+    {
+      "name": "chip/chip0041.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.80293655395508
+    },
+    {
+      "name": "dirt/dirt0095.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.205360412597656
+    },
+    {
+      "name": "normal/normal0092.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.43666458129883
+    },
+    {
+      "name": "dirt/dirt0107.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.970760345458984
+    },
+    {
+      "name": "dirt/dirt0037.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.78584671020508
+    },
+    {
+      "name": "dirt/dirt0138.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.415000915527344
+    },
+    {
+      "name": "dirt/dirt0080.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.467063903808594
+    },
+    {
+      "name": "dirt/dirt0133.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.04330825805664
+    },
+    {
+      "name": "dirt/dirt0108.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.18497085571289
+    },
+    {
+      "name": "chip/chip0012.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.44266128540039
+    },
+    {
+      "name": "dirt/dirt0023.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.19154739379883
+    },
+    {
+      "name": "dirt/dirt0099.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.9113655090332
+    },
+    {
+      "name": "dirt/dirt0072.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.56622314453125
+    },
+    {
+      "name": "chip/chip0016.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.45983123779297
+    },
+    {
+      "name": "dirt/dirt0137.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.238616943359375
+    },
+    {
+      "name": "dirt/dirt0001.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.080928802490234
+    },
+    {
+      "name": "dirt/dirt0082.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.98419189453125
+    },
+    {
+      "name": "normal/normal0035.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.02031326293945
+    },
+    {
+      "name": "normal/normal0086.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 52.350955963134766
+    },
+    {
+      "name": "dirt/dirt0093.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.300479888916016
+    },
+    {
+      "name": "dirt/dirt0125.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.34129333496094
+    },
+    {
+      "name": "dirt/dirt0126.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.24600601196289
+    },
+    {
+      "name": "dirt/dirt0031.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.99607849121094
+    },
+    {
+      "name": "chip/chip0008.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 55.59389877319336
+    },
+    {
+      "name": "dirt/dirt0087.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.80624771118164
+    },
+    {
+      "name": "chip/chip0043.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.6481819152832
+    },
+    {
+      "name": "normal/normal0023.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.1033935546875
+    },
+    {
+      "name": "chip/chip0034.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.711280822753906
+    },
+    {
+      "name": "dirt/dirt0081.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.13360595703125
+    },
+    {
+      "name": "chip/chip0014.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.37459945678711
+    },
+    {
+      "name": "dirt/dirt0004.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.2473030090332
+    },
+    {
+      "name": "dirt/dirt0070.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.80681228637695
+    },
+    {
+      "name": "dirt/dirt0098.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.74044418334961
+    },
+    {
+      "name": "chip/chip0020.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 70.59827423095703
+    },
+    {
+      "name": "dirt/dirt0013.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.735633850097656
+    },
+    {
+      "name": "normal/normal0080.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.46799850463867
+    },
+    {
+      "name": "dirt/dirt0127.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.33435821533203
+    },
+    {
+      "name": "normal/normal0088.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.66492462158203
+    },
+    {
+      "name": "dirt/dirt0124.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.97842025756836
+    },
+    {
+      "name": "dirt/dirt0024.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.17766189575195
+    },
+    {
+      "name": "normal/normal0072.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.693992614746094
+    },
+    {
+      "name": "dirt/dirt0046.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.96512985229492
+    },
+    {
+      "name": "dirt/dirt0115.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.14333724975586
+    },
+    {
+      "name": "dirt/dirt0009.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 61.505611419677734
+    },
+    {
+      "name": "dirt/dirt0025.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.80487823486328
+    },
+    {
+      "name": "normal/normal0020.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.5822639465332
+    },
+    {
+      "name": "dirt/dirt0100.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.131710052490234
+    },
+    {
+      "name": "dirt/dirt0027.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.06630325317383
+    },
+    {
+      "name": "chip/chip0029.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.11255645751953
+    },
+    {
+      "name": "dirt/dirt0113.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.19651794433594
+    },
+    {
+      "name": "chip/chip0001.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 54.91633987426758
+    },
+    {
+      "name": "dirt/dirt0055.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.777618408203125
+    },
+    {
+      "name": "dirt/dirt0041.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.0799446105957
+    },
+    {
+      "name": "chip/chip0037.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.85527038574219
+    },
+    {
+      "name": "dirt/dirt0074.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.670921325683594
+    },
+    {
+      "name": "dirt/dirt0002.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.65163803100586
+    },
+    {
+      "name": "dirt/dirt0038.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.66402053833008
+    },
+    {
+      "name": "normal/normal0031.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.49775695800781
+    },
+    {
+      "name": "normal/normal0032.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.7096061706543
+    },
+    {
+      "name": "dirt/dirt0120.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.78818130493164
+    },
+    {
+      "name": "dirt/dirt0129.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.045719146728516
+    },
+    {
+      "name": "dirt/dirt0130.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 45.242530822753906
+    },
+    {
+      "name": "dirt/dirt0077.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.234981536865234
+    },
+    {
+      "name": "normal/normal0030.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 43.996543884277344
+    },
+    {
+      "name": "chip/chip0010.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 53.159393310546875
+    },
+    {
+      "name": "dirt/dirt0131.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.02326583862305
+    },
+    {
+      "name": "dirt/dirt0063.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.89697265625
+    },
+    {
+      "name": "dirt/dirt0073.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.766693115234375
+    },
+    {
+      "name": "normal/normal0093.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.15493392944336
+    },
+    {
+      "name": "chip/chip0005.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.72597885131836
+    },
+    {
+      "name": "chip/chip0002.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 56.70972442626953
+    },
+    {
+      "name": "dirt/dirt0007.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.005855560302734
+    },
+    {
+      "name": "normal/normal0022.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.312339782714844
+    },
+    {
+      "name": "normal/normal0089.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.26610565185547
+    },
+    {
+      "name": "chip/chip0028.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 54.99947738647461
+    },
+    {
+      "name": "dirt/dirt0111.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.79262161254883
+    },
+    {
+      "name": "chip/chip0003.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.3660888671875
+    },
+    {
+      "name": "normal/normal0083.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 56.507232666015625
+    },
+    {
+      "name": "chip/chip0021.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.118896484375
+    },
+    {
+      "name": "chip/chip0024.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.42608642578125
+    },
+    {
+      "name": "dirt/dirt0069.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.30196762084961
+    },
+    {
+      "name": "dirt/dirt0078.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.693870544433594
+    },
+    {
+      "name": "dirt/dirt0083.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.41720199584961
+    },
+    {
+      "name": "dirt/dirt0119.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.76115798950195
+    },
+    {
+      "name": "dirt/dirt0114.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.841068267822266
+    },
+    {
+      "name": "dirt/dirt0096.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.86220169067383
+    },
+    {
+      "name": "dirt/dirt0011.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 67.11235046386719
+    },
+    {
+      "name": "dirt/dirt0044.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.93388366699219
+    },
+    {
+      "name": "dirt/dirt0035.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.24491500854492
+    },
+    {
+      "name": "normal/normal0033.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.77997589111328
+    },
+    {
+      "name": "dirt/dirt0060.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.08975601196289
+    },
+    {
+      "name": "normal/normal0041.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.22373580932617
+    },
+    {
+      "name": "dirt/dirt0061.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.01540756225586
+    },
+    {
+      "name": "normal/normal0027.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.38473892211914
+    },
+    {
+      "name": "chip/chip0039.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.549015045166016
+    },
+    {
+      "name": "dirt/dirt0036.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.049598693847656
+    },
+    {
+      "name": "chip/chip0004.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 67.09548950195312
+    },
+    {
+      "name": "normal/normal0021.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 57.20924377441406
+    },
+    {
+      "name": "dirt/dirt0049.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 67.9111099243164
+    },
+    {
+      "name": "chip/chip0030.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.47017288208008
+    },
+    {
+      "name": "dirt/dirt0092.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.96678924560547
+    },
+    {
+      "name": "dirt/dirt0012.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.35198211669922
+    },
+    {
+      "name": "normal/normal0034.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.22868728637695
+    },
+    {
+      "name": "dirt/dirt0091.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.33667755126953
+    },
+    {
+      "name": "dirt/dirt0015.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.5173225402832
+    },
+    {
+      "name": "dirt/dirt0053.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.890045166015625
+    },
+    {
+      "name": "normal/normal0076.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.54098129272461
+    },
+    {
+      "name": "dirt/dirt0016.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.34563446044922
+    },
+    {
+      "name": "dirt/dirt0071.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.35098648071289
+    },
+    {
+      "name": "chip/chip0031.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.62730026245117
+    },
+    {
+      "name": "dirt/dirt0079.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.083370208740234
+    },
+    {
+      "name": "dirt/dirt0066.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.34468460083008
+    },
+    {
+      "name": "normal/normal0025.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.71442794799805
+    },
+    {
+      "name": "chip/chip0032.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.9590950012207
+    },
+    {
+      "name": "normal/normal0090.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 55.10889434814453
+    },
+    {
+      "name": "dirt/dirt0075.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.55324172973633
+    },
+    {
+      "name": "normal/normal0028.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.845462799072266
+    },
+    {
+      "name": "chip/chip0015.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.635475158691406
+    },
+    {
+      "name": "normal/normal0071.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.403438568115234
+    },
+    {
+      "name": "normal/normal0039.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.582054138183594
+    },
+    {
+      "name": "dirt/dirt0028.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.44318389892578
+    },
+    {
+      "name": "normal/normal0078.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.34733581542969
+    },
+    {
+      "name": "dirt/dirt0112.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.76005172729492
+    },
+    {
+      "name": "chip/chip0033.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.52590560913086
+    },
+    {
+      "name": "dirt/dirt0106.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.884498596191406
+    },
+    {
+      "name": "dirt/dirt0059.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.56038284301758
+    },
+    {
+      "name": "chip/chip0022.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.525272369384766
+    },
+    {
+      "name": "normal/normal0040.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.609962463378906
+    },
+    {
+      "name": "dirt/dirt0110.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.63380813598633
+    },
+    {
+      "name": "dirt/dirt0109.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.31571578979492
+    },
+    {
+      "name": "dirt/dirt0121.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.65262985229492
+    },
+    {
+      "name": "dirt/dirt0117.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.5555419921875
+    },
+    {
+      "name": "dirt/dirt0132.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 44.51932144165039
+    },
+    {
+      "name": "chip/chip0011.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.3766975402832
+    },
+    {
+      "name": "dirt/dirt0089.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.122291564941406
+    },
+    {
+      "name": "dirt/dirt0017.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.73600769042969
+    },
+    {
+      "name": "dirt/dirt0022.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.61448669433594
+    },
+    {
+      "name": "dirt/dirt0086.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.337127685546875
+    },
+    {
+      "name": "dirt/dirt0128.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.65885543823242
+    },
+    {
+      "name": "dirt/dirt0118.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 45.56081771850586
+    },
+    {
+      "name": "chip/chip0036.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.35335540771484
+    },
+    {
+      "name": "dirt/dirt0034.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.18854904174805
+    },
+    {
+      "name": "dirt/dirt0094.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.19468307495117
+    },
+    {
+      "name": "dirt/dirt0058.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.804012298583984
+    },
+    {
+      "name": "normal/normal0094.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 59.91910171508789
+    },
+    {
+      "name": "dirt/dirt0014.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.28901672363281
+    },
+    {
+      "name": "normal/normal0029.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.60649108886719
+    },
+    {
+      "name": "normal/normal0069.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.84157180786133
+    },
+    {
+      "name": "chip/chip0038.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.53278732299805
+    },
+    {
+      "name": "chip/chip0019.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.21780014038086
+    },
+    {
+      "name": "dirt/dirt0051.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.288089752197266
+    },
+    {
+      "name": "normal/normal0074.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.36343002319336
+    },
+    {
+      "name": "dirt/dirt0045.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 61.28618240356445
+    },
+    {
+      "name": "chip/chip0040.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.373470306396484
+    },
+    {
+      "name": "normal/normal0087.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.94190216064453
+    },
+    {
+      "name": "dirt/dirt0040.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.856788635253906
+    },
+    {
+      "name": "dirt/dirt0068.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.69163513183594
+    },
+    {
+      "name": "dirt/dirt0135.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.91645812988281
+    },
+    {
+      "name": "normal/normal0091.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 53.939697265625
+    },
+    {
+      "name": "normal/normal0024.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.50244903564453
+    },
+    {
+      "name": "chip/chip0013.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.553565979003906
+    },
+    {
+      "name": "dirt/dirt0097.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.16795349121094
+    },
+    {
+      "name": "chip/chip0035.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.87486267089844
+    },
+    {
+      "name": "dirt/dirt0057.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.24214172363281
+    },
+    {
+      "name": "normal/normal0038.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.7836799621582
+    },
+    {
+      "name": "dirt/dirt0033.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.622005462646484
+    },
+    {
+      "name": "dirt/dirt0084.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.98284912109375
+    },
+    {
+      "name": "normal/normal0036.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 43.957183837890625
+    },
+    {
+      "name": "dirt/dirt0026.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.07841110229492
+    },
+    {
+      "name": "dirt/dirt0020.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.71317672729492
+    },
+    {
+      "name": "normal/normal0073.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.53641891479492
+    },
+    {
+      "name": "dirt/dirt0054.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.599952697753906
+    },
+    {
+      "name": "dirt/dirt0030.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.43201446533203
+    },
+    {
+      "name": "chip/chip0006.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.46265411376953
+    },
+    {
+      "name": "chip/chip0017.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.23225021362305
+    },
+    {
+      "name": "chip/chip0009.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.90253448486328
+    },
+    {
+      "name": "chip/chip0018.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 72.0800552368164
+    },
+    {
+      "name": "dirt/dirt0101.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.52507400512695
+    },
+    {
+      "name": "normal/normal0085.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.813880920410156
+    },
+    {
+      "name": "dirt/dirt0008.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.04757308959961
+    },
+    {
+      "name": "dirt/dirt0076.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.04633712768555
+    },
+    {
+      "name": "dirt/dirt0062.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.565277099609375
+    },
+    {
+      "name": "dirt/dirt0134.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.08644104003906
+    },
+    {
+      "name": "dirt/dirt0050.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.507686614990234
+    },
+    {
+      "name": "dirt/dirt0052.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.027042388916016
+    },
+    {
+      "name": "dirt/dirt0085.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.217811584472656
+    },
+    {
+      "name": "normal/normal0081.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.75508499145508
+    },
+    {
+      "name": "normal/normal0079.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.611717224121094
+    },
+    {
+      "name": "dirt/dirt0064.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.24750518798828
+    },
+    {
+      "name": "dirt/dirt0005.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.7636833190918
+    },
+    {
+      "name": "dirt/dirt0103.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.40236282348633
+    },
+    {
+      "name": "dirt/dirt0032.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.76344299316406
+    },
+    {
+      "name": "dirt/dirt0019.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.68435287475586
+    },
+    {
+      "name": "normal/normal0077.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.63352584838867
+    },
+    {
+      "name": "dirt/dirt0136.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.00704574584961
+    },
+    {
+      "name": "normal/normal0026.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.364559173583984
+    },
+    {
+      "name": "chip/chip0025.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 50.89542007446289
+    },
+    {
+      "name": "dirt/dirt0003.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.7223014831543
+    },
+    {
+      "name": "normal/normal0084.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 54.27225112915039
+    },
+    {
+      "name": "dirt/dirt0006.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.18698501586914
+    },
+    {
+      "name": "dirt/dirt0047.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.41939163208008
+    },
+    {
+      "name": "dirt/dirt0039.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 64.6941909790039
+    },
+    {
+      "name": "dirt/dirt0029.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 60.188682556152344
+    },
+    {
+      "name": "dirt/dirt0056.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 61.61707305908203
+    },
+    {
+      "name": "dirt/dirt0043.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.51454162597656
+    },
+    {
+      "name": "dirt/dirt0018.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.46752166748047
+    },
+    {
+      "name": "dirt/dirt0104.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.57345962524414
+    },
+    {
+      "name": "chip/chip0042.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.988094329833984
+    },
+    {
+      "name": "chip/chip0026.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.37435531616211
+    },
+    {
+      "name": "chip/chip0023.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.92955017089844
+    },
+    {
+      "name": "normal/normal0095.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.29686737060547
+    },
+    {
+      "name": "dirt/dirt0010.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.754356384277344
+    },
+    {
+      "name": "dirt/dirt0021.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 63.17544937133789
+    },
+    {
+      "name": "normal/normal0070.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.82026290893555
+    },
+    {
+      "name": "dirt/dirt0105.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.35392379760742
+    },
+    {
+      "name": "dirt/dirt0123.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.92411804199219
+    },
+    {
+      "name": "normal/normal0037.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.298152923583984
+    },
+    {
+      "name": "dirt/dirt0102.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.06929016113281
+    },
+    {
+      "name": "normal/normal0075.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.13643264770508
+    },
+    {
+      "name": "dirt/dirt0042.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.83769226074219
+    },
+    {
+      "name": "dirt/dirt0116.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.503902435302734
+    },
+    {
+      "name": "dirt/dirt0067.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.652442932128906
+    },
+    {
+      "name": "normal/normal0082.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.5831298828125
+    },
+    {
+      "name": "dirt/dirt0088.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.0386848449707
+    },
+    {
+      "name": "dirt/dirt0090.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.255733489990234
+    },
+    {
+      "name": "chip/chip0027.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.033477783203125
+    },
+    {
+      "name": "dirt/dirt0048.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.97918701171875
+    },
+    {
+      "name": "dirt/dirt0122.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.92115783691406
+    },
+    {
+      "name": "dirt/dirt0065.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.04200744628906
+    },
+    {
+      "name": "chip/chip0007.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.09556198120117
+    },
+    {
+      "name": "chip/chip0041.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.44607162475586
+    },
+    {
+      "name": "dirt/dirt0095.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.70428466796875
+    },
+    {
+      "name": "normal/normal0092.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.706966400146484
+    },
+    {
+      "name": "dirt/dirt0107.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.10600280761719
+    },
+    {
+      "name": "dirt/dirt0037.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.557437896728516
+    },
+    {
+      "name": "dirt/dirt0138.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.90656280517578
+    },
+    {
+      "name": "dirt/dirt0080.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.96989822387695
+    },
+    {
+      "name": "dirt/dirt0133.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.63827133178711
+    },
+    {
+      "name": "dirt/dirt0108.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.28689956665039
+    },
+    {
+      "name": "chip/chip0012.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.81784057617188
+    },
+    {
+      "name": "dirt/dirt0023.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.015438079833984
+    },
+    {
+      "name": "dirt/dirt0099.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.92314529418945
+    },
+    {
+      "name": "dirt/dirt0072.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.27354049682617
+    },
+    {
+      "name": "chip/chip0016.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.012935638427734
+    },
+    {
+      "name": "dirt/dirt0137.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.258148193359375
+    },
+    {
+      "name": "dirt/dirt0001.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.41743087768555
+    },
+    {
+      "name": "dirt/dirt0082.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.525630950927734
+    },
+    {
+      "name": "normal/normal0035.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.31999969482422
+    },
+    {
+      "name": "normal/normal0086.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.133296966552734
+    },
+    {
+      "name": "dirt/dirt0093.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.71561813354492
+    },
+    {
+      "name": "dirt/dirt0125.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.86626052856445
+    },
+    {
+      "name": "dirt/dirt0126.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.66648483276367
+    },
+    {
+      "name": "dirt/dirt0031.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.43195343017578
+    },
+    {
+      "name": "chip/chip0008.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.72011947631836
+    },
+    {
+      "name": "dirt/dirt0087.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.705867767333984
+    },
+    {
+      "name": "chip/chip0043.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 65.40084075927734
+    },
+    {
+      "name": "normal/normal0023.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.725921630859375
+    },
+    {
+      "name": "chip/chip0034.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 69.58760070800781
+    },
+    {
+      "name": "dirt/dirt0081.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.712684631347656
+    },
+    {
+      "name": "chip/chip0014.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.32173156738281
+    },
+    {
+      "name": "dirt/dirt0004.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.42195129394531
+    },
+    {
+      "name": "dirt/dirt0070.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.268123626708984
+    },
+    {
+      "name": "dirt/dirt0098.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.599849700927734
+    },
+    {
+      "name": "chip/chip0020.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 69.83342742919922
+    },
+    {
+      "name": "dirt/dirt0013.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.35895919799805
+    },
+    {
+      "name": "normal/normal0080.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.82939529418945
+    },
+    {
+      "name": "dirt/dirt0127.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.53843688964844
+    },
+    {
+      "name": "normal/normal0088.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.51411819458008
+    },
+    {
+      "name": "dirt/dirt0124.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.6439094543457
+    },
+    {
+      "name": "dirt/dirt0024.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.71527862548828
+    },
+    {
+      "name": "normal/normal0072.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.29422378540039
+    },
+    {
+      "name": "dirt/dirt0046.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.28252029418945
+    },
+    {
+      "name": "dirt/dirt0115.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.03353500366211
+    },
+    {
+      "name": "dirt/dirt0009.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.97074890136719
+    },
+    {
+      "name": "dirt/dirt0025.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.19718551635742
+    },
+    {
+      "name": "normal/normal0020.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.58225631713867
+    },
+    {
+      "name": "dirt/dirt0100.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.80255889892578
+    },
+    {
+      "name": "dirt/dirt0027.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.003658294677734
+    },
+    {
+      "name": "chip/chip0029.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.271690368652344
+    },
+    {
+      "name": "dirt/dirt0113.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.21748733520508
+    },
+    {
+      "name": "chip/chip0001.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 52.58381652832031
+    },
+    {
+      "name": "dirt/dirt0055.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.4154052734375
+    },
+    {
+      "name": "dirt/dirt0041.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.086158752441406
+    },
+    {
+      "name": "chip/chip0037.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.946441650390625
+    },
+    {
+      "name": "dirt/dirt0074.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.77629470825195
+    },
+    {
+      "name": "dirt/dirt0002.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.134281158447266
+    },
+    {
+      "name": "dirt/dirt0038.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.00923156738281
+    },
+    {
+      "name": "normal/normal0031.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.0078239440918
+    },
+    {
+      "name": "normal/normal0032.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.232505798339844
+    },
+    {
+      "name": "dirt/dirt0120.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.160179138183594
+    },
+    {
+      "name": "dirt/dirt0129.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.56927490234375
+    },
+    {
+      "name": "dirt/dirt0130.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 43.974754333496094
+    },
+    {
+      "name": "dirt/dirt0077.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.89262008666992
+    },
+    {
+      "name": "normal/normal0030.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.21262741088867
+    },
+    {
+      "name": "chip/chip0010.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 55.38610076904297
+    },
+    {
+      "name": "dirt/dirt0131.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.02204895019531
+    },
+    {
+      "name": "dirt/dirt0063.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.88862609863281
+    },
+    {
+      "name": "dirt/dirt0073.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.634788513183594
+    },
+    {
+      "name": "normal/normal0093.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.51373291015625
+    },
+    {
+      "name": "chip/chip0005.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.05502700805664
+    },
+    {
+      "name": "chip/chip0002.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.27842330932617
+    },
+    {
+      "name": "dirt/dirt0007.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.11436462402344
+    },
+    {
+      "name": "normal/normal0022.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.66035842895508
+    },
+    {
+      "name": "normal/normal0089.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.01682662963867
+    },
+    {
+      "name": "chip/chip0028.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.86076736450195
+    },
+    {
+      "name": "dirt/dirt0111.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.822479248046875
+    },
+    {
+      "name": "chip/chip0003.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 65.84965515136719
+    },
+    {
+      "name": "normal/normal0083.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 58.72655487060547
+    },
+    {
+      "name": "chip/chip0021.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.55442428588867
+    },
+    {
+      "name": "chip/chip0024.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.64865493774414
+    },
+    {
+      "name": "dirt/dirt0069.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.22217559814453
+    },
+    {
+      "name": "dirt/dirt0078.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.14938735961914
+    },
+    {
+      "name": "dirt/dirt0083.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.20302963256836
+    },
+    {
+      "name": "dirt/dirt0119.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.28154754638672
+    },
+    {
+      "name": "dirt/dirt0114.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.31686019897461
+    },
+    {
+      "name": "dirt/dirt0096.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.99530792236328
+    },
+    {
+      "name": "dirt/dirt0011.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 68.73590087890625
+    },
+    {
+      "name": "normal/normal0031.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.186126708984375
+    },
+    {
+      "name": "dirt/dirt0062.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.88715744018555
+    },
+    {
+      "name": "dirt/dirt0021.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 62.92678451538086
+    },
+    {
+      "name": "normal/normal0086.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 52.227752685546875
+    },
+    {
+      "name": "chip/chip0019.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.64988327026367
+    },
+    {
+      "name": "normal/normal0095.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.813419342041016
+    },
+    {
+      "name": "dirt/dirt0125.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.564544677734375
+    },
+    {
+      "name": "dirt/dirt0131.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.14729690551758
+    },
+    {
+      "name": "dirt/dirt0047.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.67619323730469
+    },
+    {
+      "name": "chip/chip0026.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.331443786621094
+    },
+    {
+      "name": "dirt/dirt0071.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.76677322387695
+    },
+    {
+      "name": "chip/chip0030.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.740962982177734
+    },
+    {
+      "name": "chip/chip0021.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.795494079589844
+    },
+    {
+      "name": "dirt/dirt0117.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.000038146972656
+    },
+    {
+      "name": "dirt/dirt0043.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.84543228149414
+    },
+    {
+      "name": "dirt/dirt0126.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.552886962890625
+    },
+    {
+      "name": "chip/chip0034.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 66.2013931274414
+    },
+    {
+      "name": "dirt/dirt0056.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.509727478027344
+    },
+    {
+      "name": "dirt/dirt0120.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.32262420654297
+    },
+    {
+      "name": "chip/chip0013.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.60959243774414
+    },
+    {
+      "name": "dirt/dirt0085.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.70945358276367
+    },
+    {
+      "name": "dirt/dirt0024.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.914798736572266
+    },
+    {
+      "name": "chip/chip0033.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.87260818481445
+    },
+    {
+      "name": "dirt/dirt0114.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 44.9244384765625
+    },
+    {
+      "name": "dirt/dirt0107.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.956844329833984
+    },
+    {
+      "name": "normal/normal0073.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.832847595214844
+    },
+    {
+      "name": "dirt/dirt0133.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.291996002197266
+    },
+    {
+      "name": "chip/chip0038.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 54.695343017578125
+    },
+    {
+      "name": "dirt/dirt0032.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.98212814331055
+    },
+    {
+      "name": "dirt/dirt0123.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.43053436279297
+    },
+    {
+      "name": "dirt/dirt0029.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.598514556884766
+    },
+    {
+      "name": "chip/chip0005.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 56.02690505981445
+    },
+    {
+      "name": "dirt/dirt0136.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.73922348022461
+    },
+    {
+      "name": "dirt/dirt0089.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.997318267822266
+    },
+    {
+      "name": "dirt/dirt0053.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.35378646850586
+    },
+    {
+      "name": "chip/chip0023.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.94937515258789
+    },
+    {
+      "name": "dirt/dirt0095.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.46882629394531
+    },
+    {
+      "name": "normal/normal0079.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.060218811035156
+    },
+    {
+      "name": "dirt/dirt0016.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.92647933959961
+    },
+    {
+      "name": "dirt/dirt0088.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.54221725463867
+    },
+    {
+      "name": "normal/normal0089.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.28318405151367
+    },
+    {
+      "name": "dirt/dirt0007.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.882118225097656
+    },
+    {
+      "name": "dirt/dirt0093.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.62712860107422
+    },
+    {
+      "name": "normal/normal0020.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.61336135864258
+    },
+    {
+      "name": "dirt/dirt0086.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 60.09791564941406
+    },
+    {
+      "name": "normal/normal0092.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.48490905761719
+    },
+    {
+      "name": "normal/normal0085.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.21880340576172
+    },
+    {
+      "name": "dirt/dirt0129.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.0224723815918
+    },
+    {
+      "name": "chip/chip0004.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.89957046508789
+    },
+    {
+      "name": "dirt/dirt0057.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.244449615478516
+    },
+    {
+      "name": "dirt/dirt0124.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.95088577270508
+    },
+    {
+      "name": "dirt/dirt0121.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 44.395233154296875
+    },
+    {
+      "name": "dirt/dirt0028.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.29615783691406
+    },
+    {
+      "name": "chip/chip0011.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.312774658203125
+    },
+    {
+      "name": "dirt/dirt0002.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.008216857910156
+    },
+    {
+      "name": "dirt/dirt0060.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.73105239868164
+    },
+    {
+      "name": "dirt/dirt0103.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.116912841796875
+    },
+    {
+      "name": "normal/normal0070.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.67018508911133
+    },
+    {
+      "name": "dirt/dirt0079.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 62.88019561767578
+    },
+    {
+      "name": "normal/normal0025.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.068931579589844
+    },
+    {
+      "name": "normal/normal0082.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.850013732910156
+    },
+    {
+      "name": "chip/chip0002.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 53.690406799316406
+    },
+    {
+      "name": "normal/normal0083.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 54.00908660888672
+    },
+    {
+      "name": "normal/normal0094.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 62.438697814941406
+    },
+    {
+      "name": "dirt/dirt0054.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.64756393432617
+    },
+    {
+      "name": "normal/normal0022.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.06303024291992
+    },
+    {
+      "name": "normal/normal0030.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 43.607261657714844
+    },
+    {
+      "name": "dirt/dirt0044.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.64925765991211
+    },
+    {
+      "name": "normal/normal0074.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.49101638793945
+    },
+    {
+      "name": "dirt/dirt0019.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.97470474243164
+    },
+    {
+      "name": "dirt/dirt0098.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.7044792175293
+    },
+    {
+      "name": "chip/chip0018.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.88481140136719
+    },
+    {
+      "name": "dirt/dirt0092.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.614356994628906
+    },
+    {
+      "name": "normal/normal0035.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.507720947265625
+    },
+    {
+      "name": "dirt/dirt0077.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.931365966796875
+    },
+    {
+      "name": "dirt/dirt0070.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.64109420776367
+    },
+    {
+      "name": "dirt/dirt0048.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 61.377418518066406
+    },
+    {
+      "name": "dirt/dirt0105.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.59675216674805
+    },
+    {
+      "name": "dirt/dirt0041.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.14106750488281
+    },
+    {
+      "name": "normal/normal0024.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.29536056518555
+    },
+    {
+      "name": "chip/chip0027.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.48944091796875
+    },
+    {
+      "name": "dirt/dirt0025.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.26676559448242
+    },
+    {
+      "name": "chip/chip0041.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.02090835571289
+    },
+    {
+      "name": "chip/chip0032.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.4092025756836
+    },
+    {
+      "name": "dirt/dirt0101.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.94085693359375
+    },
+    {
+      "name": "normal/normal0034.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.17249298095703
+    },
+    {
+      "name": "dirt/dirt0083.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.54126739501953
+    },
+    {
+      "name": "dirt/dirt0108.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.62587356567383
+    },
+    {
+      "name": "dirt/dirt0006.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.7327880859375
+    },
+    {
+      "name": "normal/normal0033.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.054725646972656
+    },
+    {
+      "name": "dirt/dirt0138.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.00924301147461
+    },
+    {
+      "name": "dirt/dirt0119.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.1868782043457
+    },
+    {
+      "name": "dirt/dirt0040.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.05685806274414
+    },
+    {
+      "name": "dirt/dirt0036.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.93849563598633
+    },
+    {
+      "name": "dirt/dirt0050.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.98269271850586
+    },
+    {
+      "name": "chip/chip0008.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.66011047363281
+    },
+    {
+      "name": "chip/chip0003.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.7397232055664
+    },
+    {
+      "name": "dirt/dirt0113.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.087989807128906
+    },
+    {
+      "name": "dirt/dirt0013.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.204811096191406
+    },
+    {
+      "name": "dirt/dirt0130.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.53889846801758
+    },
+    {
+      "name": "dirt/dirt0063.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.002281188964844
+    },
+    {
+      "name": "chip/chip0028.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.73193359375
+    },
+    {
+      "name": "dirt/dirt0128.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.16145706176758
+    },
+    {
+      "name": "normal/normal0087.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 42.53644943237305
+    },
+    {
+      "name": "dirt/dirt0091.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.14535903930664
+    },
+    {
+      "name": "dirt/dirt0004.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.569828033447266
+    },
+    {
+      "name": "dirt/dirt0096.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.503578186035156
+    },
+    {
+      "name": "dirt/dirt0110.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.035030364990234
+    },
+    {
+      "name": "dirt/dirt0038.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.551719665527344
+    },
+    {
+      "name": "dirt/dirt0017.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.00716781616211
+    },
+    {
+      "name": "chip/chip0022.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.77592849731445
+    },
+    {
+      "name": "dirt/dirt0023.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.166175842285156
+    },
+    {
+      "name": "dirt/dirt0005.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.50559997558594
+    },
+    {
+      "name": "dirt/dirt0078.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.96469497680664
+    },
+    {
+      "name": "dirt/dirt0111.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.047855377197266
+    },
+    {
+      "name": "dirt/dirt0027.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.35248947143555
+    },
+    {
+      "name": "dirt/dirt0132.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.69008255004883
+    },
+    {
+      "name": "dirt/dirt0035.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.122013092041016
+    },
+    {
+      "name": "dirt/dirt0055.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.65727615356445
+    },
+    {
+      "name": "dirt/dirt0045.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.999149322509766
+    },
+    {
+      "name": "normal/normal0027.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.826290130615234
+    },
+    {
+      "name": "chip/chip0006.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 68.20703125
+    },
+    {
+      "name": "dirt/dirt0051.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.19413375854492
+    },
+    {
+      "name": "dirt/dirt0022.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.46352767944336
+    },
+    {
+      "name": "dirt/dirt0127.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.22951126098633
+    },
+    {
+      "name": "dirt/dirt0082.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.14415740966797
+    },
+    {
+      "name": "normal/normal0072.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.561092376708984
+    },
+    {
+      "name": "dirt/dirt0001.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.63302230834961
+    },
+    {
+      "name": "chip/chip0036.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 66.18550872802734
+    },
+    {
+      "name": "dirt/dirt0134.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.86661911010742
+    },
+    {
+      "name": "normal/normal0075.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.73174285888672
+    },
+    {
+      "name": "dirt/dirt0106.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.30259323120117
+    },
+    {
+      "name": "dirt/dirt0059.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.360252380371094
+    },
+    {
+      "name": "chip/chip0017.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.386749267578125
+    },
+    {
+      "name": "dirt/dirt0026.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.622982025146484
+    },
+    {
+      "name": "normal/normal0029.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.74648666381836
+    },
+    {
+      "name": "dirt/dirt0042.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.87797546386719
+    },
+    {
+      "name": "dirt/dirt0049.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 66.52428436279297
+    },
+    {
+      "name": "dirt/dirt0052.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.093658447265625
+    },
+    {
+      "name": "normal/normal0091.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 53.855133056640625
+    },
+    {
+      "name": "chip/chip0037.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.88566589355469
+    },
+    {
+      "name": "normal/normal0039.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.665130615234375
+    },
+    {
+      "name": "dirt/dirt0084.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.852752685546875
+    },
+    {
+      "name": "dirt/dirt0135.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.1693000793457
+    },
+    {
+      "name": "chip/chip0001.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.765995025634766
+    },
+    {
+      "name": "normal/normal0038.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.0698356628418
+    },
+    {
+      "name": "dirt/dirt0118.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.17280960083008
+    },
+    {
+      "name": "dirt/dirt0065.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.56291580200195
+    },
+    {
+      "name": "dirt/dirt0080.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.65073013305664
+    },
+    {
+      "name": "dirt/dirt0090.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.79390335083008
+    },
+    {
+      "name": "dirt/dirt0064.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.30940246582031
+    },
+    {
+      "name": "chip/chip0014.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.58994674682617
+    },
+    {
+      "name": "normal/normal0028.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.429141998291016
+    },
+    {
+      "name": "dirt/dirt0115.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.21149826049805
+    },
+    {
+      "name": "dirt/dirt0076.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.38816833496094
+    },
+    {
+      "name": "chip/chip0015.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.5052490234375
+    },
+    {
+      "name": "normal/normal0026.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.7296257019043
+    },
+    {
+      "name": "normal/normal0081.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.22072982788086
+    },
+    {
+      "name": "normal/normal0076.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.12318801879883
+    },
+    {
+      "name": "dirt/dirt0058.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.0002555847168
+    },
+    {
+      "name": "normal/normal0041.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.58720779418945
+    },
+    {
+      "name": "dirt/dirt0046.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.98797607421875
+    },
+    {
+      "name": "chip/chip0043.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.86527633666992
+    },
+    {
+      "name": "dirt/dirt0011.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 68.23397827148438
+    },
+    {
+      "name": "dirt/dirt0137.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 60.37710189819336
+    },
+    {
+      "name": "dirt/dirt0116.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.71563720703125
+    },
+    {
+      "name": "normal/normal0023.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.450462341308594
+    },
+    {
+      "name": "dirt/dirt0104.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.388248443603516
+    },
+    {
+      "name": "chip/chip0031.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 56.332298278808594
+    },
+    {
+      "name": "dirt/dirt0072.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.43385696411133
+    },
+    {
+      "name": "normal/normal0032.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.84623336791992
+    },
+    {
+      "name": "dirt/dirt0069.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.68482208251953
+    },
+    {
+      "name": "normal/normal0080.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.62727737426758
+    },
+    {
+      "name": "dirt/dirt0075.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.37477111816406
+    },
+    {
+      "name": "chip/chip0039.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.54155731201172
+    },
+    {
+      "name": "normal/normal0040.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.874759674072266
+    },
+    {
+      "name": "chip/chip0025.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 53.69975662231445
+    },
+    {
+      "name": "chip/chip0042.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.78078079223633
+    },
+    {
+      "name": "dirt/dirt0067.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.17604064941406
+    },
+    {
+      "name": "chip/chip0020.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 70.9109115600586
+    },
+    {
+      "name": "dirt/dirt0033.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.39152145385742
+    },
+    {
+      "name": "dirt/dirt0010.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.069488525390625
+    },
+    {
+      "name": "dirt/dirt0100.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.26360321044922
+    },
+    {
+      "name": "normal/normal0088.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.82392883300781
+    },
+    {
+      "name": "chip/chip0007.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.23474884033203
+    },
+    {
+      "name": "dirt/dirt0061.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.03364181518555
+    },
+    {
+      "name": "dirt/dirt0012.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.857666015625
+    },
+    {
+      "name": "dirt/dirt0074.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.49089813232422
+    },
+    {
+      "name": "normal/normal0090.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 59.06843948364258
+    },
+    {
+      "name": "dirt/dirt0037.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.4227180480957
+    },
+    {
+      "name": "dirt/dirt0097.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.25316619873047
+    },
+    {
+      "name": "chip/chip0012.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.37984085083008
+    },
+    {
+      "name": "dirt/dirt0081.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.944332122802734
+    },
+    {
+      "name": "dirt/dirt0099.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.67113494873047
+    },
+    {
+      "name": "chip/chip0010.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.3477783203125
+    },
+    {
+      "name": "chip/chip0016.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.64936447143555
+    },
+    {
+      "name": "dirt/dirt0073.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.536624908447266
+    },
+    {
+      "name": "dirt/dirt0015.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.50229263305664
+    },
+    {
+      "name": "normal/normal0093.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.858489990234375
+    },
+    {
+      "name": "normal/normal0036.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.52613830566406
+    },
+    {
+      "name": "dirt/dirt0003.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.90483474731445
+    },
+    {
+      "name": "normal/normal0071.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.173919677734375
+    },
+    {
+      "name": "dirt/dirt0020.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.64290237426758
+    },
+    {
+      "name": "dirt/dirt0034.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.74199295043945
+    },
+    {
+      "name": "dirt/dirt0109.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.610313415527344
+    },
+    {
+      "name": "chip/chip0029.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.806114196777344
+    },
+    {
+      "name": "chip/chip0040.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.707435607910156
+    },
+    {
+      "name": "chip/chip0009.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.90937042236328
+    },
+    {
+      "name": "normal/normal0069.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.45571517944336
+    },
+    {
+      "name": "normal/normal0021.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.4366455078125
+    },
+    {
+      "name": "dirt/dirt0039.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 64.1075439453125
+    },
+    {
+      "name": "dirt/dirt0030.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.33463668823242
+    },
+    {
+      "name": "dirt/dirt0094.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.0897102355957
+    },
+    {
+      "name": "dirt/dirt0087.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.414127349853516
+    },
+    {
+      "name": "dirt/dirt0112.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.80082321166992
+    },
+    {
+      "name": "dirt/dirt0031.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.3326530456543
+    },
+    {
+      "name": "dirt/dirt0018.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.85335159301758
+    },
+    {
+      "name": "dirt/dirt0068.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.153507232666016
+    },
+    {
+      "name": "normal/normal0037.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.122928619384766
+    },
+    {
+      "name": "chip/chip0035.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 66.70389556884766
+    },
+    {
+      "name": "dirt/dirt0014.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.542633056640625
+    },
+    {
+      "name": "normal/normal0084.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 55.17455291748047
+    },
+    {
+      "name": "dirt/dirt0122.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.53888702392578
+    },
+    {
+      "name": "dirt/dirt0066.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.222103118896484
+    },
+    {
+      "name": "normal/normal0078.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 41.562828063964844
+    },
+    {
+      "name": "normal/normal0077.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.635345458984375
+    },
+    {
+      "name": "dirt/dirt0008.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.847801208496094
+    },
+    {
+      "name": "dirt/dirt0009.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.66284942626953
+    },
+    {
+      "name": "chip/chip0024.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.69478225708008
+    },
+    {
+      "name": "dirt/dirt0102.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.26226043701172
+    },
+    {
+      "name": "normal/normal0031.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.186126708984375
+    },
+    {
+      "name": "dirt/dirt0062.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.0616455078125
+    },
+    {
+      "name": "dirt/dirt0021.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 62.94631576538086
+    },
+    {
+      "name": "normal/normal0086.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.68210983276367
+    },
+    {
+      "name": "chip/chip0019.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.76936340332031
+    },
+    {
+      "name": "normal/normal0095.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.879581451416016
+    },
+    {
+      "name": "dirt/dirt0125.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.620399475097656
+    },
+    {
+      "name": "dirt/dirt0131.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.21196746826172
+    },
+    {
+      "name": "dirt/dirt0047.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.79323959350586
+    },
+    {
+      "name": "chip/chip0026.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.34137725830078
+    },
+    {
+      "name": "dirt/dirt0071.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.29664993286133
+    },
+    {
+      "name": "chip/chip0030.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.9089241027832
+    },
+    {
+      "name": "chip/chip0021.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.30471420288086
+    },
+    {
+      "name": "dirt/dirt0117.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.95888137817383
+    },
+    {
+      "name": "dirt/dirt0043.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.04415512084961
+    },
+    {
+      "name": "dirt/dirt0126.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.34462356567383
+    },
+    {
+      "name": "chip/chip0034.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.312644958496094
+    },
+    {
+      "name": "dirt/dirt0056.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.05628204345703
+    },
+    {
+      "name": "dirt/dirt0120.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.91025161743164
+    },
+    {
+      "name": "chip/chip0013.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.9797248840332
+    },
+    {
+      "name": "dirt/dirt0085.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.21040344238281
+    },
+    {
+      "name": "dirt/dirt0024.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.244911193847656
+    },
+    {
+      "name": "chip/chip0033.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.8905258178711
+    },
+    {
+      "name": "dirt/dirt0114.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.59091567993164
+    },
+    {
+      "name": "dirt/dirt0107.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.964256286621094
+    },
+    {
+      "name": "normal/normal0073.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.47370529174805
+    },
+    {
+      "name": "dirt/dirt0133.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.596229553222656
+    },
+    {
+      "name": "chip/chip0038.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.4918327331543
+    },
+    {
+      "name": "dirt/dirt0032.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.61787033081055
+    },
+    {
+      "name": "dirt/dirt0123.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.041893005371094
+    },
+    {
+      "name": "dirt/dirt0029.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 60.25801086425781
+    },
+    {
+      "name": "chip/chip0005.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.18859100341797
+    },
+    {
+      "name": "dirt/dirt0136.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.51646041870117
+    },
+    {
+      "name": "dirt/dirt0089.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.81156539916992
+    },
+    {
+      "name": "dirt/dirt0053.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.08469772338867
+    },
+    {
+      "name": "chip/chip0023.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 54.57532501220703
+    },
+    {
+      "name": "dirt/dirt0095.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.85822296142578
+    },
+    {
+      "name": "normal/normal0079.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.83334732055664
+    },
+    {
+      "name": "dirt/dirt0016.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.05473709106445
+    },
+    {
+      "name": "dirt/dirt0088.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.966461181640625
+    },
+    {
+      "name": "normal/normal0089.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 57.205711364746094
+    },
+    {
+      "name": "dirt/dirt0007.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.471736907958984
+    },
+    {
+      "name": "dirt/dirt0093.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.67776870727539
+    },
+    {
+      "name": "normal/normal0020.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.4748649597168
+    },
+    {
+      "name": "dirt/dirt0086.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.28816223144531
+    },
+    {
+      "name": "normal/normal0092.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.5164909362793
+    },
+    {
+      "name": "normal/normal0085.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.66529083251953
+    },
+    {
+      "name": "dirt/dirt0129.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.95992660522461
+    },
+    {
+      "name": "chip/chip0004.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.7924575805664
+    },
+    {
+      "name": "dirt/dirt0057.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.43263626098633
+    },
+    {
+      "name": "dirt/dirt0124.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.201751708984375
+    },
+    {
+      "name": "dirt/dirt0121.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 45.746639251708984
+    },
+    {
+      "name": "dirt/dirt0028.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.93125534057617
+    },
+    {
+      "name": "chip/chip0011.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.24881362915039
+    },
+    {
+      "name": "dirt/dirt0002.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.531166076660156
+    },
+    {
+      "name": "dirt/dirt0060.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.930938720703125
+    },
+    {
+      "name": "dirt/dirt0103.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.46841049194336
+    },
+    {
+      "name": "normal/normal0070.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.429351806640625
+    },
+    {
+      "name": "dirt/dirt0079.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 60.232791900634766
+    },
+    {
+      "name": "normal/normal0025.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.96468734741211
+    },
+    {
+      "name": "normal/normal0082.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.84120559692383
+    },
+    {
+      "name": "chip/chip0002.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 53.057342529296875
+    },
+    {
+      "name": "normal/normal0083.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.78990173339844
+    },
+    {
+      "name": "normal/normal0094.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 57.12104797363281
+    },
+    {
+      "name": "dirt/dirt0054.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.21664047241211
+    },
+    {
+      "name": "normal/normal0022.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.409080505371094
+    },
+    {
+      "name": "normal/normal0030.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.84291458129883
+    },
+    {
+      "name": "dirt/dirt0044.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.0648193359375
+    },
+    {
+      "name": "normal/normal0074.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.96952819824219
+    },
+    {
+      "name": "dirt/dirt0019.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.288124084472656
+    },
+    {
+      "name": "dirt/dirt0098.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.02130126953125
+    },
+    {
+      "name": "chip/chip0018.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.2252426147461
+    },
+    {
+      "name": "dirt/dirt0092.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.785770416259766
+    },
+    {
+      "name": "normal/normal0035.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.439754486083984
+    },
+    {
+      "name": "dirt/dirt0077.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.982112884521484
+    },
+    {
+      "name": "dirt/dirt0070.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.52049255371094
+    },
+    {
+      "name": "dirt/dirt0048.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 61.21968078613281
+    },
+    {
+      "name": "dirt/dirt0105.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.25269317626953
+    },
+    {
+      "name": "dirt/dirt0041.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.0152473449707
+    },
+    {
+      "name": "normal/normal0024.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.68247604370117
+    },
+    {
+      "name": "chip/chip0027.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.312015533447266
+    },
+    {
+      "name": "dirt/dirt0025.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.618553161621094
+    },
+    {
+      "name": "chip/chip0041.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.38235855102539
+    },
+    {
+      "name": "chip/chip0032.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.58689880371094
+    },
+    {
+      "name": "dirt/dirt0101.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.254364013671875
+    },
+    {
+      "name": "normal/normal0034.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.29869842529297
+    },
+    {
+      "name": "dirt/dirt0083.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.91611862182617
+    },
+    {
+      "name": "dirt/dirt0108.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.8194580078125
+    },
+    {
+      "name": "dirt/dirt0006.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.6776237487793
+    },
+    {
+      "name": "normal/normal0033.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.95381546020508
+    },
+    {
+      "name": "dirt/dirt0138.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.527000427246094
+    },
+    {
+      "name": "dirt/dirt0119.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.24998092651367
+    },
+    {
+      "name": "dirt/dirt0040.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.89750671386719
+    },
+    {
+      "name": "dirt/dirt0036.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.83396911621094
+    },
+    {
+      "name": "dirt/dirt0050.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.020172119140625
+    },
+    {
+      "name": "chip/chip0008.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.08232116699219
+    },
+    {
+      "name": "chip/chip0003.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.73251724243164
+    },
+    {
+      "name": "dirt/dirt0113.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.283145904541016
+    },
+    {
+      "name": "dirt/dirt0013.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.62471008300781
+    },
+    {
+      "name": "dirt/dirt0130.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.53800964355469
+    },
+    {
+      "name": "dirt/dirt0063.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.864864349365234
+    },
+    {
+      "name": "chip/chip0028.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.44424819946289
+    },
+    {
+      "name": "dirt/dirt0128.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.776756286621094
+    },
+    {
+      "name": "normal/normal0087.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.067474365234375
+    },
+    {
+      "name": "dirt/dirt0091.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.44317626953125
+    },
+    {
+      "name": "dirt/dirt0004.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.64069747924805
+    },
+    {
+      "name": "dirt/dirt0096.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.0695915222168
+    },
+    {
+      "name": "dirt/dirt0110.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.99302291870117
+    },
+    {
+      "name": "dirt/dirt0038.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.37805938720703
+    },
+    {
+      "name": "dirt/dirt0017.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.572933197021484
+    },
+    {
+      "name": "chip/chip0022.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.9659309387207
+    },
+    {
+      "name": "dirt/dirt0023.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.72468185424805
+    },
+    {
+      "name": "dirt/dirt0005.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.985389709472656
+    },
+    {
+      "name": "dirt/dirt0078.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.660831451416016
+    },
+    {
+      "name": "dirt/dirt0111.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.24624252319336
+    },
+    {
+      "name": "dirt/dirt0027.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.52981185913086
+    },
+    {
+      "name": "dirt/dirt0132.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.68583297729492
+    },
+    {
+      "name": "dirt/dirt0035.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.963592529296875
+    },
+    {
+      "name": "dirt/dirt0055.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.712196350097656
+    },
+    {
+      "name": "dirt/dirt0045.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.534873962402344
+    },
+    {
+      "name": "normal/normal0027.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.72030258178711
+    },
+    {
+      "name": "chip/chip0006.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.9589614868164
+    },
+    {
+      "name": "dirt/dirt0051.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.29808044433594
+    },
+    {
+      "name": "dirt/dirt0022.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.54302978515625
+    },
+    {
+      "name": "dirt/dirt0127.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.47603988647461
+    },
+    {
+      "name": "dirt/dirt0082.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.63336181640625
+    },
+    {
+      "name": "normal/normal0072.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.07195281982422
+    },
+    {
+      "name": "dirt/dirt0001.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.84799575805664
+    },
+    {
+      "name": "chip/chip0036.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.73347091674805
+    },
+    {
+      "name": "dirt/dirt0134.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.11012268066406
+    },
+    {
+      "name": "normal/normal0075.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.933963775634766
+    },
+    {
+      "name": "dirt/dirt0106.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.36994934082031
+    },
+    {
+      "name": "dirt/dirt0059.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.48150634765625
+    },
+    {
+      "name": "chip/chip0017.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 60.57304382324219
+    },
+    {
+      "name": "dirt/dirt0026.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.92622375488281
+    },
+    {
+      "name": "normal/normal0029.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.52444839477539
+    },
+    {
+      "name": "dirt/dirt0042.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.06730270385742
+    },
+    {
+      "name": "dirt/dirt0049.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 64.66613006591797
+    },
+    {
+      "name": "dirt/dirt0052.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.88733673095703
+    },
+    {
+      "name": "normal/normal0091.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.25974655151367
+    },
+    {
+      "name": "chip/chip0037.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 65.25237274169922
+    },
+    {
+      "name": "normal/normal0039.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.503997802734375
+    },
+    {
+      "name": "dirt/dirt0084.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.1925048828125
+    },
+    {
+      "name": "dirt/dirt0135.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 62.33632278442383
+    },
+    {
+      "name": "chip/chip0001.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.10690689086914
+    },
+    {
+      "name": "normal/normal0038.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.330936431884766
+    },
+    {
+      "name": "dirt/dirt0118.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.052371978759766
+    },
+    {
+      "name": "dirt/dirt0065.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.652584075927734
+    },
+    {
+      "name": "dirt/dirt0080.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.282840728759766
+    },
+    {
+      "name": "dirt/dirt0090.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.35591506958008
+    },
+    {
+      "name": "dirt/dirt0064.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.68403244018555
+    },
+    {
+      "name": "chip/chip0014.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.922550201416016
+    },
+    {
+      "name": "normal/normal0028.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.86320114135742
+    },
+    {
+      "name": "dirt/dirt0115.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 45.360633850097656
+    },
+    {
+      "name": "dirt/dirt0076.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.580928802490234
+    },
+    {
+      "name": "chip/chip0015.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.508480072021484
+    },
+    {
+      "name": "normal/normal0026.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.55873107910156
+    },
+    {
+      "name": "normal/normal0081.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.70387649536133
+    },
+    {
+      "name": "normal/normal0076.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.680335998535156
+    },
+    {
+      "name": "dirt/dirt0058.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.08253479003906
+    },
+    {
+      "name": "normal/normal0041.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.36863327026367
+    },
+    {
+      "name": "dirt/dirt0046.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.20209884643555
+    },
+    {
+      "name": "chip/chip0043.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.763771057128906
+    },
+    {
+      "name": "dirt/dirt0011.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 66.3393783569336
+    },
+    {
+      "name": "dirt/dirt0137.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.0560302734375
+    },
+    {
+      "name": "dirt/dirt0116.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.65737533569336
+    },
+    {
+      "name": "normal/normal0023.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.79682922363281
+    },
+    {
+      "name": "dirt/dirt0104.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.543113708496094
+    },
+    {
+      "name": "chip/chip0031.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 55.637977600097656
+    },
+    {
+      "name": "dirt/dirt0072.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.0599250793457
+    },
+    {
+      "name": "normal/normal0032.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.660030364990234
+    },
+    {
+      "name": "dirt/dirt0069.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.59744644165039
+    },
+    {
+      "name": "normal/normal0080.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.194820404052734
+    },
+    {
+      "name": "dirt/dirt0075.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.646175384521484
+    },
+    {
+      "name": "chip/chip0039.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.100040435791016
+    },
+    {
+      "name": "normal/normal0040.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.05715560913086
+    },
+    {
+      "name": "chip/chip0025.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 53.47279357910156
+    },
+    {
+      "name": "chip/chip0042.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.85997009277344
+    },
+    {
+      "name": "dirt/dirt0067.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.95051956176758
+    },
+    {
+      "name": "chip/chip0020.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 68.47798156738281
+    },
+    {
+      "name": "dirt/dirt0033.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.015380859375
+    },
+    {
+      "name": "dirt/dirt0010.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.58798599243164
+    },
+    {
+      "name": "dirt/dirt0100.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.38874435424805
+    },
+    {
+      "name": "normal/normal0088.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.82326126098633
+    },
+    {
+      "name": "chip/chip0007.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 65.56771087646484
+    },
+    {
+      "name": "dirt/dirt0061.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.28550338745117
+    },
+    {
+      "name": "dirt/dirt0012.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.92997741699219
+    },
+    {
+      "name": "dirt/dirt0074.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.183631896972656
+    },
+    {
+      "name": "normal/normal0090.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 54.82529067993164
+    },
+    {
+      "name": "dirt/dirt0037.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.86347961425781
+    },
+    {
+      "name": "dirt/dirt0097.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.566898345947266
+    },
+    {
+      "name": "chip/chip0012.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.87364959716797
+    },
+    {
+      "name": "dirt/dirt0081.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.39891815185547
+    },
+    {
+      "name": "dirt/dirt0099.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.73323059082031
+    },
+    {
+      "name": "chip/chip0010.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.89097213745117
+    },
+    {
+      "name": "chip/chip0016.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.22055435180664
+    },
+    {
+      "name": "dirt/dirt0073.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.19813919067383
+    },
+    {
+      "name": "dirt/dirt0015.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.26622772216797
+    },
+    {
+      "name": "normal/normal0093.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.53572082519531
+    },
+    {
+      "name": "normal/normal0036.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.43220520019531
+    },
+    {
+      "name": "dirt/dirt0003.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.8464469909668
+    },
+    {
+      "name": "normal/normal0071.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.556129455566406
+    },
+    {
+      "name": "dirt/dirt0020.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.46078872680664
+    },
+    {
+      "name": "dirt/dirt0034.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.049991607666016
+    },
+    {
+      "name": "dirt/dirt0109.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.84880447387695
+    },
+    {
+      "name": "chip/chip0029.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.687156677246094
+    },
+    {
+      "name": "chip/chip0040.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.59703063964844
+    },
+    {
+      "name": "chip/chip0009.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.40392303466797
+    },
+    {
+      "name": "normal/normal0069.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.19276809692383
+    },
+    {
+      "name": "normal/normal0021.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.87853240966797
+    },
+    {
+      "name": "dirt/dirt0039.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 63.334957122802734
+    },
+    {
+      "name": "dirt/dirt0030.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.338741302490234
+    },
+    {
+      "name": "dirt/dirt0094.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.75990676879883
+    },
+    {
+      "name": "dirt/dirt0087.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.69205093383789
+    },
+    {
+      "name": "dirt/dirt0112.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.73469924926758
+    },
+    {
+      "name": "dirt/dirt0031.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.150020599365234
+    },
+    {
+      "name": "dirt/dirt0018.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.793617248535156
+    },
+    {
+      "name": "dirt/dirt0068.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.12385559082031
+    },
+    {
+      "name": "normal/normal0037.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.506629943847656
+    },
+    {
+      "name": "chip/chip0035.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.505104064941406
+    },
+    {
+      "name": "dirt/dirt0014.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.059669494628906
+    },
+    {
+      "name": "normal/normal0084.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 56.067501068115234
+    },
+    {
+      "name": "dirt/dirt0122.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.91188430786133
+    },
+    {
+      "name": "dirt/dirt0066.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.69789505004883
+    },
+    {
+      "name": "normal/normal0078.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.37234878540039
+    },
+    {
+      "name": "normal/normal0077.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.38217544555664
+    },
+    {
+      "name": "dirt/dirt0008.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.15674591064453
+    },
+    {
+      "name": "dirt/dirt0009.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 61.97373962402344
+    },
+    {
+      "name": "chip/chip0024.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.03299331665039
+    },
+    {
+      "name": "dirt/dirt0102.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.82883071899414
+    },
+    {
+      "name": "dirt/dirt0078.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.35981369018555
+    },
+    {
+      "name": "dirt/dirt0051.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.91413497924805
+    },
+    {
+      "name": "dirt/dirt0060.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.976131439208984
+    },
+    {
+      "name": "normal/normal0070.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.98741912841797
+    },
+    {
+      "name": "dirt/dirt0086.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.51222229003906
+    },
+    {
+      "name": "dirt/dirt0128.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.36976623535156
+    },
+    {
+      "name": "normal/normal0071.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.58794021606445
+    },
+    {
+      "name": "dirt/dirt0119.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.91981506347656
+    },
+    {
+      "name": "dirt/dirt0022.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.537391662597656
+    },
+    {
+      "name": "chip/chip0034.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.95307540893555
+    },
+    {
+      "name": "normal/normal0081.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.672122955322266
+    },
+    {
+      "name": "dirt/dirt0001.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.04545211791992
+    },
+    {
+      "name": "dirt/dirt0049.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 66.1409912109375
+    },
+    {
+      "name": "dirt/dirt0059.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.536354064941406
+    },
+    {
+      "name": "dirt/dirt0092.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.187931060791016
+    },
+    {
+      "name": "dirt/dirt0107.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.76078796386719
+    },
+    {
+      "name": "normal/normal0092.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.57738494873047
+    },
+    {
+      "name": "dirt/dirt0081.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.49091339111328
+    },
+    {
+      "name": "dirt/dirt0009.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 61.72822952270508
+    },
+    {
+      "name": "dirt/dirt0041.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.858028411865234
+    },
+    {
+      "name": "dirt/dirt0008.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.319557189941406
+    },
+    {
+      "name": "normal/normal0039.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.898380279541016
+    },
+    {
+      "name": "dirt/dirt0113.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.730064392089844
+    },
+    {
+      "name": "dirt/dirt0109.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.8446159362793
+    },
+    {
+      "name": "normal/normal0090.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 57.361175537109375
+    },
+    {
+      "name": "dirt/dirt0040.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.739356994628906
+    },
+    {
+      "name": "normal/normal0075.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.732975006103516
+    },
+    {
+      "name": "normal/normal0026.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.56755447387695
+    },
+    {
+      "name": "normal/normal0079.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 56.893890380859375
+    },
+    {
+      "name": "dirt/dirt0037.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.3908576965332
+    },
+    {
+      "name": "normal/normal0074.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.4549560546875
+    },
+    {
+      "name": "dirt/dirt0020.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.668296813964844
+    },
+    {
+      "name": "dirt/dirt0026.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.94212341308594
+    },
+    {
+      "name": "dirt/dirt0067.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.75630187988281
+    },
+    {
+      "name": "chip/chip0014.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.371673583984375
+    },
+    {
+      "name": "normal/normal0089.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.07508087158203
+    },
+    {
+      "name": "dirt/dirt0031.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.536827087402344
+    },
+    {
+      "name": "chip/chip0043.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.47560119628906
+    },
+    {
+      "name": "dirt/dirt0072.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.36468505859375
+    },
+    {
+      "name": "normal/normal0041.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.8762321472168
+    },
+    {
+      "name": "dirt/dirt0033.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.93623733520508
+    },
+    {
+      "name": "chip/chip0037.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.7252197265625
+    },
+    {
+      "name": "dirt/dirt0134.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.0347900390625
+    },
+    {
+      "name": "dirt/dirt0048.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.743896484375
+    },
+    {
+      "name": "dirt/dirt0083.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.98603820800781
+    },
+    {
+      "name": "dirt/dirt0030.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.09729766845703
+    },
+    {
+      "name": "dirt/dirt0047.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.20099639892578
+    },
+    {
+      "name": "dirt/dirt0042.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.90055847167969
+    },
+    {
+      "name": "dirt/dirt0087.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.9547119140625
+    },
+    {
+      "name": "dirt/dirt0074.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.29728317260742
+    },
+    {
+      "name": "dirt/dirt0054.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.091129302978516
+    },
+    {
+      "name": "dirt/dirt0005.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.06513214111328
+    },
+    {
+      "name": "dirt/dirt0025.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.75843811035156
+    },
+    {
+      "name": "dirt/dirt0023.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.8797607421875
+    },
+    {
+      "name": "dirt/dirt0079.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.13775634765625
+    },
+    {
+      "name": "dirt/dirt0103.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.08366775512695
+    },
+    {
+      "name": "dirt/dirt0098.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.86799240112305
+    },
+    {
+      "name": "chip/chip0012.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.04787063598633
+    },
+    {
+      "name": "normal/normal0072.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.7714958190918
+    },
+    {
+      "name": "dirt/dirt0017.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 62.79941177368164
+    },
+    {
+      "name": "dirt/dirt0015.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.04249954223633
+    },
+    {
+      "name": "dirt/dirt0136.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.43299865722656
+    },
+    {
+      "name": "chip/chip0023.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.5728759765625
+    },
+    {
+      "name": "dirt/dirt0088.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.63991165161133
+    },
+    {
+      "name": "chip/chip0015.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.62134552001953
+    },
+    {
+      "name": "dirt/dirt0014.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.93612289428711
+    },
+    {
+      "name": "normal/normal0038.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.69851303100586
+    },
+    {
+      "name": "dirt/dirt0110.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.932987213134766
+    },
+    {
+      "name": "chip/chip0024.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.47983169555664
+    },
+    {
+      "name": "dirt/dirt0045.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.61084747314453
+    },
+    {
+      "name": "dirt/dirt0085.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.78998947143555
+    },
+    {
+      "name": "dirt/dirt0127.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.012107849121094
+    },
+    {
+      "name": "dirt/dirt0021.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 66.56907653808594
+    },
+    {
+      "name": "dirt/dirt0029.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.98387908935547
+    },
+    {
+      "name": "chip/chip0035.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 70.30123138427734
+    },
+    {
+      "name": "dirt/dirt0137.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.2761116027832
+    },
+    {
+      "name": "dirt/dirt0068.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.503334045410156
+    },
+    {
+      "name": "dirt/dirt0002.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.05730056762695
+    },
+    {
+      "name": "dirt/dirt0007.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.39407730102539
+    },
+    {
+      "name": "dirt/dirt0039.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 64.08011627197266
+    },
+    {
+      "name": "dirt/dirt0038.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.70599365234375
+    },
+    {
+      "name": "chip/chip0016.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 64.597412109375
+    },
+    {
+      "name": "dirt/dirt0035.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.671653747558594
+    },
+    {
+      "name": "chip/chip0038.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.08696365356445
+    },
+    {
+      "name": "chip/chip0039.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.51811218261719
+    },
+    {
+      "name": "dirt/dirt0013.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.1937255859375
+    },
+    {
+      "name": "chip/chip0019.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.371009826660156
+    },
+    {
+      "name": "dirt/dirt0116.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.795413970947266
+    },
+    {
+      "name": "dirt/dirt0052.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.160926818847656
+    },
+    {
+      "name": "chip/chip0036.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 66.59278869628906
+    },
+    {
+      "name": "normal/normal0084.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 55.93980407714844
+    },
+    {
+      "name": "normal/normal0031.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.49396514892578
+    },
+    {
+      "name": "dirt/dirt0055.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.68309020996094
+    },
+    {
+      "name": "chip/chip0010.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.7056770324707
+    },
+    {
+      "name": "dirt/dirt0120.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.73684310913086
+    },
+    {
+      "name": "chip/chip0033.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.85493850708008
+    },
+    {
+      "name": "dirt/dirt0123.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.021026611328125
+    },
+    {
+      "name": "dirt/dirt0093.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.416351318359375
+    },
+    {
+      "name": "normal/normal0040.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.751502990722656
+    },
+    {
+      "name": "normal/normal0069.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.05448532104492
+    },
+    {
+      "name": "chip/chip0017.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.88713455200195
+    },
+    {
+      "name": "dirt/dirt0130.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.58689880371094
+    },
+    {
+      "name": "dirt/dirt0027.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.07093811035156
+    },
+    {
+      "name": "dirt/dirt0076.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.07253646850586
+    },
+    {
+      "name": "chip/chip0005.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.934608459472656
+    },
+    {
+      "name": "chip/chip0041.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.22427749633789
+    },
+    {
+      "name": "dirt/dirt0071.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.07129669189453
+    },
+    {
+      "name": "dirt/dirt0032.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.71339797973633
+    },
+    {
+      "name": "normal/normal0095.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 56.078330993652344
+    },
+    {
+      "name": "normal/normal0082.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.02451705932617
+    },
+    {
+      "name": "dirt/dirt0121.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.80369567871094
+    },
+    {
+      "name": "dirt/dirt0126.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.059326171875
+    },
+    {
+      "name": "dirt/dirt0124.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.32508850097656
+    },
+    {
+      "name": "dirt/dirt0090.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.37763977050781
+    },
+    {
+      "name": "dirt/dirt0133.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.93849563598633
+    },
+    {
+      "name": "chip/chip0029.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 67.15874481201172
+    },
+    {
+      "name": "dirt/dirt0131.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 46.124969482421875
+    },
+    {
+      "name": "chip/chip0008.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 57.256385803222656
+    },
+    {
+      "name": "dirt/dirt0135.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.283103942871094
+    },
+    {
+      "name": "normal/normal0093.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.55630111694336
+    },
+    {
+      "name": "chip/chip0003.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.34163284301758
+    },
+    {
+      "name": "dirt/dirt0064.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.60114669799805
+    },
+    {
+      "name": "normal/normal0021.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 53.330047607421875
+    },
+    {
+      "name": "normal/normal0088.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.992977142333984
+    },
+    {
+      "name": "normal/normal0032.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.410858154296875
+    },
+    {
+      "name": "dirt/dirt0100.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.95595169067383
+    },
+    {
+      "name": "dirt/dirt0028.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.95225143432617
+    },
+    {
+      "name": "dirt/dirt0096.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.419403076171875
+    },
+    {
+      "name": "normal/normal0037.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.61692810058594
+    },
+    {
+      "name": "normal/normal0078.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.124507904052734
+    },
+    {
+      "name": "dirt/dirt0101.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.95856475830078
+    },
+    {
+      "name": "normal/normal0077.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.86500549316406
+    },
+    {
+      "name": "dirt/dirt0084.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.001312255859375
+    },
+    {
+      "name": "normal/normal0022.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.08326721191406
+    },
+    {
+      "name": "dirt/dirt0010.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.285011291503906
+    },
+    {
+      "name": "chip/chip0027.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.86217498779297
+    },
+    {
+      "name": "normal/normal0035.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 47.09980010986328
+    },
+    {
+      "name": "chip/chip0021.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 60.94121551513672
+    },
+    {
+      "name": "dirt/dirt0065.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.66643142700195
+    },
+    {
+      "name": "chip/chip0020.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 71.956298828125
+    },
+    {
+      "name": "dirt/dirt0050.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.64811706542969
+    },
+    {
+      "name": "normal/normal0023.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.21356964111328
+    },
+    {
+      "name": "chip/chip0018.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.43319702148438
+    },
+    {
+      "name": "dirt/dirt0061.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.37343215942383
+    },
+    {
+      "name": "dirt/dirt0082.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.68657302856445
+    },
+    {
+      "name": "normal/normal0020.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.398414611816406
+    },
+    {
+      "name": "dirt/dirt0044.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.89202880859375
+    },
+    {
+      "name": "dirt/dirt0099.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.519474029541016
+    },
+    {
+      "name": "dirt/dirt0073.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.76969909667969
+    },
+    {
+      "name": "dirt/dirt0095.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.5051383972168
+    },
+    {
+      "name": "chip/chip0030.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 63.70566940307617
+    },
+    {
+      "name": "dirt/dirt0091.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.286258697509766
+    },
+    {
+      "name": "dirt/dirt0112.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.96229553222656
+    },
+    {
+      "name": "dirt/dirt0080.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.26496887207031
+    },
+    {
+      "name": "dirt/dirt0075.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.3331298828125
+    },
+    {
+      "name": "normal/normal0091.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.897037506103516
+    },
+    {
+      "name": "dirt/dirt0019.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.416099548339844
+    },
+    {
+      "name": "dirt/dirt0063.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.36955261230469
+    },
+    {
+      "name": "dirt/dirt0011.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 65.45755767822266
+    },
+    {
+      "name": "normal/normal0024.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.457637786865234
+    },
+    {
+      "name": "dirt/dirt0118.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 45.22632598876953
+    },
+    {
+      "name": "dirt/dirt0089.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.5651741027832
+    },
+    {
+      "name": "dirt/dirt0034.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.23102569580078
+    },
+    {
+      "name": "chip/chip0001.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 54.90627670288086
+    },
+    {
+      "name": "dirt/dirt0106.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 59.33206558227539
+    },
+    {
+      "name": "dirt/dirt0111.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.477840423583984
+    },
+    {
+      "name": "chip/chip0042.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 66.015380859375
+    },
+    {
+      "name": "dirt/dirt0004.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 56.03107833862305
+    },
+    {
+      "name": "normal/normal0030.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.35186004638672
+    },
+    {
+      "name": "dirt/dirt0138.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.02119827270508
+    },
+    {
+      "name": "dirt/dirt0122.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.05201721191406
+    },
+    {
+      "name": "dirt/dirt0117.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.09312057495117
+    },
+    {
+      "name": "normal/normal0085.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.004520416259766
+    },
+    {
+      "name": "dirt/dirt0114.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 48.20602035522461
+    },
+    {
+      "name": "dirt/dirt0105.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.13658142089844
+    },
+    {
+      "name": "chip/chip0007.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.792869567871094
+    },
+    {
+      "name": "dirt/dirt0062.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.74692153930664
+    },
+    {
+      "name": "dirt/dirt0003.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 57.79723358154297
+    },
+    {
+      "name": "dirt/dirt0070.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.26112365722656
+    },
+    {
+      "name": "normal/normal0086.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.50849914550781
+    },
+    {
+      "name": "dirt/dirt0097.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.99018096923828
+    },
+    {
+      "name": "dirt/dirt0036.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.10213088989258
+    },
+    {
+      "name": "dirt/dirt0043.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.203147888183594
+    },
+    {
+      "name": "chip/chip0004.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 65.18881225585938
+    },
+    {
+      "name": "dirt/dirt0016.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.113704681396484
+    },
+    {
+      "name": "dirt/dirt0104.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.26128387451172
+    },
+    {
+      "name": "dirt/dirt0115.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 45.58951187133789
+    },
+    {
+      "name": "normal/normal0029.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.74062728881836
+    },
+    {
+      "name": "normal/normal0076.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.96308898925781
+    },
+    {
+      "name": "chip/chip0013.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 61.466251373291016
+    },
+    {
+      "name": "dirt/dirt0012.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.32589340209961
+    },
+    {
+      "name": "dirt/dirt0125.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.7722053527832
+    },
+    {
+      "name": "dirt/dirt0018.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 53.044315338134766
+    },
+    {
+      "name": "chip/chip0028.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 54.58501052856445
+    },
+    {
+      "name": "dirt/dirt0094.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 50.60759735107422
+    },
+    {
+      "name": "dirt/dirt0024.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 58.33942794799805
+    },
+    {
+      "name": "dirt/dirt0102.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.404335021972656
+    },
+    {
+      "name": "dirt/dirt0129.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 49.95747375488281
+    },
+    {
+      "name": "normal/normal0033.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.16978454589844
+    },
+    {
+      "name": "normal/normal0087.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 46.816593170166016
+    },
+    {
+      "name": "dirt/dirt0058.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.1168098449707
+    },
+    {
+      "name": "dirt/dirt0057.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.98200225830078
+    },
+    {
+      "name": "chip/chip0040.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.28120040893555
+    },
+    {
+      "name": "chip/chip0031.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.21954345703125
+    },
+    {
+      "name": "dirt/dirt0069.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.736419677734375
+    },
+    {
+      "name": "chip/chip0025.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 51.76160430908203
+    },
+    {
+      "name": "dirt/dirt0132.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 47.50114440917969
+    },
+    {
+      "name": "chip/chip0026.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.77318572998047
+    },
+    {
+      "name": "dirt/dirt0006.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.85322952270508
+    },
+    {
+      "name": "normal/normal0094.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 62.956016540527344
+    },
+    {
+      "name": "chip/chip0032.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 68.50679016113281
+    },
+    {
+      "name": "normal/normal0036.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 44.35145568847656
+    },
+    {
+      "name": "dirt/dirt0077.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.8143424987793
+    },
+    {
+      "name": "dirt/dirt0066.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 54.70903396606445
+    },
+    {
+      "name": "normal/normal0028.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 45.25753402709961
+    },
+    {
+      "name": "dirt/dirt0046.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 52.95132827758789
+    },
+    {
+      "name": "chip/chip0002.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 56.44820785522461
+    },
+    {
+      "name": "chip/chip0022.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 58.73782730102539
+    },
+    {
+      "name": "normal/normal0080.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 51.15607452392578
+    },
+    {
+      "name": "normal/normal0073.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 50.47077941894531
+    },
+    {
+      "name": "chip/chip0011.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 59.0318717956543
+    },
+    {
+      "name": "normal/normal0027.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 48.65660095214844
+    },
+    {
+      "name": "dirt/dirt0053.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 55.787994384765625
+    },
+    {
+      "name": "normal/normal0034.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 49.51451110839844
+    },
+    {
+      "name": "chip/chip0009.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 67.63420104980469
+    },
+    {
+      "name": "normal/normal0083.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 54.00355529785156
+    },
+    {
+      "name": "dirt/dirt0108.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 51.69063949584961
+    },
+    {
+      "name": "chip/chip0006.jpg",
+      "defect": "chip",
+      "touching": false,
+      "score": 62.852970123291016
+    },
+    {
+      "name": "normal/normal0025.jpg",
+      "defect": "good",
+      "touching": false,
+      "score": 43.682106018066406
+    },
+    {
+      "name": "dirt/dirt0056.jpg",
+      "defect": "dirt",
+      "touching": false,
+      "score": 61.25634002685547
+    },
+    {
+      "name": "dirt/dirt0078.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.35981369018555
+    },
+    {
+      "name": "dirt/dirt0051.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.0131721496582
+    },
+    {
+      "name": "dirt/dirt0060.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.907901763916016
+    },
+    {
+      "name": "normal/normal0070.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.185115814208984
+    },
+    {
+      "name": "dirt/dirt0086.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.5477294921875
+    },
+    {
+      "name": "dirt/dirt0128.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.42544937133789
+    },
+    {
+      "name": "normal/normal0071.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.67088317871094
+    },
+    {
+      "name": "dirt/dirt0119.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.94276428222656
+    },
+    {
+      "name": "dirt/dirt0022.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.71580123901367
+    },
+    {
+      "name": "chip/chip0034.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.99616241455078
+    },
+    {
+      "name": "normal/normal0081.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.227378845214844
+    },
+    {
+      "name": "dirt/dirt0001.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.88850402832031
+    },
+    {
+      "name": "dirt/dirt0049.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 63.526615142822266
+    },
+    {
+      "name": "dirt/dirt0059.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 60.18928146362305
+    },
+    {
+      "name": "dirt/dirt0092.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.939884185791016
+    },
+    {
+      "name": "dirt/dirt0107.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.34816360473633
+    },
+    {
+      "name": "normal/normal0092.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.332881927490234
+    },
+    {
+      "name": "dirt/dirt0081.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.73160171508789
+    },
+    {
+      "name": "dirt/dirt0009.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 62.70929718017578
+    },
+    {
+      "name": "dirt/dirt0041.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.314998626708984
+    },
+    {
+      "name": "dirt/dirt0008.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.484886169433594
+    },
+    {
+      "name": "normal/normal0039.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.93071746826172
+    },
+    {
+      "name": "dirt/dirt0113.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.88787078857422
+    },
+    {
+      "name": "dirt/dirt0109.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 45.70973587036133
+    },
+    {
+      "name": "normal/normal0090.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 61.480712890625
+    },
+    {
+      "name": "dirt/dirt0040.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.251712799072266
+    },
+    {
+      "name": "normal/normal0075.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.91825866699219
+    },
+    {
+      "name": "normal/normal0026.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.75305938720703
+    },
+    {
+      "name": "normal/normal0079.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 52.671348571777344
+    },
+    {
+      "name": "dirt/dirt0037.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.01905059814453
+    },
+    {
+      "name": "normal/normal0074.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.717857360839844
+    },
+    {
+      "name": "dirt/dirt0020.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.13701629638672
+    },
+    {
+      "name": "dirt/dirt0026.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.2059211730957
+    },
+    {
+      "name": "dirt/dirt0067.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.133338928222656
+    },
+    {
+      "name": "chip/chip0014.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.799800872802734
+    },
+    {
+      "name": "normal/normal0089.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 58.30101776123047
+    },
+    {
+      "name": "dirt/dirt0031.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.146114349365234
+    },
+    {
+      "name": "chip/chip0043.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.19449234008789
+    },
+    {
+      "name": "dirt/dirt0072.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.887001037597656
+    },
+    {
+      "name": "normal/normal0041.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.48148727416992
+    },
+    {
+      "name": "dirt/dirt0033.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.05017852783203
+    },
+    {
+      "name": "chip/chip0037.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.590576171875
+    },
+    {
+      "name": "dirt/dirt0134.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.787933349609375
+    },
+    {
+      "name": "dirt/dirt0048.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 62.11527633666992
+    },
+    {
+      "name": "dirt/dirt0083.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.95729446411133
+    },
+    {
+      "name": "dirt/dirt0030.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.636966705322266
+    },
+    {
+      "name": "dirt/dirt0047.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.477378845214844
+    },
+    {
+      "name": "dirt/dirt0042.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.456546783447266
+    },
+    {
+      "name": "dirt/dirt0087.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.8911018371582
+    },
+    {
+      "name": "dirt/dirt0074.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.5911750793457
+    },
+    {
+      "name": "dirt/dirt0054.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.815975189208984
+    },
+    {
+      "name": "dirt/dirt0005.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.896484375
+    },
+    {
+      "name": "dirt/dirt0025.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.27984619140625
+    },
+    {
+      "name": "dirt/dirt0023.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.34587478637695
+    },
+    {
+      "name": "dirt/dirt0079.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.21168518066406
+    },
+    {
+      "name": "dirt/dirt0103.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.2043342590332
+    },
+    {
+      "name": "dirt/dirt0098.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.3046989440918
+    },
+    {
+      "name": "chip/chip0012.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.01737213134766
+    },
+    {
+      "name": "normal/normal0072.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.07557678222656
+    },
+    {
+      "name": "dirt/dirt0017.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 61.6684684753418
+    },
+    {
+      "name": "dirt/dirt0015.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.56232452392578
+    },
+    {
+      "name": "dirt/dirt0136.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.26902389526367
+    },
+    {
+      "name": "chip/chip0023.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.85904312133789
+    },
+    {
+      "name": "dirt/dirt0088.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.625553131103516
+    },
+    {
+      "name": "chip/chip0015.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.904136657714844
+    },
+    {
+      "name": "dirt/dirt0014.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.85140609741211
+    },
+    {
+      "name": "normal/normal0038.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.844749450683594
+    },
+    {
+      "name": "dirt/dirt0110.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.605003356933594
+    },
+    {
+      "name": "chip/chip0024.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.88355255126953
+    },
+    {
+      "name": "dirt/dirt0045.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 59.19184112548828
+    },
+    {
+      "name": "dirt/dirt0085.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.34517288208008
+    },
+    {
+      "name": "dirt/dirt0127.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.347660064697266
+    },
+    {
+      "name": "dirt/dirt0021.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 63.902286529541016
+    },
+    {
+      "name": "dirt/dirt0029.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.51548767089844
+    },
+    {
+      "name": "chip/chip0035.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 64.35279846191406
+    },
+    {
+      "name": "dirt/dirt0137.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 61.96330261230469
+    },
+    {
+      "name": "dirt/dirt0068.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.66366195678711
+    },
+    {
+      "name": "dirt/dirt0002.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.919315338134766
+    },
+    {
+      "name": "dirt/dirt0007.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.07124328613281
+    },
+    {
+      "name": "dirt/dirt0039.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 63.73269271850586
+    },
+    {
+      "name": "dirt/dirt0038.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.49576950073242
+    },
+    {
+      "name": "chip/chip0016.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 63.84577178955078
+    },
+    {
+      "name": "dirt/dirt0035.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.73033905029297
+    },
+    {
+      "name": "chip/chip0038.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.120601654052734
+    },
+    {
+      "name": "chip/chip0039.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.07194900512695
+    },
+    {
+      "name": "dirt/dirt0013.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.762149810791016
+    },
+    {
+      "name": "chip/chip0019.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.958824157714844
+    },
+    {
+      "name": "dirt/dirt0116.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.35307693481445
+    },
+    {
+      "name": "dirt/dirt0052.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.94145965576172
+    },
+    {
+      "name": "chip/chip0036.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.774803161621094
+    },
+    {
+      "name": "normal/normal0084.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 57.0175895690918
+    },
+    {
+      "name": "normal/normal0031.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.52783966064453
+    },
+    {
+      "name": "dirt/dirt0055.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.23189163208008
+    },
+    {
+      "name": "chip/chip0010.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.66519546508789
+    },
+    {
+      "name": "dirt/dirt0120.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.20153045654297
+    },
+    {
+      "name": "chip/chip0033.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 65.43344116210938
+    },
+    {
+      "name": "dirt/dirt0123.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 47.1680908203125
+    },
+    {
+      "name": "dirt/dirt0093.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.84719467163086
+    },
+    {
+      "name": "normal/normal0040.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.49694061279297
+    },
+    {
+      "name": "normal/normal0069.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 50.4853401184082
+    },
+    {
+      "name": "chip/chip0017.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.24323654174805
+    },
+    {
+      "name": "dirt/dirt0130.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.392921447753906
+    },
+    {
+      "name": "dirt/dirt0027.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.426246643066406
+    },
+    {
+      "name": "dirt/dirt0076.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.46514892578125
+    },
+    {
+      "name": "chip/chip0005.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.81459045410156
+    },
+    {
+      "name": "chip/chip0041.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.78285598754883
+    },
+    {
+      "name": "dirt/dirt0071.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.94588851928711
+    },
+    {
+      "name": "dirt/dirt0032.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.776710510253906
+    },
+    {
+      "name": "normal/normal0095.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 54.021480560302734
+    },
+    {
+      "name": "normal/normal0082.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.746456146240234
+    },
+    {
+      "name": "dirt/dirt0121.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.867393493652344
+    },
+    {
+      "name": "dirt/dirt0126.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.61030197143555
+    },
+    {
+      "name": "dirt/dirt0124.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.50996398925781
+    },
+    {
+      "name": "dirt/dirt0090.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.0883674621582
+    },
+    {
+      "name": "dirt/dirt0133.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.322261810302734
+    },
+    {
+      "name": "chip/chip0029.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.75883865356445
+    },
+    {
+      "name": "dirt/dirt0131.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 46.70512771606445
+    },
+    {
+      "name": "chip/chip0008.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.79874801635742
+    },
+    {
+      "name": "dirt/dirt0135.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 60.27347946166992
+    },
+    {
+      "name": "normal/normal0093.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 45.32521438598633
+    },
+    {
+      "name": "chip/chip0003.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.3789176940918
+    },
+    {
+      "name": "dirt/dirt0064.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.93792724609375
+    },
+    {
+      "name": "normal/normal0021.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.928016662597656
+    },
+    {
+      "name": "normal/normal0088.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.6197509765625
+    },
+    {
+      "name": "normal/normal0032.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.528141021728516
+    },
+    {
+      "name": "dirt/dirt0100.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.343074798583984
+    },
+    {
+      "name": "dirt/dirt0028.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.319740295410156
+    },
+    {
+      "name": "dirt/dirt0096.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.83196258544922
+    },
+    {
+      "name": "normal/normal0037.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.087135314941406
+    },
+    {
+      "name": "normal/normal0078.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 43.95073699951172
+    },
+    {
+      "name": "dirt/dirt0101.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.66495895385742
+    },
+    {
+      "name": "normal/normal0077.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 49.262908935546875
+    },
+    {
+      "name": "dirt/dirt0084.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.25333023071289
+    },
+    {
+      "name": "normal/normal0022.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.551246643066406
+    },
+    {
+      "name": "dirt/dirt0010.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.55868911743164
+    },
+    {
+      "name": "chip/chip0027.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.647621154785156
+    },
+    {
+      "name": "normal/normal0035.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.71513748168945
+    },
+    {
+      "name": "chip/chip0021.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.44921112060547
+    },
+    {
+      "name": "dirt/dirt0065.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.2625846862793
+    },
+    {
+      "name": "chip/chip0020.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 69.3981704711914
+    },
+    {
+      "name": "dirt/dirt0050.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.98271179199219
+    },
+    {
+      "name": "normal/normal0023.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.412776947021484
+    },
+    {
+      "name": "chip/chip0018.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.49384307861328
+    },
+    {
+      "name": "dirt/dirt0061.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.92155838012695
+    },
+    {
+      "name": "dirt/dirt0082.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.330867767333984
+    },
+    {
+      "name": "normal/normal0020.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.06142807006836
+    },
+    {
+      "name": "dirt/dirt0044.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.51616287231445
+    },
+    {
+      "name": "dirt/dirt0099.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.90871047973633
+    },
+    {
+      "name": "dirt/dirt0073.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.000091552734375
+    },
+    {
+      "name": "dirt/dirt0095.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.115867614746094
+    },
+    {
+      "name": "chip/chip0030.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.03271484375
+    },
+    {
+      "name": "dirt/dirt0091.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.95643615722656
+    },
+    {
+      "name": "dirt/dirt0112.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.958251953125
+    },
+    {
+      "name": "dirt/dirt0080.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.487667083740234
+    },
+    {
+      "name": "dirt/dirt0075.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.146392822265625
+    },
+    {
+      "name": "normal/normal0091.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 55.026268005371094
+    },
+    {
+      "name": "dirt/dirt0019.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.06192398071289
+    },
+    {
+      "name": "dirt/dirt0063.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.576202392578125
+    },
+    {
+      "name": "dirt/dirt0011.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 65.73329162597656
+    },
+    {
+      "name": "normal/normal0024.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.37213134765625
+    },
+    {
+      "name": "dirt/dirt0118.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 45.067626953125
+    },
+    {
+      "name": "dirt/dirt0089.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.181884765625
+    },
+    {
+      "name": "dirt/dirt0034.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.79137420654297
+    },
+    {
+      "name": "chip/chip0001.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 57.645103454589844
+    },
+    {
+      "name": "dirt/dirt0106.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.02214813232422
+    },
+    {
+      "name": "dirt/dirt0111.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.76371765136719
+    },
+    {
+      "name": "chip/chip0042.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.47163772583008
+    },
+    {
+      "name": "dirt/dirt0004.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.191158294677734
+    },
+    {
+      "name": "normal/normal0030.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.8392219543457
+    },
+    {
+      "name": "dirt/dirt0138.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.06916427612305
+    },
+    {
+      "name": "dirt/dirt0122.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.274505615234375
+    },
+    {
+      "name": "dirt/dirt0117.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.124183654785156
+    },
+    {
+      "name": "normal/normal0085.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.62016296386719
+    },
+    {
+      "name": "dirt/dirt0114.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.267616271972656
+    },
+    {
+      "name": "dirt/dirt0105.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.92606735229492
+    },
+    {
+      "name": "chip/chip0007.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.5621337890625
+    },
+    {
+      "name": "dirt/dirt0062.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.26045227050781
+    },
+    {
+      "name": "dirt/dirt0003.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.243160247802734
+    },
+    {
+      "name": "dirt/dirt0070.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.61042404174805
+    },
+    {
+      "name": "normal/normal0086.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 52.22032928466797
+    },
+    {
+      "name": "dirt/dirt0097.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.63128662109375
+    },
+    {
+      "name": "dirt/dirt0036.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.38385772705078
+    },
+    {
+      "name": "dirt/dirt0043.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.1063117980957
+    },
+    {
+      "name": "chip/chip0004.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 62.16988754272461
+    },
+    {
+      "name": "dirt/dirt0016.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.2031364440918
+    },
+    {
+      "name": "dirt/dirt0104.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.198097229003906
+    },
+    {
+      "name": "dirt/dirt0115.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 45.3837776184082
+    },
+    {
+      "name": "normal/normal0029.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 51.46498489379883
+    },
+    {
+      "name": "normal/normal0076.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.25054168701172
+    },
+    {
+      "name": "chip/chip0013.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.4345817565918
+    },
+    {
+      "name": "dirt/dirt0012.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.21036148071289
+    },
+    {
+      "name": "dirt/dirt0125.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.43075942993164
+    },
+    {
+      "name": "dirt/dirt0018.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 53.84901428222656
+    },
+    {
+      "name": "chip/chip0028.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 56.31460189819336
+    },
+    {
+      "name": "dirt/dirt0094.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.54420852661133
+    },
+    {
+      "name": "dirt/dirt0024.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 56.55715560913086
+    },
+    {
+      "name": "dirt/dirt0102.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.213504791259766
+    },
+    {
+      "name": "dirt/dirt0129.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.1611328125
+    },
+    {
+      "name": "normal/normal0033.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.71319580078125
+    },
+    {
+      "name": "normal/normal0087.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.95640563964844
+    },
+    {
+      "name": "dirt/dirt0058.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.876502990722656
+    },
+    {
+      "name": "dirt/dirt0057.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 50.87009048461914
+    },
+    {
+      "name": "chip/chip0040.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 61.33111572265625
+    },
+    {
+      "name": "chip/chip0031.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 59.68328857421875
+    },
+    {
+      "name": "dirt/dirt0069.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 55.39828872680664
+    },
+    {
+      "name": "chip/chip0025.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 51.03573989868164
+    },
+    {
+      "name": "dirt/dirt0132.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 48.00721740722656
+    },
+    {
+      "name": "chip/chip0026.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.68555450439453
+    },
+    {
+      "name": "dirt/dirt0006.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 58.49166488647461
+    },
+    {
+      "name": "normal/normal0094.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 63.50510787963867
+    },
+    {
+      "name": "chip/chip0032.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 70.09619140625
+    },
+    {
+      "name": "normal/normal0036.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.53900146484375
+    },
+    {
+      "name": "dirt/dirt0077.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 51.34861373901367
+    },
+    {
+      "name": "dirt/dirt0066.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 54.124385833740234
+    },
+    {
+      "name": "normal/normal0028.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 44.522621154785156
+    },
+    {
+      "name": "dirt/dirt0046.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 52.17413330078125
+    },
+    {
+      "name": "chip/chip0002.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 54.212039947509766
+    },
+    {
+      "name": "chip/chip0022.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.566932678222656
+    },
+    {
+      "name": "normal/normal0080.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 52.65648651123047
+    },
+    {
+      "name": "normal/normal0073.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.15168380737305
+    },
+    {
+      "name": "chip/chip0011.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 58.40843200683594
+    },
+    {
+      "name": "normal/normal0027.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 46.075958251953125
+    },
+    {
+      "name": "dirt/dirt0053.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 57.65230178833008
+    },
+    {
+      "name": "normal/normal0034.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 48.953025817871094
+    },
+    {
+      "name": "chip/chip0009.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 65.87118530273438
+    },
+    {
+      "name": "normal/normal0083.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 57.08507537841797
+    },
+    {
+      "name": "dirt/dirt0108.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 49.59615707397461
+    },
+    {
+      "name": "chip/chip0006.jpg",
+      "defect": "chip",
+      "touching": true,
+      "score": 66.54991912841797
+    },
+    {
+      "name": "normal/normal0025.jpg",
+      "defect": "good",
+      "touching": true,
+      "score": 47.10266876220703
+    },
+    {
+      "name": "dirt/dirt0056.jpg",
+      "defect": "dirt",
+      "touching": true,
+      "score": 62.67029571533203
+    }
+  ],
+  "overall": {
+    "pills": 1380,
+    "missed_by_segmentation": 0,
+    "true_positive": 16,
+    "false_positive": 0,
+    "false_negative": 1070,
+    "true_negative": 294,
+    "precision": 1.0,
+    "recall": 0.014732965009208104,
+    "f1": 0.029038112522686028,
+    "auroc": 0.8629214116585862
+  },
+  "spaced": {
+    "pills": 690,
+    "missed_by_segmentation": 0,
+    "true_positive": 8,
+    "false_positive": 0,
+    "false_negative": 535,
+    "true_negative": 147,
+    "precision": 1.0,
+    "recall": 0.014732965009208104,
+    "f1": 0.029038112522686028,
+    "auroc": 0.862868167524837
+  },
+  "touching": {
+    "pills": 690,
+    "missed_by_segmentation": 0,
+    "true_positive": 8,
+    "false_positive": 0,
+    "false_negative": 535,
+    "true_negative": 147,
+    "precision": 1.0,
+    "recall": 0.014732965009208104,
+    "f1": 0.029038112522686028,
+    "auroc": 0.8631437842171861
+  },
+  "by_defect": {
+    "chip": {
+      "pills": 258,
+      "missed_by_segmentation": 0,
+      "true_positive": 13,
+      "false_positive": 0,
+      "false_negative": 245,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.050387596899224806,
+      "f1": 0.09594095940959409
+    },
+    "dirt": {
+      "pills": 828,
+      "missed_by_segmentation": 0,
+      "true_positive": 3,
+      "false_positive": 0,
+      "false_negative": 825,
+      "true_negative": 0,
+      "precision": 1.0,
+      "recall": 0.0036231884057971015,
+      "f1": 0.007220216606498195
+    },
+    "good": {
+      "pills": 294,
+      "missed_by_segmentation": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 294,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  }
+}

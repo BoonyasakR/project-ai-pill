@@ -16,6 +16,13 @@ from torchvision.transforms.v2.functional import pil_to_tensor, to_dtype
 
 from segmentation import MIN_RELIABLE_LENGTH, MIN_WARNED_AREA, align_pill, find_blobs, in_training_pose, keep_pills, pill_pose
 
+# How each tablet type is cut out of a multi-pill image. MVTec pills are oval, so
+# they are turned to the training pose and scored both ways round. pillQC pills
+# are round: no turn, scaled to the median pill length of a pillQC crop (148 of 225 px).
+MVTEC_POSE = {"align": {}, "flips": (False, True), "min_length": MIN_RELIABLE_LENGTH}
+PILLQC_POSE = {"align": {"canvas": 225, "pill_length": 148, "rotate": False}, "flips": (False,), "min_length": 148}
+PILLQC_CROP_BACKGROUND = 45  # pillQC crops have a teal border (median 72 or more); scenes are dark (about 18).
+
 PILL_EDGE_PIXELS = 5  # Ignore this rim of the pill, where the background bleeds in.
 MARK_GOOD = (40, 200, 110)
 MARK_BAD = (240, 60, 50)
@@ -45,8 +52,16 @@ def to_data_url(image):
     return "data:image/png;base64," + base64.b64encode(buffer.getvalue()).decode()
 
 
+def border_brightness(array):
+    gray = array.mean(axis=2)
+    return float(np.median(np.concatenate([gray[:8].ravel(), gray[-8:].ravel(), gray[:, :8].ravel(), gray[:, -8:].ravel()])))
+
+
 class Inspector:
-    def __init__(self, model_path, scene_results=None):
+    pose = MVTEC_POSE
+
+    def __init__(self, model_path, scene_results=None, pose=MVTEC_POSE):
+        self.pose = pose
         scene_data = json.loads(Path(scene_results).read_text()) if scene_results else {}
         self.scene_threshold = scene_data.get("threshold")
         checkpoint = torch.load(Path(model_path), map_location="cpu", weights_only=True)
@@ -73,7 +88,7 @@ class Inspector:
         the training background. The right way up matches training best, so the
         lower score is kept.
         """
-        views = [align_pill(image, mask, others, flip) for flip in (False, True)]
+        views = [align_pill(image, mask, others, flip, **self.pose["align"]) for flip in self.pose["flips"]]
         batch = torch.stack([
             self.transform(to_dtype(torch.from_numpy(view).permute(2, 0, 1), torch.float32, scale=True))
             for view, _ in views
@@ -127,21 +142,29 @@ class Inspector:
         masks = keep_pills(blobs)
         result = self.judge(image, array, masks)
         result["warnings"] = []
+        if self.pose is not MVTEC_POSE and "pills" not in result:
+            return result  # A pillQC crop: dirt specks on its teal border are not pills to warn about.
         ignored = sum(blob.sum() >= MIN_WARNED_AREA * blobs[0].sum() for blob in blobs[len(masks):])
         if ignored:
             result["warnings"].append(f"มีวัตถุขนาดเล็ก {ignored} ชิ้นที่ไม่ถูกตรวจ เพราะเล็กกว่าเม็ดใหญ่สุดมาก")
         if "pills" in result:
-            small = sum(pill_pose(mask)[2] < MIN_RELIABLE_LENGTH for mask in masks)
+            shortest = self.pose["min_length"]
+            small = sum(pill_pose(mask)[2] < shortest for mask in masks)
             if small:
                 result["warnings"].append(
-                    f"ยา {small} เม็ดสั้นกว่า {MIN_RELIABLE_LENGTH} พิกเซล ผลอาจแจ้งผิดปกติเกินจริง ควรถ่ายให้ใกล้ขึ้น"
+                    f"ยา {small} เม็ดสั้นกว่า {shortest} พิกเซล ผลอาจแจ้งผิดปกติเกินจริง ควรถ่ายให้ใกล้ขึ้น"
                 )
         return result
 
     @torch.inference_mode()
     def judge(self, image, array, masks):
         can_align = self.scene_threshold is not None
-        if can_align and (len(masks) > 1 or (masks and not in_training_pose(masks[0]))):
+        if self.pose is not MVTEC_POSE:
+            # A pillQC crop (teal border) keeps the whole-image score it was calibrated on;
+            # anything else, such as pills on a dark background, is cut into pills.
+            if can_align and masks and border_brightness(array) < PILLQC_CROP_BACKGROUND:
+                return self.inspect_scene(array, masks)
+        elif can_align and (len(masks) > 1 or (masks and not in_training_pose(masks[0]))):
             return self.inspect_scene(array, masks)
         tensor = to_dtype(pil_to_tensor(image), torch.float32, scale=True)
 
@@ -150,7 +173,7 @@ class Inspector:
         latency_ms = (time.perf_counter() - start) * 1000
 
         score = float(output.pred_score.flatten()[0])
-        if can_align and masks and score > self.threshold:
+        if can_align and masks and score > self.threshold and self.pose is MVTEC_POSE:
             # The pose check cannot see an upside-down pill. A normal one passes once turned;
             # a real defect stays above the threshold, so its score is kept.
             turned = self.model(self.transform(tensor.flip(1, 2)).unsqueeze(0))

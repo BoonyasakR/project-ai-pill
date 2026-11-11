@@ -102,6 +102,15 @@ backend/.venv/bin/pip install -r backend/requirements.txt
 backend/.venv/bin/python -m uvicorn app:app --app-dir backend --port 8000
 ```
 
+To inspect pillQC tablets as well, build their memory bank and threshold (about a minute on a CPU,
+needs the pillQC images in `data/pillqc/`), then pick the type on the upload page. pillQC takes one
+pill on its teal background, or several pills on a dark background. Its thresholds catch few defects
+(recall 0.25 single, 0.015 multi-pill); see `docs/updates/2026-11-11_pill_type_selector/` for why.
+
+```bash
+backend/.venv/bin/python src/build_pillqc_model.py --root data/pillqc
+```
+
 In a second terminal:
 
 ```bash

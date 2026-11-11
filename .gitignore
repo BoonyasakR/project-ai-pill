@@ -54,3 +54,6 @@ data/
 models/
 *.pt
 *.ckpt
+
+# pillQC images may not be redistributed (license limited to MathWorks products)
+docs/updates/**/pillqc_*

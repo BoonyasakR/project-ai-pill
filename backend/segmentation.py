@@ -87,20 +87,22 @@ def in_training_pose(mask):
     return tilt <= MAX_TILT and abs(length * scale / PILL_LENGTH - 1) <= MAX_SIZE_CHANGE and shift <= MAX_SHIFT
 
 
-def align_pill(image, mask, others=None, flip=False):
+def align_pill(image, mask, others=None, flip=False, canvas=CANVAS, pill_length=PILL_LENGTH, rotate=True):
     """Rotate, scale, and centre one pill on a training-style canvas.
 
     `others` marks neighbouring pills, which are removed. The long axis has no
-    direction, so `flip` gives the other 180-degree option. Returns the aligned
-    image and a boolean mask of the pill on it.
+    direction, so `flip` gives the other 180-degree option. Round pills pass
+    `rotate=False` and keep their angle. Returns the aligned image and a boolean
+    mask of the pill on it.
     """
     centre, angle, length = pill_pose(mask)
-    matrix = cv2.getRotationMatrix2D(tuple(centre), angle + (180 if flip else 0), PILL_LENGTH / length)
-    matrix[:, 2] += CANVAS / 2 - centre
-    size = (CANVAS, CANVAS)
+    turn = (angle if rotate else 0) + (180 if flip else 0)
+    matrix = cv2.getRotationMatrix2D(tuple(centre), turn, pill_length / length)
+    matrix[:, 2] += canvas / 2 - centre
+    size = (canvas, canvas)
     pill = cv2.warpAffine(image, matrix, size, flags=cv2.INTER_CUBIC)
     aligned_mask = cv2.warpAffine(mask.astype(np.uint8), matrix, size, flags=cv2.INTER_NEAREST)
-    margin = int(PILL_LENGTH * MASK_MARGIN) * 2 + 1
+    margin = int(pill_length * MASK_MARGIN) * 2 + 1
     keep = cv2.dilate(aligned_mask, np.ones((margin, margin), np.uint8))
     if others is not None:
         neighbours = cv2.warpAffine(others.astype(np.uint8), matrix, size, flags=cv2.INTER_NEAREST)
