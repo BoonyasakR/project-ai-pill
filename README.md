@@ -128,7 +128,17 @@ backend/.venv/bin/python -m unittest discover -s tests
 cd backend && .venv/bin/python -m unittest test_app
 ```
 
+## Datasets
+
+Download the images yourself; they are not stored in this repository.
+
+| Dataset | Link | Put it in |
+|---|---|---|
+| MVTec AD (Pill category) | [mvtec.com](https://www.mvtec.com/company/research/datasets/mvtec-ad), or the copy on [Kaggle](https://www.kaggle.com/datasets/ipythonx/mvtec-ad) | `data/mvtec/pill/` |
+| pillQC | [github.com/matlab-deep-learning/pillQC](https://github.com/matlab-deep-learning/pillQC) | `data/pillqc/` |
+
 ## Dataset license
 
-MVTec AD is licensed for non-commercial use under CC BY-NC-SA 4.0. Dataset images are not stored
-in this repository.
+MVTec AD is licensed for non-commercial use under CC BY-NC-SA 4.0. pillQC is under the MathWorks
+license in its repository, which limits use to MathWorks products; this project uses it only for
+coursework and does not share its images. Dataset images are not stored in this repository.
