@@ -16,6 +16,40 @@ Test set: 26 normal and 141 defective images. Thresholds come from normal valida
 
 See `docs/` for the report and slides.
 
+## Round 2: reliability and few-shot
+
+Run with `notebooks/04_reliability_fewshot.ipynb` on a Colab T4. Every setting was fixed before the
+run and matches the main result. Results are in `results/reliability/` and `results/fewshot/`.
+
+Five seeds on the same split, and a 95% bootstrap interval (2,000 image resamples, fixed threshold)
+on the seed 42 run, which reproduces the table above exactly:
+
+| Model | Image AUROC, 5 seeds | Recall, 5 seeds | Image AUROC, 95% interval |
+|---|---|---|---|
+| PatchCore | 0.948 ± 0.003 | 0.853 ± 0.018 | 0.950 [0.912, 0.980] |
+| PaDiM | 0.921 ± 0.015 | 0.384 ± 0.153 | 0.917 [0.864, 0.958] |
+
+The image AUROC gap between the models is 0.033 [-0.014, 0.083]. The interval includes zero, so
+this test set does not show that PatchCore ranks images better than PaDiM.
+
+Few-shot PatchCore builds the memory bank from a few normal images, 5 draws each. pillQC is a second
+tablet type with image labels only; its normal crops are split by source photo.
+
+| Normal images | MVTec Pill image AUROC | pillQC image AUROC |
+|---|---|---|
+| 1 | 0.820 ± 0.041 | 0.817 ± 0.085 |
+| 5 | 0.887 ± 0.019 | 0.910 ± 0.027 |
+| 10 | 0.903 ± 0.016 | 0.918 ± 0.015 |
+| 25 | 0.927 ± 0.011 | 0.947 ± 0.004 |
+| All (227 / 46) | 0.947 ± 0.003 | 0.957 ± 0.002 |
+
+The validation images that set the threshold are extra to these counts. On pillQC the threshold
+rule gives recall 0.288 at precision 1.000 with all images, so the scores rank well but the
+threshold does not carry over to a new tablet type. The MVTec test set was already used, so the
+few-shot numbers on MVTec are exploratory. pillQC photos show about 28 normal pills photographed
+several times, so its images are not independent. pillQC images are not stored in this repository;
+its license limits use to MathWorks products.
+
 ## Several pills in one image
 
 The web app also accepts several non-overlapping pills on a dark background. It separates the

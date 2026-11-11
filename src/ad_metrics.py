@@ -38,8 +38,8 @@ def au_pro(masks, maps, fpr_limit=0.3, steps=200):
     return float(area / fpr_limit)
 
 
-def evaluate(labels, scores, masks, maps, threshold):
-    """Image and pixel metrics for one model. labels: 1 means defective."""
+def image_metrics(labels, scores, threshold):
+    """Image-level metrics only, for datasets without masks. labels: 1 means defective."""
     labels = np.asarray(labels, dtype=int)
     scores = np.asarray(scores, dtype=np.float64)
     predicted = scores > threshold
@@ -51,11 +51,8 @@ def evaluate(labels, scores, masks, maps, threshold):
 
     precision = true_positive / max(true_positive + false_positive, 1)
     recall = true_positive / max(true_positive + false_negative, 1)
-    masks = np.asarray(masks, dtype=bool)
     return {
         "image_auroc": float(roc_auc_score(labels, scores)),
-        "pixel_auroc": float(roc_auc_score(masks.ravel(), np.asarray(maps).ravel())),
-        "au_pro": au_pro(masks, maps),
         "threshold": float(threshold),
         "precision": precision,
         "recall": recall,
@@ -64,6 +61,18 @@ def evaluate(labels, scores, masks, maps, threshold):
         "false_positive": false_positive,
         "false_negative": false_negative,
         "true_negative": true_negative,
+    }
+
+
+def evaluate(labels, scores, masks, maps, threshold):
+    """Image and pixel metrics for one model. labels: 1 means defective."""
+    masks = np.asarray(masks, dtype=bool)
+    image = image_metrics(labels, scores, threshold)
+    return {
+        "image_auroc": image.pop("image_auroc"),
+        "pixel_auroc": float(roc_auc_score(masks.ravel(), np.asarray(maps).ravel())),
+        "au_pro": au_pro(masks, maps),
+        **image,
     }
 
 

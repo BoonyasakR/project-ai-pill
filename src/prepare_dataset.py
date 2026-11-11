@@ -105,6 +105,23 @@ def make_split(pill_root, val_ratio=0.15, seed=42):
     }
 
 
+def make_pillqc_split(groups, seed=42):
+    """Split pillQC normal crops by source photo, so one photo never feeds two sets.
+
+    groups: {photo name: [crop file names]}. Two photos go to test, two to
+    validation, and the rest form the pool that memory banks are built from.
+    """
+    photos = sorted(groups)
+    if len(photos) < 5:
+        raise ValueError("need at least 5 source photos: 2 test, 2 validation, 1 pool")
+    random.Random(seed).shuffle(photos)
+    parts = {"test": photos[:2], "validation": photos[2:4], "pool": photos[4:]}
+    split = {"seed": seed, "method": "by_source_photo", "photos": parts}
+    for part, names in parts.items():
+        split[part] = sorted(crop for name in names for crop in groups[name])
+    return split
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", required=True, help="pill folder or a parent of it")
