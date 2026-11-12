@@ -111,3 +111,30 @@ def align_pill(image, mask, others=None, flip=False, canvas=CANVAS, pill_length=
     background = np.array(BACKGROUND_BGR[::-1], np.float32)
     aligned = (pill * keep + background * (1 - keep)).clip(0, 255).astype(np.uint8)
     return aligned, aligned_mask > 0
+
+
+def pink_pill_mask(image):
+    """The pink pill in a pillQC crop. Dirt on the pill stays inside; dirt on the floor does not."""
+    red, green = image[..., 0].astype(np.int16), image[..., 1].astype(np.int16)
+    pink = ((red > 150) & (red > green + 10)).astype(np.uint8)
+    contours, _ = cv2.findContours(pink, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    mask = np.zeros_like(pink)
+    cv2.drawContours(mask, [max(contours, key=cv2.contourArea)], -1, 1, -1)
+    return mask > 0
+
+
+ROUND_PILL_GROWTH = 1.05  # Keeps the rim, where chips are, but not floor dirt touching the pill.
+
+
+def round_pill_region(mask):
+    """A disk over a round pill: the largest circle inside the mask, grown by 5%.
+
+    White dirt on the floor can touch the pill and join its mask. The inscribed
+    circle ignores such bumps, so only the pill itself is scored.
+    """
+    mask = mask.astype(np.uint8)
+    distance = cv2.distanceTransform(mask, cv2.DIST_L2, 5)
+    y, x = np.unravel_index(int(distance.argmax()), distance.shape)
+    disk = np.zeros_like(mask)
+    cv2.circle(disk, (int(x), int(y)), int(distance.max() * ROUND_PILL_GROWTH), 1, -1)
+    return disk > 0

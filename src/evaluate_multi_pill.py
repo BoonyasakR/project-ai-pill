@@ -98,12 +98,15 @@ def calibrate(inspector):
     print(json.dumps(result, indent=2))
 
 
-def summarize(rows, threshold, colour_threshold):
+def summarize(rows, threshold, colour_threshold=None):
+    """Without `colour_threshold` (pill types with no colour table), PatchCore decides alone."""
     defective = [row for row in rows if row["defect"] != "good"]
     normal = [row for row in rows if row["defect"] == "good"]
 
     def combined(row):
         """Each check divided by its own threshold, larger one kept."""
+        if colour_threshold is None:
+            return row["score"] / threshold
         return max(row["score"] / threshold, row["colour_area"] / colour_threshold)
 
     def flagged(row):

@@ -13,7 +13,6 @@ import json
 import sys
 from pathlib import Path
 
-import cv2
 import numpy as np
 from PIL import Image
 
@@ -23,24 +22,22 @@ sys.path[:0] = [str(ROOT / "backend"), str(ROOT / "src")]
 from ad_metrics import pick_threshold  # noqa: E402
 from evaluate_multi_pill import CALIBRATION_ROUNDS, TEST_SEEDS, run_pass, summarize  # noqa: E402
 from inference import PILLQC_POSE, Inspector  # noqa: E402
+from segmentation import pink_pill_mask, round_pill_region  # noqa: E402
 import make_pill_scenes  # noqa: E402
 
 # Round pills take more room than MVTec's ovals, so 8 of them need a larger floor.
 make_pill_scenes.SCENE_SIZE = (1300, 1800)
 
+
+def pill_mask(image):
+    """The pink pill without floor dirt that touches it, which would be pasted along."""
+    mask = pink_pill_mask(image)
+    return mask & round_pill_region(mask)
+
 IMAGES = ROOT / "data" / "pillqc" / "images"
 SPLIT = ROOT / "splits" / "pillqc_seed42.json"
 OUTPUT = ROOT / "results" / "pillqc_model" / "pillqc_scene_results.json"
 
-
-def pill_mask(image):
-    """The pink pill in a pillQC crop. Dirt on the pill stays inside; dirt on the floor does not."""
-    red, green = image[..., 0].astype(np.int16), image[..., 1].astype(np.int16)
-    pink = ((red > 150) & (red > green + 10)).astype(np.uint8)
-    contours, _ = cv2.findContours(pink, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-    mask = np.zeros_like(pink)
-    cv2.drawContours(mask, [max(contours, key=cv2.contourArea)], -1, 1, -1)
-    return mask > 0
 
 
 def prepare(entries):

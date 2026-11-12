@@ -17,6 +17,7 @@ from torchvision.transforms.v2.functional import pil_to_tensor, to_dtype
 from colour_check import BINS, novel_colour
 from segmentation import (
     CANVAS, MIN_RELIABLE_LENGTH, MIN_WARNED_AREA, align_pill, find_blobs, in_training_pose, keep_pills, pill_pose,
+    pink_pill_mask, round_pill_region,
 )
 
 # How each tablet type is cut out of a multi-pill image. MVTec pills are oval, so
@@ -63,6 +64,7 @@ def border_brightness(array):
 
 class Inspector:
     pose = MVTEC_POSE
+    score_area = "image"  # "pill": a single crop is scored on its pill only, as its threshold was.
 
     def __init__(self, model_path, scene_results=None, pose=MVTEC_POSE):
         self.pose = pose
@@ -72,6 +74,7 @@ class Inspector:
         checkpoint = torch.load(Path(model_path), map_location="cpu", weights_only=True)
         self.threshold = float(checkpoint["threshold"])
         self.image_size = int(checkpoint["image_size"])
+        self.score_area = checkpoint.get("score_area", "image")
         state = checkpoint["state_dict"]
         # Older model files have no colour table. They still work, without the colour check.
         self.colour_seen, self.colour_threshold = None, None
@@ -211,6 +214,13 @@ class Inspector:
             if float(turned.pred_score.flatten()[0]) <= self.threshold:
                 return self.inspect_scene(array, masks)
         anomaly_map = output.anomaly_map.squeeze().cpu().numpy()
+        if self.score_area == "pill":
+            # White dirt on the floor must not count, so only the pill is scored and shown.
+            region = round_pill_region(pink_pill_mask(array)).astype(np.uint8)
+            region = cv2.resize(region, anomaly_map.shape[::-1], interpolation=cv2.INTER_NEAREST)
+            region = cv2.erode(region, np.ones((PILL_EDGE_PIXELS, PILL_EDGE_PIXELS), np.uint8)) > 0
+            anomaly_map = np.where(region, anomaly_map, 0)
+            score = float(anomaly_map[region].max())
         odd_colour = False
         if masks:
             # The pill is posed like training, so resizing puts it on the training canvas.

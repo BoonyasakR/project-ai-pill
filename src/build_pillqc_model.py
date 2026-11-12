@@ -5,6 +5,10 @@ WideResNet50-2, layers 2+3, coreset 0.1, seed 42. The memory bank uses all 46
 pool images and the threshold is the 99th percentile of the 54 validation images,
 so this is the "all images, seed 42" run of round 2, rebuilt on this machine.
 
+Scores count the pill only, inside `round_pill_region`. Whole-image scores let white
+dirt on the floor of some normal validation crops set the threshold (55.21), so most
+defects passed. Both are saved; the model file uses the pill-only threshold.
+
     backend/.venv/bin/python src/build_pillqc_model.py --root data/pillqc
 """
 import argparse
@@ -15,6 +19,7 @@ import tempfile
 import time
 from pathlib import Path
 
+import cv2
 import numpy as np
 import torch
 from PIL import Image
@@ -22,8 +27,10 @@ from torchvision.transforms.v2 import Compose, Normalize, Resize
 from torchvision.transforms.v2.functional import pil_to_tensor, to_dtype
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "src"))
+sys.path[:0] = [str(ROOT / "src"), str(ROOT / "backend")]
 import ad_metrics  # noqa: E402
+from inference import PILL_EDGE_PIXELS  # noqa: E402
+from segmentation import pink_pill_mask, round_pill_region  # noqa: E402
 
 SIZE = 256
 BACKBONE = "wide_resnet50_2"
@@ -38,16 +45,28 @@ def transform():
     ])
 
 
+def pill_region(path):
+    """The scored pill area at model size, without the rim where the background bleeds in."""
+    region = round_pill_region(pink_pill_mask(np.asarray(Image.open(path).convert("RGB"))))
+    small = cv2.resize(region.astype(np.uint8), (SIZE, SIZE), interpolation=cv2.INTER_NEAREST)
+    return cv2.erode(small, np.ones((PILL_EDGE_PIXELS, PILL_EDGE_PIXELS), np.uint8)) > 0
+
+
 @torch.inference_mode()
 def predict(model, paths, batch_size=8):
-    scores = []
+    """Return whole-image scores and pill-only scores."""
+    whole, pill = [], []
     for start in range(0, len(paths), batch_size):
+        chunk = paths[start:start + batch_size]
         batch = torch.stack([
             transform()(to_dtype(pil_to_tensor(Image.open(p).convert("RGB")), torch.float32, scale=True))
-            for p in paths[start:start + batch_size]
+            for p in chunk
         ])
-        scores.append(model.model(batch).pred_score.flatten().float().numpy())
-    return np.concatenate(scores)
+        output = model.model(batch)
+        whole += output.pred_score.flatten().float().tolist()
+        maps = output.anomaly_map.squeeze(1).float().numpy()
+        pill += [float(score_map[pill_region(path)].max()) for score_map, path in zip(maps, chunk)]
+    return np.array(whole), np.array(pill)
 
 
 def train(pool_paths, val_paths, work):
@@ -95,9 +114,10 @@ def main():
     start = time.perf_counter()
     with tempfile.TemporaryDirectory() as work:
         model = train(pool, val, Path(work))
-    val_scores = predict(model, val)
+    val_whole, val_scores = predict(model, val)
     threshold = ad_metrics.pick_threshold(val_scores)
-    test_scores = predict(model, test)
+    test_whole, test_scores = predict(model, test)
+    whole_threshold = ad_metrics.pick_threshold(val_whole)
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -107,6 +127,7 @@ def main():
         "image_size": SIZE,
         "backbone": BACKBONE,
         "layers": LAYERS,
+        "score_area": "pill",
     }, out)
 
     summary = {
@@ -117,6 +138,13 @@ def main():
         "recall_by_defect": {g: float(np.mean(test_scores[groups == g] > threshold)) for g in ("chip", "dirt")},
         "validation_scores": val_scores.tolist(),
         "test_scores": {f"{g}/{p.name}": float(s) for g, p, s in zip(groups, test, test_scores)},
+        "score_area": "pill",
+        "whole_image": {
+            "threshold": whole_threshold,
+            "overall": ad_metrics.image_metrics(labels, test_whole, whole_threshold),
+            "recall_by_defect": {g: float(np.mean(test_whole[groups == g] > whole_threshold)) for g in ("chip", "dirt")},
+            "validation_scores": val_whole.tolist(),
+        },
         "build_seconds": round(time.perf_counter() - start, 1),
     }
     results = ROOT / "results" / "pillqc_model"

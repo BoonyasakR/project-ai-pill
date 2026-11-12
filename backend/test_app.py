@@ -12,7 +12,7 @@ from PIL import Image
 import app as service
 from colour_check import build_seen, novel_colour
 from inference import PILLQC_POSE, Inspector, overlay_heatmap
-from segmentation import align_pill, find_pills, in_training_pose
+from segmentation import align_pill, find_pills, in_training_pose, pink_pill_mask, round_pill_region
 
 
 class FakeInspector:
@@ -160,6 +160,18 @@ class ColourTest(unittest.TestCase):
             self.assertGreater(self.area(specked_pill(stain)), 300, stain)
 
 
+class RoundPillTest(unittest.TestCase):
+    def test_floor_dirt_touching_the_pill_is_left_out(self):
+        crop = np.full((225, 225, 3), (70, 120, 120), np.uint8)
+        cv2.circle(crop, (112, 112), 74, (240, 190, 180), -1)
+        cv2.rectangle(crop, (100, 180), (125, 222), (235, 200, 195), -1)  # White dirt joined to the pill.
+        mask = pink_pill_mask(crop)
+        self.assertTrue(mask[215, 112])
+        region = round_pill_region(mask)
+        self.assertFalse(region[215, 112])
+        self.assertTrue(region[112, 112] and region[112, 40] and region[112, 184])  # Centre and rim.
+
+
 class RoutingTest(unittest.TestCase):
     """A single pill must not be judged by a whole-image model it is not posed for."""
 
@@ -257,6 +269,20 @@ class RoutingTest(unittest.TestCase):
             cv2.circle(scene, (x, 300), 120, (240, 190, 180), -1)
         result = self.pillqc(scene, [])
         self.assertEqual((result["route"], len(result["pills"]), result["warnings"]), ("pills", 3, []))
+
+    def test_pillqc_crop_scores_the_pill_only(self):
+        crop = np.full((225, 225, 3), (70, 120, 120), np.uint8)
+        cv2.circle(crop, (112, 112), 74, (240, 190, 180), -1)
+        hot_floor = torch.zeros(1, 1, 32, 32)
+        hot_floor[..., 0, 0] = 50.0  # Dirt in the corner, far from the pill.
+        inspector = Inspector.__new__(Inspector)
+        inspector.model = lambda batch: SimpleNamespace(pred_score=torch.tensor([50.0]), anomaly_map=hot_floor)
+        inspector.transform = lambda tensor: tensor
+        inspector.image_size, inspector.threshold, inspector.scene_threshold = 32, 10.0, 12.0
+        inspector.colour_seen = inspector.colour_threshold = inspector.scene_colour_threshold = None
+        inspector.pose, inspector.score_area = PILLQC_POSE, "pill"
+        result = inspector.inspect(Image.fromarray(crop))
+        self.assertEqual((result["score"], result["is_anomalous"]), (0.0, False))
 
     def test_clean_images_have_no_warnings(self):
         self.assertEqual(self.inspect(self.scene(), [5.0])["warnings"], [])

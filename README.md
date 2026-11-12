@@ -78,6 +78,25 @@ few-shot numbers on MVTec are exploratory. pillQC photos show about 28 normal pi
 several times, so its images are not independent. pillQC images are not stored in this repository;
 its license limits use to MathWorks products.
 
+## pillQC: score the pill only
+
+The first pillQC model scored the whole crop. Some normal validation crops have white dirt on the
+teal floor next to the pill, which scored up to 55 and set the threshold at 55.21. Most defects
+scored below that. The model now scores only the pill: the largest circle inside the pink pill
+mask, grown by 5%, so floor dirt that touches the pill is left out. This was chosen from the
+validation crops only, then the test set was run once.
+
+| pillQC | Threshold | Image AUROC | Precision | Recall | F1 | Chip recall | Dirt recall | False positives |
+|---|---|---|---|---|---|---|---|---|
+| One pill, whole crop (before) | 55.21 | 0.959 | 1.000 | 0.249 | 0.398 | 0.44 | 0.19 | 0 / 49 |
+| One pill, pill only | 47.39 | 0.990 | 1.000 | 0.746 | 0.854 | 0.88 | 0.70 | 0 / 49 |
+| Multi-pill (before) | 67.64 | 0.863 | 1.000 | 0.015 | 0.029 | 0.05 | 0.00 | 0 / 294 |
+| Multi-pill, clean cut-outs | 54.83 | 0.933 | 0.986 | 0.391 | 0.560 | 0.55 | 0.34 | 6 / 294 |
+
+In simulated multi-pill scenes, pills were cut out with the pink mask, so floor dirt was pasted
+along with them. It is now cut off at the same circle. Multi-pill recall is still low, because
+pills pasted at new sizes score higher than crops, which raises the threshold.
+
 ## Several pills in one image
 
 The web app also accepts several non-overlapping pills on a dark background. It separates the
@@ -147,8 +166,8 @@ skipped. The multi-pill thresholds in `results/multi_pill/` were set for the 512
 
 To inspect pillQC tablets as well, build their memory bank and threshold (about a minute on a CPU,
 needs the pillQC images in `data/pillqc/`), then pick the type on the upload page. pillQC takes one
-pill on its teal background, or several pills on a dark background. Its thresholds catch few defects
-(recall 0.25 single, 0.015 multi-pill); see `docs/updates/2026-11-11_pill_type_selector/` for why.
+pill on its teal background, or several pills on a dark background. See "pillQC: score the pill
+only" above for its results.
 
 ```bash
 backend/.venv/bin/python src/build_pillqc_model.py --root data/pillqc
