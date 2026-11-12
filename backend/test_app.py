@@ -11,7 +11,7 @@ from PIL import Image
 
 import app as service
 from colour_check import build_seen, novel_colour
-from inference import Inspector, overlay_heatmap
+from inference import PILLQC_POSE, Inspector, overlay_heatmap
 from segmentation import align_pill, find_pills, in_training_pose
 
 
@@ -50,6 +50,24 @@ class ApiTest(unittest.TestCase):
     def test_rejects_large_file(self):
         response = self.upload(b"0" * (service.MAX_UPLOAD_BYTES + 1))
         self.assertEqual(response.status_code, 413)
+
+    def test_rejects_unknown_pill_type(self):
+        service.app.dependency_overrides.clear()
+        response = self.client.post(
+            "/api/inspect", files={"file": ("pill.png", png_bytes(), "image/png")}, data={"pill_type": "capsule"}
+        )
+        self.assertEqual(response.status_code, 400)
+
+    def test_pill_type_picks_its_own_model(self):
+        service.app.dependency_overrides.clear()
+        picked = []
+        original = service.load_inspector
+        service.load_inspector = lambda name: picked.append(name) or FakeInspector()
+        self.addCleanup(setattr, service, "load_inspector", original)
+        for data in ({}, {"pill_type": "pillqc"}):
+            response = self.client.post("/api/inspect", files={"file": ("pill.png", png_bytes(), "image/png")}, data=data)
+            self.assertEqual(response.status_code, 200)
+        self.assertEqual(picked, ["mvtec", "pillqc"])
 
     def test_results_keep_only_public_fields(self):
         result = self.client.get("/api/results").json()
@@ -214,6 +232,31 @@ class RoutingTest(unittest.TestCase):
         self.assertEqual(result["score"], 5.0)
         self.assertTrue(result["odd_colour"])
         self.assertTrue(result["is_anomalous"])
+
+    def pillqc(self, scene, scores):
+        queue = iter(scores)
+        inspector = Inspector.__new__(Inspector)
+        inspector.model = lambda batch: SimpleNamespace(pred_score=torch.tensor([next(queue)]), anomaly_map=torch.zeros(1, 1, 8, 8))
+        inspector.transform = lambda tensor: tensor
+        inspector.image_size, inspector.threshold, inspector.scene_threshold = 8, 10.0, 12.0
+        inspector.colour_seen = inspector.colour_threshold = inspector.scene_colour_threshold = None
+        inspector.pose = PILLQC_POSE
+        inspector.inspect_scene = lambda image, masks: {"route": "pills", "pills": [{} for _ in masks]}
+        return inspector.inspect(Image.fromarray(scene))
+
+    def test_pillqc_crop_keeps_whole_image_score(self):
+        crop = np.full((225, 225, 3), (70, 120, 120), np.uint8)  # Teal border, like a pillQC crop.
+        cv2.circle(crop, (112, 112), 74, (240, 190, 180), -1)
+        cv2.circle(crop, (20, 20), 6, (240, 190, 180), -1)  # A speck: no warning on this route.
+        result = self.pillqc(crop, [20.0])
+        self.assertEqual((result["score"], result["is_anomalous"], result["warnings"]), (20.0, True, []))
+
+    def test_pillqc_pills_on_dark_background_are_cut_out(self):
+        scene = np.zeros((600, 900, 3), np.uint8)
+        for x in (150, 450, 750):
+            cv2.circle(scene, (x, 300), 120, (240, 190, 180), -1)
+        result = self.pillqc(scene, [])
+        self.assertEqual((result["route"], len(result["pills"]), result["warnings"]), ("pills", 3, []))
 
     def test_clean_images_have_no_warnings(self):
         self.assertEqual(self.inspect(self.scene(), [5.0])["warnings"], [])

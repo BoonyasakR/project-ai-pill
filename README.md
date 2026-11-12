@@ -16,7 +16,7 @@ Test set: 26 normal and 141 defective images. Thresholds come from normal valida
 
 See `docs/` for the report and slides.
 
-## Colour check
+## Colour check (MVTec Pill)
 
 PatchCore missed 6 of the 25 `color` defects. On these pills, normal specks are dull red. The
 defects are stains in new colours: bright red, pink, yellow, or blue. Many are small or on the rim.
@@ -40,6 +40,43 @@ the dark blue background. Cracks remain the weakest type, with a recall of 0.77.
 
 The 256 PatchCore model trained here scores slightly below the Colab one (Image AUROC 0.944 against
 0.950). The hardware and the random coreset start differ.
+
+The colour check applies to MVTec Pill only. The pillQC model has no colour table, so pillQC pills
+are judged by PatchCore alone.
+
+## Round 2: reliability and few-shot
+
+Run with `notebooks/04_reliability_fewshot.ipynb` on a Colab T4. Every setting was fixed before the
+run and matches the main result. Results are in `results/reliability/` and `results/fewshot/`.
+
+Five seeds on the same split, and a 95% bootstrap interval (2,000 image resamples, fixed threshold)
+on the seed 42 run, which reproduces the table above exactly:
+
+| Model | Image AUROC, 5 seeds | Recall, 5 seeds | Image AUROC, 95% interval |
+|---|---|---|---|
+| PatchCore | 0.948 ± 0.003 | 0.853 ± 0.018 | 0.950 [0.912, 0.980] |
+| PaDiM | 0.921 ± 0.015 | 0.384 ± 0.153 | 0.917 [0.864, 0.958] |
+
+The image AUROC gap between the models is 0.033 [-0.014, 0.083]. The interval includes zero, so
+this test set does not show that PatchCore ranks images better than PaDiM.
+
+Few-shot PatchCore builds the memory bank from a few normal images, 5 draws each. pillQC is a second
+tablet type with image labels only; its normal crops are split by source photo.
+
+| Normal images | MVTec Pill image AUROC | pillQC image AUROC |
+|---|---|---|
+| 1 | 0.820 ± 0.041 | 0.817 ± 0.085 |
+| 5 | 0.887 ± 0.019 | 0.910 ± 0.027 |
+| 10 | 0.903 ± 0.016 | 0.918 ± 0.015 |
+| 25 | 0.927 ± 0.011 | 0.947 ± 0.004 |
+| All (227 / 46) | 0.947 ± 0.003 | 0.957 ± 0.002 |
+
+The validation images that set the threshold are extra to these counts. On pillQC the threshold
+rule gives recall 0.288 at precision 1.000 with all images, so the scores rank well but the
+threshold does not carry over to a new tablet type. The MVTec test set was already used, so the
+few-shot numbers on MVTec are exploratory. pillQC photos show about 28 normal pills photographed
+several times, so its images are not independent. pillQC images are not stored in this repository;
+its license limits use to MathWorks products.
 
 ## Several pills in one image
 
@@ -108,6 +145,15 @@ A `patchcore_pill_256.pt` file exported from the Colab notebook still works. Set
 skipped. The multi-pill thresholds in `results/multi_pill/` were set for the 512 model, so run
 `src/evaluate_multi_pill.py calibrate` again, with the same `MODEL_PATH`, after changing the model.
 
+To inspect pillQC tablets as well, build their memory bank and threshold (about a minute on a CPU,
+needs the pillQC images in `data/pillqc/`), then pick the type on the upload page. pillQC takes one
+pill on its teal background, or several pills on a dark background. Its thresholds catch few defects
+(recall 0.25 single, 0.015 multi-pill); see `docs/updates/2026-11-11_pill_type_selector/` for why.
+
+```bash
+backend/.venv/bin/python src/build_pillqc_model.py --root data/pillqc
+```
+
 In a second terminal:
 
 ```bash
@@ -125,7 +171,17 @@ backend/.venv/bin/python -m unittest discover -s tests
 cd backend && .venv/bin/python -m unittest test_app
 ```
 
+## Datasets
+
+Download the images yourself; they are not stored in this repository.
+
+| Dataset | Link | Put it in |
+|---|---|---|
+| MVTec AD (Pill category) | [mvtec.com](https://www.mvtec.com/company/research/datasets/mvtec-ad), or the copy on [Kaggle](https://www.kaggle.com/datasets/ipythonx/mvtec-ad) | `data/mvtec/pill/` |
+| pillQC | [github.com/matlab-deep-learning/pillQC](https://github.com/matlab-deep-learning/pillQC) | `data/pillqc/` |
+
 ## Dataset license
 
-MVTec AD is licensed for non-commercial use under CC BY-NC-SA 4.0. Dataset images are not stored
-in this repository.
+MVTec AD is licensed for non-commercial use under CC BY-NC-SA 4.0. pillQC is under the MathWorks
+license in its repository, which limits use to MathWorks products; this project uses it only for
+coursework and does not share its images. Dataset images are not stored in this repository.

@@ -94,6 +94,18 @@ class PrepareDatasetTest(unittest.TestCase):
         with self.assertRaises(ValueError):
             pd.make_split(self.pill, val_ratio=1)
 
+    def test_pillqc_split_keeps_each_photo_in_one_set(self):
+        groups = {f"photo{p}": [f"p{p}_{i}.jpg" for i in range(3 + p)] for p in range(6)}
+        split = pd.make_pillqc_split(groups)
+        self.assertEqual(split, pd.make_pillqc_split(groups))
+        self.assertEqual([len(split["photos"][part]) for part in ("test", "validation", "pool")], [2, 2, 2])
+        for part, photos in split["photos"].items():
+            self.assertEqual(split[part], sorted(crop for photo in photos for crop in groups[photo]))
+        everything = split["test"] + split["validation"] + split["pool"]
+        self.assertEqual(sorted(everything), sorted(crop for crops in groups.values() for crop in crops))
+        with self.assertRaises(ValueError):
+            pd.make_pillqc_split({f"photo{p}": ["a.jpg"] for p in range(4)})
+
     def test_cli_writes_split(self):
         out = self.tmp / "out" / "split.json"
         code = pd.main(["--root", str(self.tmp), "--out", str(out)])

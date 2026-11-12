@@ -17,10 +17,21 @@ const METRICS = [
 ];
 
 const MODEL_NAMES = { patchcore: "PatchCore", padim: "PaDiM" };
+const PILL_TYPES = {
+  mvtec: {
+    label: "MVTec Pill (ยาเม็ดรีสีขาว)",
+    hint: "ใช้ภาพยาหนึ่งเม็ดหรือหลายเม็ดที่วางไม่ทับกันบนพื้นสีเข้ม",
+  },
+  pillqc: {
+    label: "pillQC (ยาเม็ดกลมสีชมพู)",
+    hint: "ใช้ภาพยาหนึ่งเม็ดบนพื้นสีเขียวอมฟ้าแบบชุดข้อมูล pillQC หรือหลายเม็ดที่วางไม่ทับกันบนพื้นสีเข้ม ยาชนิดนี้ยังจับตำหนิได้น้อย: ราว 1 ใน 4 เม็ดในภาพเดี่ยว และแทบไม่ได้เลยในภาพหลายเม็ด",
+  },
+};
 const fixed = (value, digits = 3) => (typeof value === "number" ? value.toFixed(digits) : "-");
 
 function UploadPage({ onResult }) {
   const [file, setFile] = useState(null);
+  const [pillType, setPillType] = useState("mvtec");
   const [preview, setPreview] = useState(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
@@ -38,10 +49,11 @@ function UploadPage({ onResult }) {
     try {
       const body = new FormData();
       body.append("file", file);
+      body.append("pill_type", pillType);
       const response = await fetch("/api/inspect", { method: "POST", body });
       const data = await response.json();
       if (!response.ok) throw new Error(data.detail || "ตรวจภาพไม่สำเร็จ");
-      onResult({ ...data, fileName: file.name });
+      onResult({ ...data, fileName: file.name, pillType });
     } catch (problem) {
       setError(problem.message);
     } finally {
@@ -52,8 +64,14 @@ function UploadPage({ onResult }) {
   return (
     <section className="panel narrow">
       <h2>อัปโหลดภาพยาเม็ด</h2>
+      <label className="field">
+        ชนิดยา
+        <select value={pillType} onChange={(event) => setPillType(event.target.value)}>
+          {Object.entries(PILL_TYPES).map(([id, type]) => <option key={id} value={id}>{type.label}</option>)}
+        </select>
+      </label>
       <p className="muted">
-        ใช้ภาพยาหนึ่งเม็ดหรือหลายเม็ดที่วางไม่ทับกันบนพื้นสีเข้ม โมเดลนี้เรียนรู้จากยาเม็ดชนิดเดียวใน MVTec AD Pill
+        {PILL_TYPES[pillType].hint} แต่ละชนิดใช้ memory bank และ threshold ของตัวเอง ระบบไม่ระบุชนิดยาให้อัตโนมัติ
       </p>
       <label className="drop">
         {preview ? <img src={preview} alt="ภาพที่เลือก" /> : <span>เลือกไฟล์ภาพ PNG, JPG หรือ WebP</span>}
@@ -81,7 +99,7 @@ function SceneResult({ result }) {
     <section className="panel">
       <div className="verdict-row">
         <div>
-          <p className="muted">{result.fileName}</p>
+          <p className="muted">{result.fileName} · {PILL_TYPES[result.pillType]?.label}</p>
           <h2 className={bad ? "bad" : "good"}>{bad ? `ผิดปกติ ${bad} เม็ด` : "ปกติทุกเม็ด"}</h2>
         </div>
         <dl className="stats">
@@ -127,7 +145,7 @@ function ResultPage({ result, goToUpload }) {
     <section className="panel">
       <div className="verdict-row">
         <div>
-          <p className="muted">{result.fileName}</p>
+          <p className="muted">{result.fileName} · {PILL_TYPES[result.pillType]?.label}</p>
           <h2 className={abnormal ? "bad" : "good"}>{abnormal ? "ผิดปกติ" : "ปกติ"}</h2>
         </div>
         <dl className="stats">
