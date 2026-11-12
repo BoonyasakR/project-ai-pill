@@ -14,7 +14,10 @@ from PIL import Image
 from torchvision.transforms.v2 import Compose, Normalize, Resize
 from torchvision.transforms.v2.functional import pil_to_tensor, to_dtype
 
-from segmentation import MIN_RELIABLE_LENGTH, MIN_WARNED_AREA, align_pill, find_blobs, in_training_pose, keep_pills, pill_pose
+from colour_check import BINS, novel_colour
+from segmentation import (
+    CANVAS, MIN_RELIABLE_LENGTH, MIN_WARNED_AREA, align_pill, find_blobs, in_training_pose, keep_pills, pill_pose,
+)
 
 PILL_EDGE_PIXELS = 5  # Ignore this rim of the pill, where the background bleeds in.
 MARK_GOOD = (40, 200, 110)
@@ -22,6 +25,7 @@ MARK_BAD = (240, 60, 50)
 ROW_HEIGHT = 300  # Pixels. Only affects numbering order.
 HEATMAP_LOW = 0.5  # Share of the threshold shown as the coldest colour.
 HEATMAP_HIGH = 1.25  # Share of the threshold shown as the hottest colour.
+DEVICE = "mps" if torch.backends.mps.is_available() else "cpu"  # The Apple GPU is several times faster.
 
 
 def overlay_heatmap(image, anomaly_map, threshold):
@@ -49,17 +53,24 @@ class Inspector:
     def __init__(self, model_path, scene_results=None):
         scene_data = json.loads(Path(scene_results).read_text()) if scene_results else {}
         self.scene_threshold = scene_data.get("threshold")
+        self.scene_colour_threshold = scene_data.get("colour_threshold")
         checkpoint = torch.load(Path(model_path), map_location="cpu", weights_only=True)
         self.threshold = float(checkpoint["threshold"])
         self.image_size = int(checkpoint["image_size"])
         state = checkpoint["state_dict"]
+        # Older model files have no colour table. They still work, without the colour check.
+        self.colour_seen, self.colour_threshold = None, None
+        if "colour_seen" in checkpoint:
+            bits = np.unpackbits(checkpoint["colour_seen"].numpy())[:BINS ** 3]
+            self.colour_seen = bits.reshape((BINS,) * 3).astype(bool)
+            self.colour_threshold = float(checkpoint["colour_threshold"])
 
         self.model = PatchcoreModel(
             layers=checkpoint["layers"], backbone=checkpoint["backbone"], pre_trained=False
         )
         self.model.memory_bank = torch.empty_like(state["memory_bank"])
         self.model.load_state_dict(state)
-        self.model.eval()
+        self.model.to(DEVICE).eval()
         self.transform = Compose([
             Resize((self.image_size, self.image_size), antialias=True),
             Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
@@ -78,7 +89,7 @@ class Inspector:
             self.transform(to_dtype(torch.from_numpy(view).permute(2, 0, 1), torch.float32, scale=True))
             for view, _ in views
         ])
-        maps = self.model(batch).anomaly_map.squeeze(1).numpy()
+        maps = self.model(batch.to(DEVICE)).anomaly_map.squeeze(1).cpu().numpy()
         size = (self.image_size, self.image_size)
         kernel = np.ones((PILL_EDGE_PIXELS, PILL_EDGE_PIXELS), np.uint8)
         regions = [
@@ -87,7 +98,23 @@ class Inspector:
         ]
         scores = [float(score_map[region].max()) for score_map, region in zip(maps, regions)]
         best = int(np.argmin(scores))
-        return scores[best], views[best][0], np.where(regions[best], maps[best], 0)
+        colour_area, colour_mask = self.check_colour(*views[best])
+        return scores[best], views[best][0], np.where(regions[best], maps[best], 0), colour_area, colour_mask
+
+    def check_colour(self, image, mask):
+        """Measure unseen colour on a pill posed on the training canvas.
+
+        Returns the largest blob area and the unseen pixels at heatmap size.
+        """
+        if self.colour_seen is None:
+            return 0, None
+        area, novel = novel_colour(self.colour_seen, image, mask)
+        size = (self.image_size, self.image_size)
+        return area, cv2.resize(novel.astype(np.float32), size, interpolation=cv2.INTER_AREA) > 0
+
+    def mark_colour(self, anomaly_map, colour_mask, threshold):
+        """Show flagged unseen colour as hot on the heatmap."""
+        return np.where(colour_mask, np.maximum(anomaly_map, threshold * HEATMAP_HIGH), anomaly_map)
 
     def inspect_scene(self, image, masks):
         """Inspect every pill in an RGB array and mark the results on the image."""
@@ -96,8 +123,11 @@ class Inspector:
         marked = image.copy()
         pills = []
         for number, mask in enumerate(sorted(masks, key=reading_order), start=1):
-            score, view, anomaly_map = self.score_pill(image, mask, everything & ~mask)
-            abnormal = score > self.scene_threshold
+            score, view, anomaly_map, colour_area, colour_mask = self.score_pill(image, mask, everything & ~mask)
+            odd_colour = self.scene_colour_threshold is not None and colour_area > self.scene_colour_threshold
+            if odd_colour:
+                anomaly_map = self.mark_colour(anomaly_map, colour_mask, self.scene_threshold)
+            abnormal = score > self.scene_threshold or odd_colour
             colour = MARK_BAD if abnormal else MARK_GOOD
             contours, _ = cv2.findContours(mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
             cv2.drawContours(marked, contours, -1, colour, 3)
@@ -108,6 +138,7 @@ class Inspector:
             pills.append({
                 "number": number,
                 "score": score,
+                "odd_colour": odd_colour,
                 "is_anomalous": abnormal,
                 "heatmap": to_data_url(overlay_heatmap(small, anomaly_map, self.scene_threshold)),
             })
@@ -143,7 +174,7 @@ class Inspector:
         can_align = self.scene_threshold is not None
         if can_align and (len(masks) > 1 or (masks and not in_training_pose(masks[0]))):
             return self.inspect_scene(array, masks)
-        tensor = to_dtype(pil_to_tensor(image), torch.float32, scale=True)
+        tensor = to_dtype(pil_to_tensor(image), torch.float32, scale=True).to(DEVICE)
 
         start = time.perf_counter()
         output = self.model(self.transform(tensor).unsqueeze(0))
@@ -156,12 +187,22 @@ class Inspector:
             turned = self.model(self.transform(tensor.flip(1, 2)).unsqueeze(0))
             if float(turned.pred_score.flatten()[0]) <= self.threshold:
                 return self.inspect_scene(array, masks)
-        anomaly_map = output.anomaly_map.squeeze().numpy()
+        anomaly_map = output.anomaly_map.squeeze().cpu().numpy()
+        odd_colour = False
+        if masks:
+            # The pill is posed like training, so resizing puts it on the training canvas.
+            canvas = cv2.resize(array, (CANVAS, CANVAS), interpolation=cv2.INTER_AREA)
+            pill = cv2.resize(masks[0].astype(np.uint8), (CANVAS, CANVAS), interpolation=cv2.INTER_NEAREST) > 0
+            colour_area, colour_mask = self.check_colour(canvas, pill)
+            odd_colour = self.colour_threshold is not None and colour_area > self.colour_threshold
+            if odd_colour:
+                anomaly_map = self.mark_colour(anomaly_map, colour_mask, self.threshold)
         resized = image.resize((self.image_size, self.image_size))
         return {
             "score": score,
             "threshold": self.threshold,
-            "is_anomalous": score > self.threshold,
+            "odd_colour": odd_colour,
+            "is_anomalous": score > self.threshold or odd_colour,
             "latency_ms": latency_ms,
             "image": to_data_url(resized),
             "heatmap": to_data_url(overlay_heatmap(resized, anomaly_map, self.threshold)),

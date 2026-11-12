@@ -4,6 +4,7 @@ Run `calibrate` first. It sets the threshold from validation pills only. Run `te
 """
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -15,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "backend"), str(ROOT / "src")]
 
 from ad_metrics import pick_threshold  # noqa: E402
+from colour_check import MIN_AREA  # noqa: E402
 from inference import Inspector  # noqa: E402
 from make_pill_scenes import PILLS_PER_SCENE, compose_scene, cut_pill  # noqa: E402
 from segmentation import find_pills  # noqa: E402
@@ -40,9 +42,10 @@ def run_scene(inspector, items, rng, touching):
     for (name, defect, _, _), mask in zip(items, truth):
         overlaps = [(mask & other).sum() / (mask | other).sum() for other in found]
         best = int(np.argmax(overlaps)) if overlaps else -1
-        row = {"name": name, "defect": defect, "touching": touching, "score": None}
+        row = {"name": name, "defect": defect, "touching": touching, "score": None, "colour_area": None}
         if overlaps and overlaps[best] >= MIN_IOU:
-            row["score"] = inspector.score_pill(scene, found[best], everything & ~found[best])[0]
+            score, _, _, colour_area, _ = inspector.score_pill(scene, found[best], everything & ~found[best])
+            row["score"], row["colour_area"] = score, colour_area
         rows.append(row)
     return rows, len(found)
 
@@ -79,8 +82,11 @@ def calibrate(inspector):
         for touching in (False, True):
             rows += run_pass(inspector, pills, seed, touching)[0]
     scores = [row["score"] for row in rows if row["score"] is not None]
+    areas = [row["colour_area"] for row in rows if row["score"] is not None]
     result = {
         "threshold": float(pick_threshold(scores)),
+        "colour_threshold": max(float(pick_threshold(areas)), MIN_AREA),
+        "validation_colour_area_max": max(areas),
         "validation_pills": len(rows),
         "validation_missed_by_segmentation": len(rows) - len(scores),
         "validation_score_percentiles": {
@@ -92,12 +98,16 @@ def calibrate(inspector):
     print(json.dumps(result, indent=2))
 
 
-def summarize(rows, threshold):
+def summarize(rows, threshold, colour_threshold):
     defective = [row for row in rows if row["defect"] != "good"]
     normal = [row for row in rows if row["defect"] == "good"]
 
+    def combined(row):
+        """Each check divided by its own threshold, larger one kept."""
+        return max(row["score"] / threshold, row["colour_area"] / colour_threshold)
+
     def flagged(row):
-        return row["score"] is not None and row["score"] > threshold
+        return row["score"] is not None and combined(row) > 1
 
     true_positive = sum(flagged(row) for row in defective)
     false_positive = sum(flagged(row) for row in normal)
@@ -117,13 +127,13 @@ def summarize(rows, threshold):
     }
     if normal and defective:
         labels = [row["defect"] != "good" for row in scored]
-        summary["auroc"] = roc_auc_score(labels, [row["score"] for row in scored])
+        summary["auroc"] = roc_auc_score(labels, [combined(row) for row in scored])
     return summary
 
 
 def test(inspector):
     result = json.loads(OUTPUT.read_text())
-    threshold = result["threshold"]
+    thresholds = result["threshold"], result["colour_threshold"]
     paths = [
         (path, path.parent.name)
         for path in sorted((DATA / "test").glob("*/*.png"))
@@ -135,14 +145,14 @@ def test(inspector):
             pass_rows, found = run_pass(inspector, pills, seed, touching)
             rows += pass_rows
             scene_counts[f"seed{seed}_touching{touching}"] = {"truth": len(pass_rows), "found": found}
-            print(seed, touching, summarize(pass_rows, threshold), flush=True)
+            print(seed, touching, summarize(pass_rows, *thresholds), flush=True)
     result["segmentation_counts"] = scene_counts
     result["pill_scores"] = rows
-    result["overall"] = summarize(rows, threshold)
-    result["spaced"] = summarize([row for row in rows if not row["touching"]], threshold)
-    result["touching"] = summarize([row for row in rows if row["touching"]], threshold)
+    result["overall"] = summarize(rows, *thresholds)
+    result["spaced"] = summarize([row for row in rows if not row["touching"]], *thresholds)
+    result["touching"] = summarize([row for row in rows if row["touching"]], *thresholds)
     result["by_defect"] = {
-        defect: summarize([row for row in rows if row["defect"] == defect], threshold)
+        defect: summarize([row for row in rows if row["defect"] == defect], *thresholds)
         for defect in sorted({row["defect"] for row in rows})
     }
     OUTPUT.write_text(json.dumps(result, indent=2))
@@ -153,5 +163,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("stage", choices=["calibrate", "test"])
     stage = parser.parse_args().stage
-    model = Inspector(ROOT / "models" / "patchcore_pill_256.pt")
+    model = Inspector(os.environ.get("MODEL_PATH", ROOT / "models" / "patchcore_pill_512.pt"))
     (calibrate if stage == "calibrate" else test)(model)

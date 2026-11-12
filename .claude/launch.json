@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "backend",
-      "runtimeExecutable": "/Users/boonyasakrattanadiloknaphuket/Documents/GitHub/project ai pill/backend/.venv/bin/python",
+      "runtimeExecutable": "backend/.venv/bin/python",
       "runtimeArgs": ["-m", "uvicorn", "app:app", "--app-dir", "backend", "--port", "8000"],
       "port": 8000
     },

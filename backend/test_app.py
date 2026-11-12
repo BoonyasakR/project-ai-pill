@@ -10,6 +10,7 @@ from fastapi.testclient import TestClient
 from PIL import Image
 
 import app as service
+from colour_check import build_seen, novel_colour
 from inference import Inspector, overlay_heatmap
 from segmentation import align_pill, find_pills, in_training_pose
 
@@ -113,8 +114,38 @@ class SegmentationTest(unittest.TestCase):
         self.assertFalse(in_training_pose(mask(centre=(420, 400))))
 
 
+def specked_pill(stain=None):
+    """A white training-pose pill with dull red specks, and optionally a stain of another colour."""
+    scene = np.zeros((800, 800, 3), np.uint8)
+    ellipse(scene, (400, 400), (346, 238))
+    for x in range(150, 650, 60):
+        cv2.circle(scene, (x, 380), 6, (130, 60, 70), -1)
+    if stain:
+        cv2.circle(scene, (400, 500), 12, stain, -1)
+    return scene
+
+
+class ColourTest(unittest.TestCase):
+    def setUp(self):
+        normal = specked_pill()
+        self.seen = build_seen([(normal, find_pills(normal)[0])])
+
+    def area(self, scene):
+        return novel_colour(self.seen, scene, find_pills(scene)[0])[0]
+
+    def test_normal_colours_are_seen(self):
+        self.assertEqual(self.area(specked_pill()), 0)
+        self.assertEqual(self.area(specked_pill(stain=(130, 60, 70))), 0)  # A larger normal speck.
+
+    def test_new_colours_are_found(self):
+        for stain in [(40, 40, 200), (230, 220, 60), (240, 40, 60)]:  # Blue, yellow, bright red.
+            self.assertGreater(self.area(specked_pill(stain)), 300, stain)
+
+
 class RoutingTest(unittest.TestCase):
     """A single pill must not be judged by a whole-image model it is not posed for."""
+
+    colour_seen = None
 
     def inspect(self, scene, scores, scene_threshold=10.0):
         queue = iter(scores)
@@ -125,6 +156,8 @@ class RoutingTest(unittest.TestCase):
         inspector = Inspector.__new__(Inspector)
         inspector.model, inspector.transform = model, lambda tensor: tensor
         inspector.image_size, inspector.threshold, inspector.scene_threshold = 8, 10.0, scene_threshold
+        inspector.colour_seen = self.colour_seen
+        inspector.colour_threshold = inspector.scene_colour_threshold = 20
         inspector.inspect_scene = lambda image, masks: {"route": "aligned", "pills": [{} for _ in masks]}
         return inspector.inspect(Image.fromarray(scene))
 
@@ -172,6 +205,15 @@ class RoutingTest(unittest.TestCase):
         scene = self.scene()
         ellipse(scene, (60, 60), (8, 8))
         self.assertEqual(self.inspect(scene, [5.0])["warnings"], [])
+
+    def test_odd_colour_flags_a_low_scoring_pill(self):
+        normal = specked_pill()
+        self.colour_seen = build_seen([(normal, find_pills(normal)[0])])
+        self.assertFalse(self.inspect(normal, [5.0])["is_anomalous"])
+        result = self.inspect(specked_pill(stain=(40, 40, 200)), [5.0])
+        self.assertEqual(result["score"], 5.0)
+        self.assertTrue(result["odd_colour"])
+        self.assertTrue(result["is_anomalous"])
 
     def test_clean_images_have_no_warnings(self):
         self.assertEqual(self.inspect(self.scene(), [5.0])["warnings"], [])

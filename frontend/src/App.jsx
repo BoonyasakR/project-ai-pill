@@ -102,7 +102,7 @@ function SceneResult({ result }) {
             <figcaption>
               เม็ดที่ {pill.number}:{" "}
               <span className={pill.is_anomalous ? "bad" : "good"}>{pill.is_anomalous ? "ผิดปกติ" : "ปกติ"}</span>
-              {" "}({fixed(pill.score, 2)})
+              {" "}({fixed(pill.score, 2)}){pill.odd_colour && " มีสีที่ยาปกติไม่มี"}
             </figcaption>
           </figure>
         ))}
@@ -137,6 +137,7 @@ function ResultPage({ result, goToUpload }) {
         </dl>
       </div>
       <Warnings warnings={result.warnings} />
+      {result.odd_colour && <p className="notice" role="status">พบสีที่ยาปกติไม่มี จึงแจ้งว่าผิดปกติ ไม่ว่า Score จะเกิน Threshold หรือไม่</p>}
       <div className="images">
         <figure><img src={result.image} alt="ภาพต้นฉบับ" /><figcaption>ภาพที่ตรวจ</figcaption></figure>
         <figure><img src={result.heatmap} alt="Heatmap จุดผิดปกติ" /><figcaption>Heatmap สีแดงคือบริเวณที่ต่างจากยาปกติมาก</figcaption></figure>
@@ -219,6 +220,10 @@ function ExperimentsPage({ results }) {
       <p className="notice">
         การทดลองเหล่านี้เลือกหลังเห็นผล test จึงเป็น exploratory ไม่ใช่หลักฐานประสิทธิภาพอิสระ
       </p>
+      <p className="muted">
+        แถวที่มี "ตรวจสี" เทรนบน Apple M3 และแจ้งผิดปกติเมื่อ PatchCore เกิน threshold หรือพบสีที่ยาปกติไม่มี
+        เว็บใช้แถว 512 + ตรวจสี
+      </p>
       <div className="scroll">
         <table>
           <thead>
@@ -239,12 +244,12 @@ function ExperimentsPage({ results }) {
               <tr key={name}><td>{name}</td><td colSpan="5">รันไม่สำเร็จ</td></tr>
             ) : (
               <tr key={name}>
-                <td>{run.config.size}, coreset {run.config.coreset}</td>
+                <td>{run.config.size}, coreset {run.config.coreset}{run.config.colour_check && " + ตรวจสี"}</td>
                 <td>{fixed(run.overall.image_auroc)}</td>
                 <td>{fixed(run.overall.pixel_auroc)}</td>
                 <td>{fixed(run.overall.au_pro)}</td>
                 <td>{fixed(run.overall.f1)}</td>
-                <td>{fixed(run.overall.latency_ms, 1)} ms</td>
+                <td>{run.overall.latency_ms ? `${fixed(run.overall.latency_ms, 1)} ms` : "-"}</td>
               </tr>
             )))}
           </tbody>

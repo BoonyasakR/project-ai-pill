@@ -9,7 +9,7 @@ from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from PIL import Image, UnidentifiedImageError
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL_PATH = Path(os.environ.get("MODEL_PATH", ROOT / "models" / "patchcore_pill_256.pt"))
+MODEL_PATH = Path(os.environ.get("MODEL_PATH", ROOT / "models" / "patchcore_pill_512.pt"))
 SCENE_RESULTS = ROOT / "results" / "multi_pill" / "multi_pill_results.json"
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024
 
@@ -44,7 +44,10 @@ def health():
 def results():
     return {
         "main": summarize(ROOT / "results" / "phase3" / "phase3_results.json"),
-        "exploratory": summarize(ROOT / "results" / "phase4" / "phase4_results.json"),
+        "exploratory": {
+            **summarize(ROOT / "results" / "phase4" / "phase4_results.json"),
+            **summarize(ROOT / "results" / "phase5" / "phase5_results.json"),
+        },
     }
 
 
