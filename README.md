@@ -92,10 +92,24 @@ validation crops only, then the test set was run once.
 | One pill, pill only | 47.39 | 0.990 | 1.000 | 0.746 | 0.854 | 0.88 | 0.70 | 0 / 49 |
 | Multi-pill (before) | 67.64 | 0.863 | 1.000 | 0.015 | 0.029 | 0.05 | 0.00 | 0 / 294 |
 | Multi-pill, clean cut-outs | 54.83 | 0.933 | 0.986 | 0.391 | 0.560 | 0.55 | 0.34 | 6 / 294 |
+| One pill, bank + cut-out pool (web app) | 46.87 | 0.990 | 1.000 | 0.751 | 0.858 | 0.91 | 0.70 | 0 / 49 |
+| Multi-pill, bank + cut-out pool (web app) | 48.65 | 0.980 | 0.995 | 0.597 | 0.746 | 0.55 | 0.61 | 3 / 294 |
 
 In simulated multi-pill scenes, pills were cut out with the pink mask, so floor dirt was pasted
-along with them. It is now cut off at the same circle. Multi-pill recall is still low, because
-pills pasted at new sizes score higher than crops, which raises the threshold.
+along with them. It is now cut off at the same circle.
+
+Multi-pill recall stayed low because each scene pill is cut out onto a plain fill before scoring.
+Its rim then touches the fill, never the teal floor of the training crops. On the 54 validation
+pills, cutting out alone raised the median normal score from 33 to 45; resizing barely mattered.
+The memory bank now also holds the 46 pool pills cut out the same way. On validation, the median
+normal scene score fell from 46.6 to 35.1 and the threshold from 54.83 to 48.65. Single-crop
+results barely changed. The test set was then run once for each mode. The multi-pill test had
+already been run with the previous model, so these numbers are exploratory.
+
+Chips are still missed in scenes (recall 0.55, against 0.91 for single crops). The simulated
+scenes also turn each pill at random, which turns its lighting and side band with it; a real photo
+keeps one light direction. On validation, scenes without turns had a lower 99th percentile (52.6
+against 54.8 with the previous model), so the turn makes these results a little pessimistic.
 
 ## Several pills in one image
 
@@ -164,7 +178,7 @@ A `patchcore_pill_256.pt` file exported from the Colab notebook still works. Set
 skipped. The multi-pill thresholds in `results/multi_pill/` were set for the 512 model, so run
 `src/evaluate_multi_pill.py calibrate` again, with the same `MODEL_PATH`, after changing the model.
 
-To inspect pillQC tablets as well, build their memory bank and threshold (about a minute on a CPU,
+To inspect pillQC tablets as well, build their memory bank and threshold (a few minutes on a CPU,
 needs the pillQC images in `data/pillqc/`), then pick the type on the upload page. pillQC takes one
 pill on its teal background, or several pills on a dark background. See "pillQC: score the pill
 only" above for its results.

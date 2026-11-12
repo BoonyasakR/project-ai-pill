@@ -9,6 +9,9 @@ Scores count the pill only, inside `round_pill_region`. Whole-image scores let w
 dirt on the floor of some normal validation crops set the threshold (55.21), so most
 defects passed. Both are saved; the model file uses the pill-only threshold.
 
+The memory bank also holds each pool pill cut out onto the plain fill used for
+multi-pill scenes, so scene pills are compared with pills cut out the same way.
+
     backend/.venv/bin/python src/build_pillqc_model.py --root data/pillqc
 """
 import argparse
@@ -29,8 +32,8 @@ from torchvision.transforms.v2.functional import pil_to_tensor, to_dtype
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / "src"), str(ROOT / "backend")]
 import ad_metrics  # noqa: E402
-from inference import PILL_EDGE_PIXELS  # noqa: E402
-from segmentation import pink_pill_mask, round_pill_region  # noqa: E402
+from inference import PILL_EDGE_PIXELS, PILLQC_POSE  # noqa: E402
+from segmentation import align_pill, pink_pill_mask, round_pill_region  # noqa: E402
 
 SIZE = 256
 BACKBONE = "wide_resnet50_2"
@@ -81,6 +84,13 @@ def train(pool_paths, val_paths, work):
         (work / name).mkdir()
         for path in paths:
             os.symlink(path, work / name / path.name)
+    # Scene pills are cut out onto a plain fill, so their rim never touches the teal floor.
+    # The memory bank also gets each pool pill cut out that way, or every scene rim looks abnormal.
+    for path in pool_paths:
+        image = np.asarray(Image.open(path).convert("RGB"))
+        mask = pink_pill_mask(image)
+        view, _ = align_pill(image, mask & round_pill_region(mask), **PILLQC_POSE["align"])
+        Image.fromarray(view).save(work / "train_good" / f"cut_{path.stem}.png")
     datamodule = Folder(
         name="pillqc", root=work, normal_dir="train_good", normal_test_dir="val_good",
         train_batch_size=8, eval_batch_size=8, num_workers=0,
@@ -132,7 +142,8 @@ def main():
 
     summary = {
         "settings": {"size": SIZE, "backbone": BACKBONE, "layers": LAYERS, "coreset": 0.1, "seed": SEED,
-                     "pool_images": len(pool), "validation_images": len(val), "device": "cpu"},
+                     "pool_images": len(pool), "cut_out_pool_images": len(pool),
+                     "validation_images": len(val), "device": "cpu"},
         "threshold": threshold,
         "overall": ad_metrics.image_metrics(labels, test_scores, threshold),
         "recall_by_defect": {g: float(np.mean(test_scores[groups == g] > threshold)) for g in ("chip", "dirt")},
