@@ -36,7 +36,10 @@ Apple M3 with `src/train_patchcore.py`.
 
 The colour check added no false positives. The largest unseen-colour blob on a normal test pill
 was 2 pixels. One `color` defect is still missed: a blue stain on the rim, whose colour blends into
-the dark blue background. Cracks remain the weakest type, with a recall of 0.77.
+the dark blue background. Cracks remain the weakest type, with a recall of 0.77. All 6 missed
+cracks are faint notches on the rim. Measuring how far the pill outline dents in from a fitted
+ellipse did not separate them: missed cracks dent 83 to 723 pixels, and normal validation pills up
+to 368, so only 1 more crack would be caught. It was not added.
 
 The 256 PatchCore model trained here scores slightly below the Colab one (Image AUROC 0.944 against
 0.950). The hardware and the random coreset start differ.
@@ -93,7 +96,8 @@ validation crops only, then the test set was run once.
 | Multi-pill (before) | 67.64 | 0.863 | 1.000 | 0.015 | 0.029 | 0.05 | 0.00 | 0 / 294 |
 | Multi-pill, clean cut-outs | 54.83 | 0.933 | 0.986 | 0.391 | 0.560 | 0.55 | 0.34 | 6 / 294 |
 | One pill, bank + cut-out pool (web app) | 46.87 | 0.990 | 1.000 | 0.751 | 0.858 | 0.91 | 0.70 | 0 / 49 |
-| Multi-pill, bank + cut-out pool (web app) | 48.65 | 0.980 | 0.995 | 0.597 | 0.746 | 0.55 | 0.61 | 3 / 294 |
+| Multi-pill, bank + cut-out pool | 48.65 | 0.980 | 0.995 | 0.597 | 0.746 | 0.55 | 0.61 | 3 / 294 |
+| Multi-pill, same, pills not turned (web app) | 46.55 | 0.983 | 0.993 | 0.743 | 0.850 | 0.75 | 0.74 | 6 / 294 |
 
 In simulated multi-pill scenes, pills were cut out with the pink mask, so floor dirt was pasted
 along with them. It is now cut off at the same circle.
@@ -106,10 +110,19 @@ normal scene score fell from 46.6 to 35.1 and the threshold from 54.83 to 48.65.
 results barely changed. The test set was then run once for each mode. The multi-pill test had
 already been run with the previous model, so these numbers are exploratory.
 
-Chips are still missed in scenes (recall 0.55, against 0.91 for single crops). The simulated
-scenes also turn each pill at random, which turns its lighting and side band with it; a real photo
-keeps one light direction. On validation, scenes without turns had a lower 99th percentile (52.6
-against 54.8 with the previous model), so the turn makes these results a little pessimistic.
+The simulated scenes turned each pill at random, which turns its lighting and side band with it;
+a real photo keeps one light direction. Round pills are now pasted without a turn. On validation,
+this lowered the threshold from 48.65 to 46.55, and the highest normal score from 56.2 to 46.8.
+The test set was then run once: recall rose from 0.597 to 0.743, close to single crops, with 6
+false alarms in 294 normal pills instead of 3.
+
+Chips are still missed more in scenes (recall 0.75, against 0.91 for single crops). The scene
+cut-out keeps only the circle inside the pink pill, to leave floor dirt behind, and that circle
+also cuts chips off the rim. Cutting at the pink outline instead kept the chips, but pasted floor
+dirt with some normal validation pills and raised the threshold to 56.23, so it was not kept.
+
+The pillQC multi-pill test was run four times while these changes were made, so its numbers may
+be optimistic.
 
 ## Several pills in one image
 

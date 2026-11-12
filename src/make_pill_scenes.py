@@ -5,6 +5,7 @@ import numpy as np
 SCENE_SIZE = (1000, 1400)  # Height, width.
 PILLS_PER_SCENE = 8
 PILL_LENGTH_RANGE = (240, 330)
+TURN_RANGE = (0, 360)  # Degrees.
 BACKGROUND_RGB = (15, 15, 26)
 BACKGROUND_NOISE = 3.0
 
@@ -17,7 +18,7 @@ def cut_pill(image, mask, rng):
     alpha = cv2.GaussianBlur(cv2.dilate(mask.astype(np.uint8) * 255, np.ones((9, 9), np.uint8)), (7, 7), 0)
     rgba = np.dstack([image, alpha])
     side = int(length * scale * 1.2)
-    matrix = cv2.getRotationMatrix2D((float(xs.mean()), float(ys.mean())), rng.uniform(0, 360), scale)
+    matrix = cv2.getRotationMatrix2D((float(xs.mean()), float(ys.mean())), rng.uniform(*TURN_RANGE), scale)
     matrix[:, 2] += side / 2 - np.array([xs.mean(), ys.mean()])
     return cv2.warpAffine(rgba, matrix, (side, side), flags=cv2.INTER_AREA)
 

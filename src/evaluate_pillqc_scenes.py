@@ -1,7 +1,8 @@
 """Set and test the multi-pill threshold for pillQC tablets, as was done for MVTec.
 
 pillQC has no multi-pill photos, so scenes are simulated: each crop's pill is cut out,
-turned, resized, and pasted on a dark background, 8 pills per scene. `calibrate` sets
+resized, and pasted on a dark background, 8 pills per scene. Pills are not turned: these
+round pills show a side band and shadow from one light, which a turn would move. `calibrate` sets
 the threshold from the 54 validation pills only (5 rounds, spaced and touching). Run
 `test` once after that, on the 230 test pills (3 seeds, spaced and touching).
 
@@ -27,10 +28,17 @@ import make_pill_scenes  # noqa: E402
 
 # Round pills take more room than MVTec's ovals, so 8 of them need a larger floor.
 make_pill_scenes.SCENE_SIZE = (1300, 1800)
+# In a real photo every pill has the same light, so the side band and shadow keep their direction.
+make_pill_scenes.TURN_RANGE = (0, 0)
 
 
 def pill_mask(image):
-    """The pink pill without floor dirt that touches it, which would be pasted along."""
+    """The pink pill without floor dirt that touches it, which would be pasted along.
+
+    The circle also cuts off chips on the rim, so scenes understate chip recall. Cutting at
+    the pink outline instead pasted floor dirt with normal validation pills and raised the
+    threshold from 48.65 to 56.23.
+    """
     mask = pink_pill_mask(image)
     return mask & round_pill_region(mask)
 
