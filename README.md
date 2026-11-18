@@ -5,6 +5,8 @@ MVTec AD Pill category with PatchCore as the main model and PaDiM as the baselin
 
 This is a research prototype. It is not a certified pharmaceutical quality system.
 
+ภาษาไทย: [README_TH.md](README_TH.md)
+
 ## Results
 
 Test set: 26 normal and 141 defective images. Thresholds come from normal validation images.
