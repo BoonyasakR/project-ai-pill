@@ -116,7 +116,7 @@ pillQC (ใช้ในการทดลองรอบ 2 เท่านั้
 | รายงาน | `docs/AI_Pill_Anomaly_Detection_Report.docx` |
 | สไลด์นำเสนอ | `docs/AI_Pill_Anomaly_Detection_Slides.pptx` |
 
-ไฟล์โมเดลและชุดข้อมูลไม่อยู่ใน Git
+ไฟล์โมเดลที่ใช้งานอยู่ 3 ไฟล์เก็บผ่าน Git LFS ส่วนชุดข้อมูลไม่อยู่ใน Git ผล few-shot จาก Colab เก็บใน `results/fewshot/` แต่ notebook ไม่ได้บันทึกโมเดลของแต่ละรอบ few-shot
 
 ## ข้อจำกัด
 

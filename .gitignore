@@ -50,10 +50,13 @@ tmp/
 # Datasets
 data/
 
-# Model weights
-models/
+# Model weights (current checkpoints are stored with Git LFS)
+models/*
 *.pt
 *.ckpt
+!models/patchcore_pill_256.pt
+!models/patchcore_pill_512.pt
+!models/patchcore_pillqc_256.pt
 
 # pillQC images may not be redistributed (license limited to MathWorks products)
 docs/updates/**/pillqc_*

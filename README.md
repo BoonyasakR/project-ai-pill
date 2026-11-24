@@ -178,8 +178,10 @@ backend/.venv/bin/python src/evaluate_multi_pill.py test
 
 ## Run the web app
 
-The model file is not in Git. Put the Pill category in `data/mvtec/pill/`, then train the model.
-It takes about 15 to 30 minutes on an Apple M3, and uses the Apple GPU when there is one.
+The three current model files in `models/` are stored with Git LFS. Install Git LFS before cloning
+or pulling to download the actual checkpoints. To train again, put the Pill category in
+`data/mvtec/pill/`, then run the commands below. Training takes about 15 to 30 minutes on an Apple
+M3, and uses the Apple GPU when there is one.
 
 ```bash
 python3.12 -m venv backend/.venv
