@@ -1,12 +1,21 @@
 <!doctype html>
+<!-- บรรทัดบนประกาศว่าเป็นเอกสาร HTML5 (ต้องอยู่บรรทัดแรกสุดเพื่อไม่ให้เบราว์เซอร์เข้าโหมด quirks จึงใส่คำอธิบายไว้ที่นี่) | input: - | output: - -->
+<!-- ราก HTML กำหนดภาษาของหน้าเป็นภาษาไทย | input: - | output: - -->
 <html lang="th">
+  <!-- ส่วนหัว: ข้อมูลของหน้าที่ไม่ได้แสดงเป็นเนื้อหา -->
   <head>
+    <!-- กำหนดการเข้ารหัสอักขระเป็น UTF-8 (รองรับภาษาไทย) -->
     <meta charset="UTF-8" />
+    <!-- ให้หน้าแสดงผลพอดีกับความกว้างของอุปกรณ์ (รองรับมือถือ) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ชื่อหน้าที่แสดงบนแท็บเบราว์เซอร์ -->
     <title>Pill Inspection</title>
   </head>
+  <!-- ส่วนเนื้อหา -->
   <body>
+    <!-- จุดที่ React จะวาดแอปลงมา (main.jsx ค้นหาด้วย id="root") -->
     <div id="root"></div>
+    <!-- โหลดโค้ดเริ่มต้นของแอปแบบ ES module | input: /src/main.jsx | output: แอปเริ่มทำงาน -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

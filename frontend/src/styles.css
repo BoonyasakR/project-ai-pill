@@ -1,133 +1,178 @@
+/* กลุ่มตัวแปรสีและฟอนต์ที่ใช้ทั้งแอป | input: element ราก (:root) | output: ตัวแปร CSS ให้ทุกกฎเรียกใช้ด้วย var(--ชื่อ) */
 :root {
-  --ink: #17212b;
-  --muted: #5d6b78;
-  --line: #d9e0e6;
-  --surface: #ffffff;
-  --page: #f3f5f7;
-  --accent: #0f6b6b;
-  --good: #16794c;
-  --bad: #b3261e;
-  font-family: "Noto Sans Thai", "Sukhumvit Set", -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--ink);
-  background: var(--page);
+  --ink: #17212b; /* สีตัวอักษรหลัก (น้ำเงินเข้มเกือบดำ) */
+  --muted: #5d6b78; /* สีตัวอักษรรอง (เทา) */
+  --line: #d9e0e6; /* สีเส้นขอบ (เทาอ่อน) */
+  --surface: #ffffff; /* สีพื้นกล่อง (ขาว) */
+  --page: #f3f5f7; /* สีพื้นหลังหน้า (เทาอ่อนมาก) */
+  --accent: #0f6b6b; /* สีเน้นหลัก (เขียวอมฟ้าเข้ม) */
+  --good: #16794c; /* สีผลปกติ (เขียว) */
+  --bad: #b3261e; /* สีผลผิดปกติ/ข้อผิดพลาด (แดง) */
+  font-family: "Noto Sans Thai", "Sukhumvit Set", -apple-system, BlinkMacSystemFont, sans-serif; /* ลำดับฟอนต์ที่ใช้ เริ่มจากฟอนต์ไทย */
+  color: var(--ink); /* ตั้งสีตัวอักษรเริ่มต้นทั้งหน้า */
+  background: var(--page); /* ตั้งสีพื้นหลังทั้งหน้า */
 }
 
+/* ให้ขนาดของกล่องรวมขอบและระยะใน (padding/border) ทุก element | input: ทุก element | output: การคำนวณความกว้างที่คาดเดาง่าย */
 * { box-sizing: border-box; }
+/* ลบระยะขอบของ body | input: <body> | output: เนื้อหาชิดขอบหน้าต่าง */
 body { margin: 0; }
+/* ลบระยะขอบบนของหัวข้อและย่อหน้า | input: h1, h2, p | output: ไม่มีช่องว่างเกินด้านบน */
 h1, h2, p { margin-top: 0; }
+/* หัวข้อใหญ่: ไม่มีระยะล่าง ขนาด 1.25 เท่า | input: h1 | output: ชื่อแอปขนาดพอดี */
 h1 { margin-bottom: 0; font-size: 1.25rem; }
+/* หัวข้อรอง: ขนาด 1.25 เท่า ระยะล่าง 0.5 เท่า | input: h2 | output: หัวข้อของแต่ละกล่อง */
 h2 { font-size: 1.25rem; margin-bottom: 0.5rem; }
 
+/* ส่วนหัวของหน้า (ชื่อแอปและเมนู) | input: <header> | output: แถบด้านบน */
 header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 32px;
-  align-items: center;
-  padding: 14px 24px;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
+  display: flex; /* จัดลูกเรียงในแนวนอน */
+  flex-wrap: wrap; /* ขึ้นบรรทัดใหม่เมื่อที่ไม่พอ */
+  gap: 12px 32px; /* ช่องว่างแนวตั้ง 12px แนวนอน 32px */
+  align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+  padding: 14px 24px; /* ระยะในบน-ล่าง 14px ซ้าย-ขวา 24px */
+  background: var(--surface); /* พื้นสีขาว */
+  border-bottom: 1px solid var(--line); /* เส้นคั่นด้านล่าง */
 }
 
+/* แถบเมนู: เรียงปุ่มแนวนอน ขึ้นบรรทัดใหม่ได้ ช่องว่าง 4px | input: <nav> | output: ปุ่มเมนูเรียงกัน */
 nav { display: flex; flex-wrap: wrap; gap: 4px; }
 
+/* พื้นที่เนื้อหาหลัก | input: <main> | output: คอลัมน์กลางกว้างไม่เกิน 1040px */
 main {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 16px;
-  width: min(1040px, 100%);
-  margin: 0 auto;
-  padding: 24px;
+  display: grid; /* จัดแบบตาราง */
+  grid-template-columns: minmax(0, 1fr); /* คอลัมน์เดียวที่ย่อได้ไม่ล้น */
+  gap: 16px; /* ช่องว่างระหว่างกล่อง */
+  width: min(1040px, 100%); /* กว้างสุด 1040px หรือเต็มจอถ้าแคบกว่า */
+  margin: 0 auto; /* จัดกึ่งกลางแนวนอน */
+  padding: 24px; /* ระยะในรอบด้าน */
 }
 
+/* ปุ่มทั่วไป | input: <button> | output: ปุ่มสีเขียวอมฟ้า ตัวอักษรขาว */
 button {
-  min-height: 42px;
-  padding: 8px 18px;
-  border: 0;
-  border-radius: 6px;
-  font: inherit;
-  font-weight: 600;
-  color: #fff;
-  background: var(--accent);
-  cursor: pointer;
+  min-height: 42px; /* สูงอย่างน้อย 42px เพื่อกดง่าย */
+  padding: 8px 18px; /* ระยะใน */
+  border: 0; /* ไม่มีขอบ */
+  border-radius: 6px; /* มุมมน */
+  font: inherit; /* ใช้ฟอนต์เดียวกับหน้า */
+  font-weight: 600; /* ตัวหนาปานกลาง */
+  color: #fff; /* ตัวอักษรสีขาว */
+  background: var(--accent); /* พื้นสีเน้น */
+  cursor: pointer; /* เมาส์เป็นรูปมือ */
 }
 
+/* ปุ่มที่ปิดใช้งาน: จางลงและเมาส์เป็นสัญลักษณ์ห้าม | input: button:disabled | output: ปุ่มดูกดไม่ได้ */
 button:disabled { opacity: 0.5; cursor: not-allowed; }
+/* กรอบโฟกัสเมื่อใช้คีย์บอร์ดกับปุ่มหรือพื้นที่เลือกไฟล์ | input: ปุ่ม/.drop ที่ถูกโฟกัส | output: เส้นขอบนอกสีฟ้าอ่อนหนา 3px */
 button:focus-visible, .drop:focus-within { outline: 3px solid #8cc9c9; outline-offset: 2px; }
 
+/* ปุ่มแท็บเมนู (ยังไม่เลือก): ตัวอักษรเทา พื้นโปร่งใส ตัวบางลง | input: button.tab | output: ปุ่มแบบแท็บ */
 button.tab { color: var(--muted); background: transparent; font-weight: 500; }
+/* ปุ่มแท็บที่เลือกอยู่: ตัวอักษรสีเน้น พื้นฟ้าอ่อน ตัวหนา | input: button.tab.active | output: แท็บที่เลือก */
 button.tab.active { color: var(--accent); background: #e2f0f0; font-weight: 700; }
 
+/* กล่องเนื้อหา | input: .panel | output: กล่องขาวมีขอบและมุมมน */
 .panel {
-  padding: 24px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  padding: 24px; /* ระยะในรอบด้าน */
+  background: var(--surface); /* พื้นสีขาว */
+  border: 1px solid var(--line); /* ขอบบาง */
+  border-radius: 8px; /* มุมมน */
 }
 
+/* กล่องแบบแคบ: กว้างสุด 560px และอยู่กึ่งกลาง | input: .narrow | output: กล่องแคบกลางหน้า */
 .narrow { width: min(560px, 100%); margin: 0 auto; }
+/* ข้อความสีรอง | input: .muted | output: ตัวอักษรสีเทา */
 .muted { color: var(--muted); }
+/* ข้อความผิดพลาด | input: .error | output: ตัวอักษรสีแดง */
 .error { color: var(--bad); }
+/* ข้อความผลปกติ | input: .good | output: ตัวอักษรสีเขียว */
 .good { color: var(--good); }
+/* ข้อความผลผิดปกติ | input: .bad | output: ตัวอักษรสีแดง */
 .bad { color: var(--bad); }
+/* กล่องข้อความแจ้งเตือน | input: .notice | output: พื้นเหลืองอ่อน มุมมน มีระยะใน */
 .notice { padding: 10px 12px; background: #fff6df; border-radius: 6px; }
 
+/* พื้นที่เลือกไฟล์ภาพ | input: .drop | output: กรอบเส้นประสูงอย่างน้อย 280px */
 .drop {
-  display: grid;
-  place-items: center;
-  min-height: 280px;
-  margin-bottom: 16px;
-  padding: 12px;
-  overflow: hidden;
-  color: var(--muted);
-  border: 2px dashed var(--line);
-  border-radius: 8px;
-  cursor: pointer;
+  display: grid; /* จัดแบบตาราง */
+  place-items: center; /* จัดเนื้อหากึ่งกลางทั้งสองแกน */
+  min-height: 280px; /* สูงอย่างน้อย 280px */
+  margin-bottom: 16px; /* ระยะล่าง */
+  padding: 12px; /* ระยะใน */
+  overflow: hidden; /* ซ่อนส่วนที่ล้น */
+  color: var(--muted); /* ตัวอักษรสีรอง */
+  border: 2px dashed var(--line); /* ขอบเส้นประ */
+  border-radius: 8px; /* มุมมน */
+  cursor: pointer; /* เมาส์เป็นรูปมือ */
 }
 
+/* ช่องกรอกแบบมีป้ายกำกับ: เรียงป้ายกับตัวเลือกในแนวตั้ง ตัวหนา | input: .field | output: ป้ายอยู่เหนือรายการเลือก */
 .field { display: grid; gap: 6px; margin-bottom: 8px; font-weight: 600; }
+/* รายการเลือกในช่องกรอก: สูงอย่างน้อย 42px ใช้ฟอนต์หน้า ตัวไม่หนา ขอบบาง มุมมน พื้นขาว | input: .field select | output: ช่องเลือกชนิดยา */
 .field select { min-height: 42px; padding: 6px 10px; font: inherit; font-weight: 400; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+/* กรอบโฟกัสของรายการเลือก | input: .field select ที่ถูกโฟกัส | output: เส้นขอบนอกสีฟ้าอ่อน */
 .field select:focus-visible { outline: 3px solid #8cc9c9; outline-offset: 2px; }
+/* รูปตัวอย่างในพื้นที่เลือกไฟล์: ไม่เกินความกว้างกล่องและสูงไม่เกิน 320px | input: .drop img | output: รูปย่อพอดีกล่อง */
 .drop img { max-width: 100%; max-height: 320px; }
+/* ซ่อนช่อง input ไฟล์ (ยังโฟกัสด้วยคีย์บอร์ดได้) โดยทำให้โปร่งใสและเล็ก 1px | input: .drop input | output: ไม่เห็นช่องไฟล์ */
 .drop input { position: absolute; opacity: 0; width: 1px; height: 1px; }
 
+/* แถวสรุปผล (คำตัดสินกับตัวเลข) | input: .verdict-row | output: สองฝั่งซ้าย-ขวา ขึ้นบรรทัดใหม่ได้ */
 .verdict-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 16px;
+  display: flex; /* เรียงแนวนอน */
+  flex-wrap: wrap; /* ขึ้นบรรทัดใหม่เมื่อที่ไม่พอ */
+  justify-content: space-between; /* ดันสองฝั่งไปชิดซ้ายและขวา */
+  gap: 16px; /* ช่องว่างระหว่างฝั่ง */
+  margin-bottom: 16px; /* ระยะล่าง */
 }
 
+/* คำตัดสินในแถวสรุป: ตัวใหญ่ 2 เท่า ไม่มีระยะล่าง | input: .verdict-row h2 | output: ข้อความ ปกติ/ผิดปกติ ขนาดใหญ่ */
 .verdict-row h2 { font-size: 2rem; margin-bottom: 0; }
+/* ย่อหน้าในแถวสรุป: ระยะล่าง 4px | input: .verdict-row p | output: ชื่อไฟล์ชิดคำตัดสิน */
 .verdict-row p { margin-bottom: 4px; }
 
+/* รายการสถิติ: เรียงแนวนอน ช่องว่าง 28px ไม่มีระยะขอบ | input: .stats | output: ตัวเลขสถิติเรียงข้างกัน */
 .stats { display: flex; gap: 28px; margin: 0; }
+/* ชื่อสถิติ: สีรอง ตัวเล็ก | input: .stats dt | output: ป้ายเหนือค่า */
 .stats dt { color: var(--muted); font-size: 0.85rem; }
+/* ค่าสถิติ: ไม่มีระยะขอบ ตัวใหญ่ ตัวหนา | input: .stats dd | output: ตัวเลขเด่น */
 .stats dd { margin: 0; font-size: 1.25rem; font-weight: 700; }
 
+/* กริดรูปภาพต้นฉบับกับ heatmap | input: .images | output: คอลัมน์ละอย่างน้อย 240px ปรับจำนวนคอลัมน์อัตโนมัติ */
 .images {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
-  margin-bottom: 12px;
+  display: grid; /* จัดแบบตาราง */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* คอลัมน์กว้าง 240px ขึ้นไป เท่ากัน */
+  gap: 16px; /* ช่องว่างระหว่างรูป */
+  margin-bottom: 12px; /* ระยะล่าง */
 }
 
+/* กริด heatmap ของแต่ละเม็ด | input: .pills | output: คอลัมน์ละอย่างน้อย 170px เติมเต็มแถวอัตโนมัติ */
 .pills {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-  gap: 14px;
-  margin-bottom: 12px;
+  display: grid; /* จัดแบบตาราง */
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); /* คอลัมน์กว้าง 170px ขึ้นไป */
+  gap: 14px; /* ช่องว่างระหว่างรูป */
+  margin-bottom: 12px; /* ระยะล่าง */
 }
 
+/* ภาพรวมของฉาก: ระยะล่าง 16px | input: .scene | output: เว้นที่ใต้ภาพ */
 .scene { margin-bottom: 16px; }
 
+/* ลบระยะขอบเริ่มต้นของ figure | input: figure | output: รูปชิดขอบกล่อง */
 figure { margin: 0; }
+/* รูปใน figure: แสดงเป็นบล็อก กว้างเต็ม มุมมน | input: figure img | output: รูปเต็มความกว้างกล่อง */
 figure img { display: block; width: 100%; border-radius: 6px; }
+/* คำอธิบายรูป: ระยะบน 6px สีรอง ตัวเล็กลงเล็กน้อย | input: figcaption | output: ข้อความใต้รูป */
 figcaption { margin-top: 6px; color: var(--muted); font-size: 0.9rem; }
 
+/* ห่อตารางให้เลื่อนแนวนอนเมื่อกว้างเกิน | input: .scroll | output: แถบเลื่อนแนวนอน */
 .scroll { overflow-x: auto; }
+/* ตาราง: เต็มความกว้าง รวมเส้นขอบ ตัวเลขกว้างเท่ากันเพื่อให้เรียงตรง | input: table | output: ตารางที่อ่านง่าย */
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+/* เซลล์ตาราง: ระยะใน ชิดขวา เส้นล่างบาง ไม่ตัดบรรทัด | input: th, td | output: เซลล์ตัวเลขชิดขวา */
 th, td { padding: 10px 12px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; }
+/* คอลัมน์แรกชิดซ้าย (เป็นชื่อแถว) | input: th:first-child, td:first-child | output: ชื่อแถวชิดซ้าย */
 th:first-child, td:first-child { text-align: left; }
+/* หัวคอลัมน์: สีรอง ตัวหนาปานกลาง | input: th | output: หัวตารางสีเทา */
 th { color: var(--muted); font-weight: 600; }
+/* แถวผลหลัก: ตัวหนา พื้นเขียวอมฟ้าอ่อน | input: .baseline td | output: แถวฐานเด่นกว่าแถวอื่น */
 .baseline td { font-weight: 700; background: #eef6f6; }
